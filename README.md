@@ -2,7 +2,7 @@ PODS 1_1_7
 
 Protocol of Ontological Digital Survey 
 
-Introduction to the PODS Ontology
+Introduction to the PODS Ontology 
 
 The Protocol of Ontological Digital Survey (PODS) is an ontology designed to standardize and formalize the digital surveying process, particularly for the documentation and preservation of cultural heritage. Developed as a refinement and expansion of previous protocols such as BeAPG and FOPPA, PODS focuses on the precise metadata representation of each step in the digital surveying workflow, ensuring a structured and semantically coherent approach to 3D data acquisition, processing, and management.
 
