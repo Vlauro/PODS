@@ -386,433 +386,6 @@
     "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin___ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Obj 3D Model, 180 MB \n3D Model from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin___BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "FBX 3D Model, 290 MB\n3D Model from  the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin____DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Obj 3D Model, 480 MB \n3d Model  from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Mesh_of__ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "3d Mesh from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. This Mesh is without texture and represents just the morphological surface of the object"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Mesh_of___of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "3d Mesh from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.   This Mesh is without texture and represents just the morphological surface of the object"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ACQUISITION_of_AF_MNM_005__ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AF_MNM_005_PROCESSING_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Processing of the photographs from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Compact camera with built-in extendable lens"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Reflex camera with standard lens"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Reflex camera with standard lens"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Lumix DMC-TZ70 of Vittorio Lauro"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Canon EOS 1100D  from Okayama University, Deprtament of Antiquity"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "EOS 2000D from Computer Science Department, University of Turin"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Coordinates_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "34°38'45.15\"N 133°56'17.43\"E (WGS84)"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_DESCRIPTION_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "“This is the acquisition record of the AF MNM 005 carried out with photogrammetry\nFreehand spiral acquisition with three degrees of progressive inclination (75°, 45°, 15°)"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Location_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "The location where the photogrammetric survey of the artifact AFMNM005 was conducted (work chain ALFAfsB001)."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Method  used for  the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The acquisition method used complies with the FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Method  used for  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead. The acquisition method used complies with the FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of__BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Method used for the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun. The acquisition method used complies with the Agisoft Metashape Acquisition Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Phase_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Phase  of the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The acquisition phase respected the scans and indications as established by the BeA-PG protocol"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Phase_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Phase  of  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.\n\nThe acquisition phase respected the scans and indications as established by the FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Raw Data from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations.  These Raw Data are the result of photogrammetric acquisition and are made up of a set of photographs"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Raw Data from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001.  These Raw Data are the result of photogrammetric acquisition and are made up of a set of photographs"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of__BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Raw Data from  the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun.These Raw Data are the result of photogrammetric acquisition and are made up of a set of photographs"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Software_for_BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Camera Software EOS 1.0.6"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Software_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Camera Software EOS 3.8.0 Utility"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Trajectory of ALFAfsB001     Acquisition Trajectory used for  the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The selected trajectory is a Freehand Spiral as defined by the FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Trajectory used for  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead. The selected trajectory is a Close Survey on a Rotating Base as defined by the FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of__BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Acquisition Trajectory used for the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun.The selected trajectory is an Interior Acquisition as defined by the Agisoft Metashape Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_of_NO01_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_of_TBZ._K._BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "BETAfsF001_Acquisition"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Color_Balance_Texture_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "In the context of color balance for the texture of the 3D model obtained from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), a color balancing technique combined with gradient ramps has been utilized."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud:_Depth_Noise_Filtering_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_depth noise filtering"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Concerning the dense point cloud resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), the depth noise filtering is based on adaptive feature extraction (AFE), gradient field estimation (GFE), and further accelerated gradient ascent (FAGA)."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_Mesaurement_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Measurement of the number of points comprising the densified point cloud obtained from the survey of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications)."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Dense Point Cloud from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_of__ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Dense Point Cloud from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_Alghoritm_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "mathematical detail unknown, certain use of decimation algorithms to manage point cloud density with application of density reduction techniques to optimize computational resources and optimization of point cloud management to reduce computational load."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_Method_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Densification Method of the Cloud Point in the context of the processing from  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.\n\nMulti View Stereo Method"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Regarding the densification of the point cloud of the 3D Model of AFMNM005 (workflow chain ALFAfsB001) mathematical detail unknown, certain use of decimation algorithms to manage point cloud density with application of density reduction techniques to optimize computational resources and optimization of point cloud management to reduce computational load."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_of_DELTArmA001.",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Densification of the Cloud Point in the context of the processing from  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#DigitalScale_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "1:1"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#E12_Production",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -820,74 +393,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Eidotype_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/126#F40_Eidotype"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Eidotype  of the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The Eidotype represents a sketch of the survey context, the acquisition set, the positioning of the lights and the possible trajectories that can be followed also taking into account the obstacles along the path. The Eidotype of ALFAfsB001 is originally in pen on paper and saved as JPG"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Final_Use_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/158#F71_Final_Use_of_Digital_Twin"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_FinalUse"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Final use of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This artifact is a boar's jaw subjected to anthropic modifications. Final use refers to the application of the 3D model within the context of the project according to the established parameters."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#GeometryType_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Parallelepiped by FOPPA Thesaurus"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#GeometryType_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sphere by FOPPA Thesaurus"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Implementation_in_Pject_BeaVIR_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_InteractiveImplementation"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Implementation of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), in the interactive project BeA-VIR for the visualization of 3D models within the BeArchaeo project."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Interactive_Software_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Unity 2021.3.33f1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input_(was_input_of)",
@@ -993,240 +498,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_Algorithm_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "feature-based approach, probably integrating AI techniques"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_Method_of__DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Matching Method  used for the processing in the context of the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.\nFeature-based matching algorithm"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFArmA001_Matching"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Matching, that is, in the context of processing, extraction of points from the photographs collected for the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_BETAfs001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "BETAfs001_Matching"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Matching, that is, in the context of processing, extraction of points from the photographs collected for the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_NO01__DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Matching"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Matching, that is, in the context of processing, extraction of points from the photographs collected for the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Mesh_Reconstruction_of_AFMNM005",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_MeshReconstruction"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "For Mesh Reconstruction based on Dense Point Cloud, probably use of Neural Marching Cube and Neural Dual Contouring"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Mesh_Reconstruction_of_NO01_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Reconstruction"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Reconstruction of the mesh from the photogrammetric survey of the archaeological artifact NO01, workflow chain DELTArmA001. This pertains to a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ModellingDetemination_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/153#F66_Modelling_Determination"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "In the context of determining the elements of the textured 3D model of ALFAfsB001, the focus was established on the object and all visible parts of the surface."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ModellingElimination_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/154#F67_Modelling_Elimination"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "In the context of the elimination of parts from the textured 3D model of ALFAfsB001, the removal of any elements related to the acquisition set was established."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_3D_Mesh_of_NO01_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Modelling"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Modification of the 3D model resulting from the photogrammetric survey of the archaeological artifact NO01, workflow chain DELTArmA001. This artifact is a colored glass bead. Modeling refers to the transformation of the format and any alterations made to the 3D model."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Date_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "19/03/2019"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Description_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "elimination of the elements of the table and the set and focus on the find"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Device_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Alienware 1, Intel(R) Core(TM) i7-10870H CPU Processor @ 2.20GHz, 2208 Mhz, 8 cores, 16 logical processors, of Department of Computer Science, University of Turin"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Operator_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Vittorio Lauro\nhttps://orcid.org/0000-0003-3446-6127"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Software_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Blender 7.74"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_of_AFMNM005_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/90#F4_Modelling"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "ALFAfsB001_Modelling"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Modeling, that is, the set of activities involving the reconstruction, coloration, and manipulation of the mesh of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_of_NO01_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/90#F4_Modelling"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Modelling"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Modeling, that is, the set of activities involving the reconstruction, coloration, and manipulation of the mesh of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_Picture_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://qudt.org/vocab/soqk/SI"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "180"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_Point_Dense_Point_Cloud_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "75399"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_TExture_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#O24_measured_(was_measured_by)",
@@ -1570,357 +841,6 @@
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P10_falls_within_(contains)"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Picture_Set__of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Picture Set  from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations.  Picture Set are the result of photogrammetric acquisition and are made up of multiple photographs of the object under examination observed from different points of view"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Picture_Set__of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Picture Set  from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001.  Picture Set  are the result of photogrammetric acquisition and are made up of multiple photographs of the object under examination observed from different points of view"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Recap Autodesk Research Licence of International Research Institute for Archaeology and Ethnology"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Agistoft Metashape Licence Unkonwn"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Zephyr 3D Professional Licence  of Computer Science Department University of Turin"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Point_Cloud_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Point Cloud from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Point_Cloud_of__ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Point Cloud from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Device_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "DELL Vostro 3525 AMD Ryzen™ 7 5700U Computer of International Research Intstitute of Archaeology and Ethnography"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Device_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "MSI Cyborg 15 A13VE-602IT Intel® Core™ i7 i7-13620H of the Computer Science Department University of Turin"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Phase_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Processing Phase  of the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The acquisition phase respected the scans and indications as established by the BeA-PG protocol"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Phase_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Processing Phase  of  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.\n\nThe acquisition phase respected the scans and indications as established by the FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_of_NO01_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Processing of the photographs from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_of_TBZ._K._BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "BETAfsF001_Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Processing of the photographs from the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Algorithm_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Neural Marching Cube and Neural Dual Contouring"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Algorithm_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Poisson"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Method_of__DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Reconstruction  used for the modelling in the context of the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.\nSASHA Method integrated in Zephyr 3D."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Medium Object (1 cm to 30 cm) by FOPPA Thesaurus"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_BETAfs001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Cave or underground structure by FOPPA Thesaurus"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Small object (equal to or smaller than 1 cm) by FOPPA thesaurus"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Smoothing_Filter_of_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Concerning the smoothing filter in the context of mesh reconstruction based on the dense point cloud obtained from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), a Laplacian smoothing technique has been employed."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Date_of_AFMNM005_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "09/03/2019"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_OPERATOR_of_AFMNM005_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Vittorio Lauro\nhttps://orcid.org/0000-0003-3446-6127"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Object of the photogrammetric survey. \nJaw of a wild boar belonging to the late Yayoi culture and found at the Minamikata excavation during the construction excavations of the Okayama hospital concluded in 2016. The jaw shows signs of processing on the sides and two artificial holes produced in the attachment of the jaw. It is assumed that the object was hung thanks to the use of a rope passing through the holes. Its purpose is unknown. \nThe object is marked in the BeArchaeo project database as AF MNM 005\nIn the work chain the identifier  ALFAfsB001  was assigned according to the FOPPA method"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Object of the photogrammetric survey. \nBurial chamber made of stone blocks set in a mound according to the typology of Japanese monumental tombs known as Kofun. In particular, the object of the Survey is the so-called Tobiotsuka Kofun located in Okayama Prefecture and dating back to the late Kofun period and subject to investigation and excavation from 2019 to 2023 in the context of the BeArchaeo project. \nThe object is marked in the BeArchaeo project database as TBZ-K\nIn the work chain the identifier BETAfsF001 was assigned according to the FOPPA method"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Object of the Survey. Colored glass bead in blue and black paste from the Nima Otsuka site and dating back to the late Kofun period and detected in the context of investigations promoted by the University of Turin and the University of Okayama which took place in 2024. The object has a temporary identifier of Nima Otsuka 01 or alternatively NM01\nIn the work chain the identifier DELTArmA001 was assigned according to the FOPPA method"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Textured_3D_Mesh_of_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "3d Mesh from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.   This Mesh is enriched with the texture and represents the morphological surface of the object and the colours displacement"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Textured_3D_Mesh_of__ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "3d Mesh from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations.  This Mesh is enriched with the texture and represents the morphological surface of the object and the colours displacement"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Mesh_of_NO01__DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "DELTArmA001_Reconstruction"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Texturing of the mesh obtained from the photogrammetric survey of the archaeological artifact NO01, workflow chain DELTArmA001. This artifact is a colored glass bead, and the texturing is based on the extraction of color information from the photographs collected during the acquisition phase."
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Method_of__DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/102#F16_Texturing_Method"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Texturing Method used for the modelling in the context of the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.\n\nParameterization + Texturing from registered rasters"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Type_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Single Texture jpg"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Type_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Multi Texturing"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Free hand spiral acquisition by FOPPA Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Interior by MetaShape Agisoft Manual"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_DELTArmA001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Rotating base microscope by FOPPA Manual"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y12_was_continued_by_Processing_Phase",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1994,26 +914,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#rational"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#interactive_software_for_BETAfsF001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Unity 2021.3.3f1"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#processing_operator_ALFAfsB001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Vittorio Lauro\nhttps://orcid.org/0000-0003-3446-6127"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory",
@@ -2237,6 +1137,970 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "42°50′32.06″N 12°45′24.94″E"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "15/03/2012"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Tempietto sul Clitunno date of Acquisition \n15/03/2012"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Casio EX-Z110"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Compact Camera"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ITABC-CNR Photogrammetry Acquisition Method"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Casio 1.00"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Composite: [Linear A (6 pictures) + Half Circle Prospective A (34 pictures)  + Half Circle Prospective B (5 pictures) + Linear B (4 pictures) + Linear C (4 pictures)  + Linear D (5 pictures)  + Linear E (6 pictures) + Linear F (4 pictures)  + Linear G (5 pictures) + Azimutal Spiral A (22 pictures) +  Azimutal Spiral B (22 pictures) + Linear H (4 pictures) +  Linear I (5 pictures) + Linear L (4 pictures)  + Free Hand Azimutal Spiral A ( 6 Pictures) + Free Hand Azimutal Spiral B ( 4 Pictures)  + Free Hand Azimutal Spiral C ( 7 Pictures) + Free Hand Azimutal Spiral D ( 5 Pictures) + Free Hand Half Circle Prospective A (6 Pictures) + Free Hand Circle (36 pictures) + Free Hand Linear A (11 Pictures) + Free Hand Linear B (9 Pictures) +  Free Hand Linear C (5 Pictures)."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assemblamento_nuvole_scalate_mesh2012 3D Object (.ply)"
+  }, {
+    "@language" : "en",
+    "@value" : "https://sketchfab.com/3d-models/assemblamento-nuvole-scalate-mesh-8ec2999f45da4df3b4b2bb03d2492a1a"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloudNumberofPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of Vertex: 1038244\nMosaicoV1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DigitalTwin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "MosaicoV1 2024"
+  }, {
+    "@language" : "en",
+    "@value" : "Tempietto Clitunno Esterno 2019\nhttps://sketchfab.com/3d-models/tempietto-clitunno--esterno2019-d411fc2689b64680a238ea0fc32f36a0"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First Modelling 20 ‎March ‎2012, ‏‎16:25:23\nSecond Modelling 2019\nThird Modelling 2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First Modelling Blender 6.4\nSecond Modelling Blender 6.9\nThird Modelling Blender 7.9"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfFinalUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfPicture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "219"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberofTexture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "MosaicoV1"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "6"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingAlgorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Insight 3D matching algorithm \nhttps://github.com/lukasmach/insight3d/tree/master/insight3d"
+  }, {
+    "@language" : "en",
+    "@value" : "Zephyr 3D \nZephyr Processing Algorythm: SASHA"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Insight 3d -2012 Processing- \nUnknown -2019 Processing- \nZephyr 3D -2024 Processing-"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Registration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First Registration \n20 ‎March ‎2012, ‏‎16:25:23"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SinglePicture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/94#F8_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "sample information picture acquisition of Tempietto sul Clitunno \nImage informations: 2816x2112, 72dpi, bit depth 24, resolution unit 2, colour rappresentation sRGB, compresseb bits/pixel 5."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePoint_Cloud_Number_of_Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/137#F51_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "152992"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The small temple of Clitunno is a small temple-shaped chapel in the municipality of Campello sul Clitunno (PG).[1][2] It is located approximately 1 km downstream from the sources of the Clitunno river (\"Fonti del Clitunno\"), in an area where other springs are located (\"Vene del Tempio\"), in the hamlet of Pissignano. It is part of the serial site \"Longobards in Italy: places of power\", including seven places full of architectural, pictorial and sculptural evidence of Lombard art, registered on the UNESCO World Heritage List in June 2011\nWikipedia source"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "camera_focal_length (in mm)\t\t40\nLight Intensity\t\t100\nprojector deviation\t\t0.09055132161249042\ncamera angle\t\t0.4714696578564687"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "GOM‘s intelligent ATOS Professional"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Calibration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Set Definition \nCalibration Volume depth\t\t247.91921175327593\nCalibration Volume length\t\t330.68029990195714\nCalibration Volume width\t\t255.23001757658218"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_CapturingDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ATOS Triple Scan\nSensor \nATOS III Rev.02"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_CapturingDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Industrial Optical 3D Digitizer"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_DigitalTwin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://ars3d.rgzm.de/object.htm?id=ars3do:47def21b-ca45-4dbd-9eac-899956149b1d"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Environment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Set information \n\narea\t594cm²"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/94#F8_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "exposure time\t0.1 und 0.3 (two exposure times per image)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_ProcessingDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "max_intersection_deviation\t\t0,02 - 0,08\naverage_point_distance (in Mesh)\t\t0.11321688668448972\nSensor\t\tATOS III Rev.02\nEllipseQuality\t\t0,25"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_SurveyObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://arachne.dainst.org/entity/7031131\ncolor\tlight\nmaterial\tnon-reflective\nsize in mm\t30mm x 255mm x 250mm"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_TotalNumberofVertice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4636612"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_scale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "1:1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Photogrammetry with compact camera, Acquisition of AF MNM 005"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONCOORDINATES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "34°38'45.15\"N 133°56'17.43\"E"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONDESCRIPTION",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the acquisition record of the AF MNM 005 carried out with photogrammetry, Freehand spiral acquisition with three degrees of progressive inclination (75°, 45°, 15°)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONMETHOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Bea-PG\nLink to exposition or article \nhttps://diglib.eg.org/server/api/core/bitstreams/457a13a5-0da3-4210-8719-121d928db3a6/content"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONTRAJECTORY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "freehand spiral URI pag. 54\nhttps://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Vittorio Lauro Lumix DMC-Tz70"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE_TYPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Compact camera with built-in fixed lenses"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_RAW_DATA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/111#F25_Acquisition_Raw_Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "RAW DATA of Acquisition of AF MNM 005  \nhttps://drive.google.com/drive/folders/1TwvbMjRUFQMT-GBQcDK7kyqEEPKRLUPO?usp=sharing"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_SOFTWARE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SILKYPIX"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AR/MR_Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/185#F98_AR/MR_Project_Implementation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BeaVir CAVE \nArticle Link \nhttps://dl.acm.org/doi/10.1007/978-3-031-44751-8_39"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AcquisitionDATE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "09/03/2019"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_COLOR_BALANCE/_MULTIBAND_TEXTURE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Color Balancing  + Gradient Ramps"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSE_POINT_CLOUD_NUMBER_OF_POINT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "75399"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSIFICATIONALGORITHM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "mathematical detail unknown, certain use of decimation algorithms to manage point cloud density with application of density reduction techniques to optimize computational resources and optimization of point cloud management to reduce computational load."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DEPTH_NOISE_FILTERING",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Adaptive feature extraction (AFE), gradient field estimation (GFE) and further accelerated gradient ascent (FAGA)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DIGITAL_SCALE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "1:1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DOMINANT_GEOMETRY_TYPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Parallelepiped URI pag. 66\nhttps://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Database_Architecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/183#F96_Database_Architecture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Omeka S version 3.2.3"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Database_Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/182#F95_Database_Project_Implementation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Project BeArcheo Database \nhttps://bearchaeo.unito.it/omeka-s/s/bearchaeo-resources-site/page/welcome"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DigitalTwin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://sketchfab.com/3d-models/yaioi-boar-jaw-3136f87dde21439c953f62d2e19293d4"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Exporting_Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/156#F69_Exporting_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Final Use of the 3D model outside of the Database, here it will annotate all the uses of the 3d Model, in this case project BeaVIR and Video Presentation"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Final_3D_model_physical__carrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/155#F68_Digital_Twin_Physical_Carrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BeArchaeo Project I.R.I.A.E. 3D Hardware Carrier n°001"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Interactive_Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BeaVir \nMinamikata Room \nhttps://vr.bearchaeo.unito.it/"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Interactive_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Unity 2021.3.3f1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MATCHING_ALGORITHM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Recap 3d proprietary software:  feature-based approach, probably integrating AI techniques"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DATE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@language" : "en",
+    "@value" : "16/03/2019"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DESCRIPTION",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "elimination of the elements of the table and the set and focus on the find"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DEVICE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "DELL Vostro 3525 AMD Ryzen™ 7 5700U"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_OPERATOR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@language" : "en",
+    "@value" : "Vittorio Lauro\norcid: https://orcid.org/0000-0003-3446-6127"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_SOFTWARE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Blender 7.4"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Modelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Modifying  of AF MNM 005 Digital Twin"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBEROFPICTURE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "180"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBER_OF_TEXTURE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Number_of_final_destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_CARRIER",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BeArchaeo Project Hardware Storage"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_SET",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Photo Set of AF MNM 005 Acquisition"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PLACE_OF_ACQUISITION",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Okayama City Buried Cultural Property Center"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_POINT_CLOUD_VERTEX_QUALITY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "no Vertex Quality"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Processing of AF MNM 005 Digital Twin, based on photogrammetric acquisition, using structure from motion technique"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_DEVICE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "DELL Vostro 3525 AMD Ryzen™ 7 5700U and external server by Recap 3D"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_SOFTWARE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Recap Autodesk 3D 2019"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Project_Video",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/162#F75_Project_Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "DELTAfsB04 Presentation for Izumo Exhibition"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_RECONSTRUCTIONALGORITHM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Neural Marching Cube and Neural Dual Contouring"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SMOOTHING_FILTER",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Laplacian Smoothing"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SurveyObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AF MNM 005\nhttps://bearchaeo.unito.it/omeka-s/s/bearchaeo-resources-site/item/2041#?c=0&m=0&s=0&cv=0&xywh=-274%2C0%2C1506%2C719"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TEXTURING_TYPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Single jpg."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TYPE_OF_OBJECT_SCALE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Medium object URI pag. 52\nhttps://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Video_Editing_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/161#F74_Video_Editing_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Video PAD Editor"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_acquisitionOPERATOR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Vittorio Lauro\norcid: https://orcid.org/0000-0003-3446-6127"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_processingOperator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Vittorio Lauro\norcid: https://orcid.org/0000-0003-3446-6127"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_AcquisitionDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "camera_focal_length (in mm)\t40\nLight Intensity\t100\nprojector deviation\t0.07778481336545273\nscale deviation\t\ncamera angle\t0.4706199955076422"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_AcquisitionSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "GOM‘s intelligent ATOS Professional"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Calibration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Set Definition \nCalibration Volume depth\t263.5035303923889\nCalibration Volume length\t337.2812802309544\nCalibration Volume width\t257.4264686411049"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_CapturingDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ATOS Triple Scan \nSensor \nATOS III Rev.02"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_CapturingDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Industrial Optical 3D Digitizer"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_DigitalTwin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://ars3d.rgzm.de/object.htm?id=ars3do:95c8cc98-06a8-4bb6-a85b-fcc93c98689f"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Environment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Set:\nheight_variance/ height_variation\t243.77158472996985\narea\t631cm²"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_NumberOfPicture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "7"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/94#F8_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "exposure time\t0,25 und 0.75 (two exposure times per image)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_ProcessingDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "max_intersection_deviation\t0,04 - 0,07 (längere Werte)\naverage_point_distance (in Mesh)\t0.11838185253093024\nSensor\tATOS III Rev.02\nEllipseQuality\t0,25"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_SurveyObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://arachne.dainst.org/entity/7031203\ncolor\tlight\nmaterial\tnon-reflective\n\nsize in mm\t335mm x 255mm x 265mm"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_TotalNumberofVertice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4509344"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_scale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "1:1"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method",
@@ -7653,7 +7517,7 @@
     "@value" : "Modelling"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object"
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
