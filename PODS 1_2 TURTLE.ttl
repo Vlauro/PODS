@@ -72,7 +72,7 @@ The “Urnfield” period (E4) spatiotemporally overlaps with the “Hallstatt�
                                                                                                   rdfs:domain <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
                                                                                                   rdfs:range <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
                                                                                                   rdfs:comment """This property is redundant and can be replaced by the superproperty 
--Y93 was continued by subsequent phase-"""en ;
+-Y93 was continued by subsequent phase-"""@en ;
                                                                                                   rdfs:label "was_continued_by_processing_phase"@en ;
                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> """Y12: was continued by Processing Phase
 
