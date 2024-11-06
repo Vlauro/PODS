@@ -4985,7 +4985,7 @@ Subclass of: F9 Acquisition Device"""@en ;
 
 ###  https://photogrammetry.altervista.org/items/show/90#F4_Modelling
 <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object> ;
+                                                                   rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
                                                                    <http://purl.org/dc/elements/1.1/description> "dc: description \"Relevant for:\" Conservation and Enhancement"@en ;
                                                                    rdfs:label "Modelling"@en ;
                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Definition of the class F4 Modelling as a subclass of D7 Digital Machine Event"@en ;
@@ -5079,665 +5079,646 @@ Subclass of: F9 Acquisition Device"""@en ;
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ACQUISITION_of_AF_MNM_005__ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ACQUISITION_of_AF_MNM_005__ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                           <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_Acquisition"@en ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionCoordinate
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionCoordinate> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates> ;
+                                                                                                    rdfs:comment "42°50′32.06″N 12°45′24.94″E" .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AF_MNM_005_PROCESSING_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AF_MNM_005_PROCESSING_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_Processing"@en ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Processing of the photographs from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDate
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDate> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date> ;
+                                                                                              <http://purl.org/dc/elements/1.1/date> "15/03/2012" ;
+                                                                                              rdfs:comment """Tempietto sul Clitunno date of Acquisition 
+15/03/2012"""@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                          <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
-                                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Compact camera with built-in extendable lens"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDevice
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDevice> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+                                                                                                rdfs:comment "Casio EX-Z110"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                          <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
-                                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Reflex camera with standard lens"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDeviceType
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDeviceType> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+                                                                                                    rdfs:comment "Compact Camera"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDeviceType_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                           <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Reflex camera with standard lens"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionMethod
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionMethod> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
+                                                                                                rdfs:comment "ITABC-CNR Photogrammetry Acquisition Method"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Lumix DMC-TZ70 of Vittorio Lauro"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionSoftware
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionSoftware> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
+                                                                                                  rdfs:comment "Casio 1.00"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Canon EOS 1100D  from Okayama University, Deprtament of Antiquity"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionTrajectory
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionTrajectory> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
+                                                                                                    rdfs:comment "Composite: [Linear A (6 pictures) + Half Circle Prospective A (34 pictures)  + Half Circle Prospective B (5 pictures) + Linear B (4 pictures) + Linear C (4 pictures)  + Linear D (5 pictures)  + Linear E (6 pictures) + Linear F (4 pictures)  + Linear G (5 pictures) + Azimutal Spiral A (22 pictures) +  Azimutal Spiral B (22 pictures) + Linear H (4 pictures) +  Linear I (5 pictures) + Linear L (4 pictures)  + Free Hand Azimutal Spiral A ( 6 Pictures) + Free Hand Azimutal Spiral B ( 4 Pictures)  + Free Hand Azimutal Spiral C ( 7 Pictures) + Free Hand Azimutal Spiral D ( 5 Pictures) + Free Hand Half Circle Prospective A (6 Pictures) + Free Hand Circle (36 pictures) + Free Hand Linear A (11 Pictures) + Free Hand Linear B (9 Pictures) +  Free Hand Linear C (5 Pictures)."@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#AcquisitionDevice_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "EOS 2000D from Computer Science Department, University of Turin"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloud
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloud> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> ;
+                                                                                              rdfs:comment "Assemblamento_nuvole_scalate_mesh2012 3D Object (.ply)"@en ,
+                                                                                                           "https://sketchfab.com/3d-models/assemblamento-nuvole-scalate-mesh-8ec2999f45da4df3b4b2bb03d2492a1a"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Coordinates_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Coordinates_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                           <https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "34°38'45.15\"N 133°56'17.43\"E (WGS84)" .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloudNumberofPoint
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloudNumberofPoint> rdf:type owl:NamedIndividual ,
+                                                                                                                    <https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> ;
+                                                                                                           rdfs:comment """Number of Vertex: 1038244
+MosaicoV1"""@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_DESCRIPTION_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_DESCRIPTION_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                        <https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description> ;
-                                                                                               rdfs:comment """“This is the acquisition record of the AF MNM 005 carried out with photogrammetry
-Freehand spiral acquisition with three degrees of progressive inclination (75°, 45°, 15°)""" .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DigitalTwin
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DigitalTwin> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
+                                                                                          rdfs:comment "MosaicoV1 2024"@en ,
+                                                                                                       """Tempietto Clitunno Esterno 2019
+https://sketchfab.com/3d-models/tempietto-clitunno--esterno2019-d411fc2689b64680a238ea0fc32f36a0"""@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Location_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Location_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "The location where the photogrammetric survey of the artifact AFMNM005 was conducted (work chain ALFAfsB001)."@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingDate
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingDate> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date> ;
+                                                                                            rdfs:comment """First Modelling 20 ‎March ‎2012, ‏‎16:25:23
+Second Modelling 2019
+Third Modelling 2024"""@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Method  used for  the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The acquisition method used complies with the FOPPA Manual"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingSoftware
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingSoftware> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software> ;
+                                                                                                rdfs:comment """First Modelling Blender 6.4
+Second Modelling Blender 6.9
+Third Modelling Blender 7.9"""@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Method  used for  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead. The acquisition method used complies with the FOPPA Manual"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfFinalUse
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfFinalUse> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination> ;
+                                                                                               rdfs:comment 3 .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of__BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Method_of__BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Method used for the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun. The acquisition method used complies with the Agisoft Metashape Acquisition Manual"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfPicture
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfPicture> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture> ;
+                                                                                              rdfs:comment 219 .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Phase_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Phase_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Phase  of the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The acquisition phase respected the scans and indications as established by the BeA-PG protocol"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberofTexture
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberofTexture> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture> ;
+                                                                                              rdfs:comment "MosaicoV1"@en ,
+                                                                                                           6 .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Phase_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Phase_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> """Acquisition Phase  of  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingAlgorithm
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingAlgorithm> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type> ;
+                                                                                                  rdfs:comment """Insight 3D matching algorithm 
+https://github.com/lukasmach/insight3d/tree/master/insight3d"""@en ,
+                                                                                                               """Zephyr 3D 
+Zephyr Processing Algorythm: SASHA"""@en .
 
-The acquisition phase respected the scans and indications as established by the FOPPA Manual"""@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingSoftware
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingSoftware> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
+                                                                                                 rdfs:comment """Insight 3d -2012 Processing- 
+Unknown -2019 Processing- 
+Zephyr 3D -2024 Processing-"""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                        <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
-                                                                                               <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Raw Data from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations.  These Raw Data are the result of photogrammetric acquisition and are made up of a set of photographs"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Registration
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Registration> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)> ;
+                                                                                           rdfs:comment """First Registration 
+20 ‎March ‎2012, ‏‎16:25:23"""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Raw Data from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001.  These Raw Data are the result of photogrammetric acquisition and are made up of a set of photographs"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SinglePicture
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SinglePicture> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/items/show/94#F8_Picture> ;
+                                                                                            rdfs:comment """sample information picture acquisition of Tempietto sul Clitunno 
+Image informations: 2816x2112, 72dpi, bit depth 24, resolution unit 2, colour rappresentation sRGB, compresseb bits/pixel 5."""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of__BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Raw_Data_of__BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Raw Data from  the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun.These Raw Data are the result of photogrammetric acquisition and are made up of a set of photographs"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePoint_Cloud_Number_of_Point
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePoint_Cloud_Number_of_Point> rdf:type owl:NamedIndividual ,
+                                                                                                                         <https://photogrammetry.altervista.org/items/show/137#F51_Point_Cloud_Number_of_Point> ;
+                                                                                                                rdfs:comment "152992"@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Software_for_BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Software_for_BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Camera Software EOS 1.0.6"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Subject
+<https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Subject> rdf:type owl:NamedIndividual ,
+                                                                                               <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+                                                                                      rdfs:comment """The small temple of Clitunno is a small temple-shaped chapel in the municipality of Campello sul Clitunno (PG).[1][2] It is located approximately 1 km downstream from the sources of the Clitunno river (\"Fonti del Clitunno\"), in an area where other springs are located (\"Vene del Tempio\"), in the hamlet of Pissignano. It is part of the serial site \"Longobards in Italy: places of power\", including seven places full of architectural, pictorial and sculptural evidence of Lombard art, registered on the UNESCO World Heritage List in June 2011
+Wikipedia source"""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Software_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Software_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                          <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
-                                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Camera Software EOS 3.8.0 Utility"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionDescription
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionDescription> rdf:type owl:NamedIndividual ,
+                                                                                                               <https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description> ;
+                                                                                                      rdfs:comment """camera_focal_length (in mm)		40
+Light Intensity		100
+projector deviation		0.09055132161249042
+camera angle		0.4714696578564687"""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                          <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
-                                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Trajectory of ALFAfsB001     Acquisition Trajectory used for  the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The selected trajectory is a Freehand Spiral as defined by the FOPPA Manual"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionSoftware
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionSoftware> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
+                                                                                                   rdfs:comment "GOM‘s intelligent ATOS Professional"@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                           <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Trajectory used for  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead. The selected trajectory is a Close Survey on a Rotating Base as defined by the FOPPA Manual"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Calibration
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Calibration> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument> ;
+                                                                                           rdfs:comment """Set Definition 
+Calibration Volume depth		247.91921175327593
+Calibration Volume length		330.68029990195714
+Calibration Volume width		255.23001757658218"""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of__BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_Trajectory_of__BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                           <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Acquisition Trajectory used for the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun.The selected trajectory is an Interior Acquisition as defined by the Agisoft Metashape Manual"@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_CapturingDevice
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_CapturingDevice> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+                                                                                               rdfs:comment """ATOS Triple Scan
+Sensor 
+ATOS III Rev.02"""@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_of_NO01_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_of_NO01_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Acquisition"@en ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "Photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."@en .
 
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_CapturingDeviceType
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_CapturingDeviceType> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+                                                                                                   rdfs:comment "Industrial Optical 3D Digitizer"@en .
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_of_TBZ._K._BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Acquisition_of_TBZ._K._BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#altLabel> "BETAfsF001_Acquisition"@en ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."@en .
 
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Color_Balance_Texture_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Color_Balance_Texture_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "In the context of color balance for the texture of the 3D model obtained from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), a color balancing technique combined with gradient ramps has been utilized."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_Mesaurement_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_Mesaurement_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                                 <https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement> ;
-                                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "Measurement of the number of points comprising the densified point cloud obtained from the survey of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications)."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Dense Point Cloud from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_of__ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud_of__ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Dense Point Cloud from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_Alghoritm_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_Alghoritm_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                            <https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type> ;
-                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "mathematical detail unknown, certain use of decimation algorithms to manage point cloud density with application of density reduction techniques to optimize computational resources and optimization of point cloud management to reduce computational load."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_Method_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_Method_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> """Densification Method of the Cloud Point in the context of the processing from  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.
-
-Multi View Stereo Method"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                 <https://photogrammetry.altervista.org/items/show/133#F47:_Densification> ;
-                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "Regarding the densification of the point cloud of the 3D Model of AFMNM005 (workflow chain ALFAfsB001) mathematical detail unknown, certain use of decimation algorithms to manage point cloud density with application of density reduction techniques to optimize computational resources and optimization of point cloud management to reduce computational load."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_of_DELTArmA001.
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Densification_of_DELTArmA001.> rdf:type owl:NamedIndividual ,
-                                                                                                   <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "Densification of the Cloud Point in the context of the processing from  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#DigitalScale_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#DigitalScale_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                <https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale> ;
-                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "1:1" .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Eidotype_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Eidotype_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                            <https://photogrammetry.altervista.org/items/show/126#F40_Eidotype> ;
-                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Eidotype  of the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The Eidotype represents a sketch of the survey context, the acquisition set, the positioning of the lights and the possible trajectories that can be followed also taking into account the obstacles along the path. The Eidotype of ALFAfsB001 is originally in pen on paper and saved as JPG"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Final_Use_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Final_Use_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                             <https://photogrammetry.altervista.org/items/show/158#F71_Final_Use_of_Digital_Twin> ;
-                                                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_FinalUse"@en ;
-                                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Final use of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This artifact is a boar's jaw subjected to anthropic modifications. Final use refers to the application of the 3D model within the context of the project according to the established parameters."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#GeometryType_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#GeometryType_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                 <https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type> ;
-                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "Parallelepiped by FOPPA Thesaurus"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#GeometryType_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#GeometryType_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                  <https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type> ;
-                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "Sphere by FOPPA Thesaurus"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Implementation_in_Pject_BeaVIR_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Implementation_in_Pject_BeaVIR_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                                  <https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation> ;
-                                                                                                         <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_InteractiveImplementation"@en ;
-                                                                                                         <http://www.w3.org/2004/02/skos/core#definition> "Implementation of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), in the interactive project BeA-VIR for the visualization of 3D models within the BeArchaeo project."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Interactive_Software_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Interactive_Software_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Unity 2021.3.33f1"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_Algorithm_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_Algorithm_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "feature-based approach, probably integrating AI techniques"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_Method_of__DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_Method_of__DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> """Matching Method  used for the processing in the context of the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.
-Feature-based matching algorithm"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                            <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
-                                                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "ALFArmA001_Matching"@en ;
-                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Matching, that is, in the context of processing, extraction of points from the photographs collected for the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_BETAfs001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_BETAfs001> rdf:type owl:NamedIndividual ,
-                                                                                           <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
-                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "BETAfs001_Matching"@en ;
-                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Matching, that is, in the context of processing, extraction of points from the photographs collected for the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_NO01__DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Matching_of_NO01__DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Matching"@en ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "Matching, that is, in the context of processing, extraction of points from the photographs collected for the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Mesh_Reconstruction_of_AFMNM005
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Mesh_Reconstruction_of_AFMNM005> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_MeshReconstruction"@en ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "For Mesh Reconstruction based on Dense Point Cloud, probably use of Neural Marching Cube and Neural Dual Contouring"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Mesh_Reconstruction_of_NO01_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Mesh_Reconstruction_of_NO01_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                             <https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction> ;
-                                                                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Reconstruction"@en ;
-                                                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Reconstruction of the mesh from the photogrammetric survey of the archaeological artifact NO01, workflow chain DELTArmA001. This pertains to a colored glass bead."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ModellingDetemination_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ModellingDetemination_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/153#F66_Modelling_Determination> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "In the context of determining the elements of the textured 3D model of ALFAfsB001, the focus was established on the object and all visible parts of the surface."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ModellingElimination_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#ModellingElimination_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                        <https://photogrammetry.altervista.org/items/show/154#F67_Modelling_Elimination> ;
-                                                                                               <http://www.w3.org/2004/02/skos/core#definition> "In the context of the elimination of parts from the textured 3D model of ALFAfsB001, the removal of any elements related to the acquisition set was established."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_3D_Mesh_of_NO01_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_3D_Mesh_of_NO01_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                           <https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Modelling"@en ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Modification of the 3D model resulting from the photogrammetric survey of the archaeological artifact NO01, workflow chain DELTArmA001. This artifact is a colored glass bead. Modeling refers to the transformation of the format and any alterations made to the 3D model."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Date_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Date_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                               <https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date> ;
-                                                                                      <http://www.w3.org/2004/02/skos/core#definition> "19/03/2019" .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Description_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Description_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "elimination of the elements of the table and the set and focus on the find"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Device_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Device_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "Alienware 1, Intel(R) Core(TM) i7-10870H CPU Processor @ 2.20GHz, 2208 Mhz, 8 cores, 16 logical processors, of Department of Computer Science, University of Turin"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Operator_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Operator_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> """Vittorio Lauro
-https://orcid.org/0000-0003-3446-6127"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Software_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_Software_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Blender 7.74"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_of_AFMNM005_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_of_AFMNM005_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_Modelling"@en ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Modeling, that is, the set of activities involving the reconstruction, coloration, and manipulation of the mesh of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_of_NO01_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Modelling_of_NO01_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Modelling"@en ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "Modeling, that is, the set of activities involving the reconstruction, coloration, and manipulation of the mesh of the 3D model resulting from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_Picture_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_Picture_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                  <https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture> ;
-                                                                                         rdfs:isDefinedBy "http://qudt.org/vocab/soqk/SI" ;
-                                                                                         <http://www.w3.org/2004/02/skos/core#definition> 180 .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_Point_Dense_Point_Cloud_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_Point_Dense_Point_Cloud_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                                  <https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> ;
-                                                                                                         rdfs:comment 75399 .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_TExture_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Number_of_TExture_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                  <https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture> ;
-                                                                                         rdfs:comment 1 .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Picture_Set__of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Picture_Set__of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> ;
-                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Picture Set  from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations.  Picture Set are the result of photogrammetric acquisition and are made up of multiple photographs of the object under examination observed from different points of view"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Picture_Set__of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Picture_Set__of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                 <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> ;
-                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "Picture Set  from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001.  Picture Set  are the result of photogrammetric acquisition and are made up of multiple photographs of the object under examination observed from different points of view"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Recap Autodesk Research Licence of International Research Institute for Archaeology and Ethnology"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                       <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
-                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Agistoft Metashape Licence Unkonwn"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Pocessing_Software_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                        <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
-                                                                                               <http://www.w3.org/2004/02/skos/core#definition> "Zephyr 3D Professional Licence  of Computer Science Department University of Turin"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Point_Cloud_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Point_Cloud_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                <https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud> ;
-                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Point Cloud from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Point_Cloud_of__ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Point_Cloud_of__ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                <https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud> ;
-                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Point Cloud from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Device_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Device_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "DELL Vostro 3525 AMD Ryzen™ 7 5700U Computer of International Research Intstitute of Archaeology and Ethnography"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Device_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Device_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "MSI Cyborg 15 A13VE-602IT Intel® Core™ i7 i7-13620H of the Computer Science Department University of Turin"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Phase_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Phase_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                    <https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> "Processing Phase  of the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. The acquisition phase respected the scans and indications as established by the BeA-PG protocol"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Phase_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_Phase_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> """Processing Phase  of  the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.
-
-The acquisition phase respected the scans and indications as established by the FOPPA Manual"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_of_NO01_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_of_NO01_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                    <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Processing"@en ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> "Processing of the photographs from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_of_TBZ._K._BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Processing_of_TBZ._K._BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "BETAfsF001_Processing"@en ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Processing of the photographs from the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Algorithm_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Algorithm_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                             <https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type> ;
-                                                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Neural Marching Cube and Neural Dual Contouring"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Algorithm_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Algorithm_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                              <https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type> ;
-                                                                                                     <http://www.w3.org/2004/02/skos/core#definition> "Poisson"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Method_of__DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Reconstruction_Method_of__DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                           <https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method> ;
-                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> """Reconstruction  used for the modelling in the context of the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.
-SASHA Method integrated in Zephyr 3D."""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                          <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Medium Object (1 cm to 30 cm) by FOPPA Thesaurus"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_BETAfs001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_BETAfs001> rdf:type owl:NamedIndividual ,
-                                                                                         <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
-                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Cave or underground structure by FOPPA Thesaurus"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Scale_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                           <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
-                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Small object (equal to or smaller than 1 cm) by FOPPA thesaurus"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Smoothing_Filter_of_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Smoothing_Filter_of_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                    <https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> "Concerning the smoothing filter in the context of mesh reconstruction based on the dense point cloud obtained from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), a Laplacian smoothing technique has been employed."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Date_of_AFMNM005_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Date_of_AFMNM005_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                        <https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date> ;
-                                                                                               rdfs:comment "09/03/2019" .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_OPERATOR_of_AFMNM005_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_OPERATOR_of_AFMNM005_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                            <https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator> ;
-                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> """Vittorio Lauro
-https://orcid.org/0000-0003-3446-6127"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> """Object of the photogrammetric survey. 
-Jaw of a wild boar belonging to the late Yayoi culture and found at the Minamikata excavation during the construction excavations of the Okayama hospital concluded in 2016. The jaw shows signs of processing on the sides and two artificial holes produced in the attachment of the jaw. It is assumed that the object was hung thanks to the use of a rope passing through the holes. Its purpose is unknown. 
-The object is marked in the BeArchaeo project database as AF MNM 005
-In the work chain the identifier  ALFAfsB001  was assigned according to the FOPPA method"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> """Object of the photogrammetric survey. 
-Burial chamber made of stone blocks set in a mound according to the typology of Japanese monumental tombs known as Kofun. In particular, the object of the Survey is the so-called Tobiotsuka Kofun located in Okayama Prefecture and dating back to the late Kofun period and subject to investigation and excavation from 2019 to 2023 in the context of the BeArchaeo project. 
-The object is marked in the BeArchaeo project database as TBZ-K
-In the work chain the identifier BETAfsF001 was assigned according to the FOPPA method"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Survey_Object_for__DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                    <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> """Object of the Survey. Colored glass bead in blue and black paste from the Nima Otsuka site and dating back to the late Kofun period and detected in the context of investigations promoted by the University of Turin and the University of Okayama which took place in 2024. The object has a temporary identifier of Nima Otsuka 01 or alternatively NM01
-In the work chain the identifier DELTArmA001 was assigned according to the FOPPA method"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Textured_3D_Mesh_of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Textured_3D_Mesh_of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "3d Mesh from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.   This Mesh is enriched with the texture and represents the morphological surface of the object and the colours displacement"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Textured_3D_Mesh_of__ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Textured_3D_Mesh_of__ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh> ;
-                                                                                            <http://www.w3.org/2004/02/skos/core#definition> "3d Mesh from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations.  This Mesh is enriched with the texture and represents the morphological surface of the object and the colours displacement"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Mesh_of_NO01__DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Mesh_of_NO01__DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#altLabel> "DELTArmA001_Reconstruction"@en ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Texturing of the mesh obtained from the photogrammetric survey of the archaeological artifact NO01, workflow chain DELTArmA001. This artifact is a colored glass bead, and the texturing is based on the extraction of color information from the photographs collected during the acquisition phase."@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Method_of__DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Method_of__DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                      <https://photogrammetry.altervista.org/items/show/102#F16_Texturing_Method> ;
-                                                                                             <http://www.w3.org/2004/02/skos/core#definition> """Texturing Method used for the modelling in the context of the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.
-
-Parameterization + Texturing from registered rasters"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Type_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Type_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                               <https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type> ;
-                                                                                      <http://www.w3.org/2004/02/skos/core#definition> "Single Texture jpg"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Type_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Texturing_Type_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                <https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type> ;
-                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Multi Texturing"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "Free hand spiral acquisition by FOPPA Manual"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                   <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
-                                                                                          <http://www.w3.org/2004/02/skos/core#definition> "Interior by MetaShape Agisoft Manual"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#TrajectoryType_for_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                    <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> "Rotating base microscope by FOPPA Manual"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#interactive_software_for_BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#interactive_software_for_BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                         <https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software> ;
-                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Unity 2021.3.3f1"@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#processing_operator_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#processing_operator_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                    <https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> """Vittorio Lauro
-https://orcid.org/0000-0003-3446-6127"""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin___ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin___ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                  <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
-                                                                                         <http://www.w3.org/2004/02/skos/core#definition> """Obj 3D Model, 180 MB 
-3D Model from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations."""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin___BETAfsF001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin___BETAfsF001> rdf:type owl:NamedIndividual ,
-                                                                                                  <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
-                                                                                         <http://www.w3.org/2004/02/skos/core#definition> """FBX 3D Model, 290 MB
-3D Model from  the photogrammetric acquisition of the funerary archaeological site Tobiotsuka Kofuna (TBZ_K), workflow chain BETAfs001. This consists of a stone burial chamber situated within a tumulus known as Kofun."""@en .
-
-
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin____DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Digital_Twin____DELTArmA001> rdf:type owl:NamedIndividual ,
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_DigitalTwin
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_DigitalTwin> rdf:type owl:NamedIndividual ,
                                                                                                     <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
-                                                                                           <http://www.w3.org/2004/02/skos/core#definition> """Obj 3D Model, 480 MB 
-3d Model  from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a colored glass bead."""@en .
+                                                                                           rdfs:comment "https://ars3d.rgzm.de/object.htm?id=ars3do:47def21b-ca45-4dbd-9eac-899956149b1d"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Mesh_of__ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Mesh_of__ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                            <https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh> ;
-                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "3d Mesh from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001. This pertains to a jawbone of a wild boar that has undergone anthropogenic manipulations. This Mesh is without texture and represents just the morphological surface of the object"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Environment
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Environment> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type> ;
+                                                                                           rdfs:comment """Set information 
+
+area	594cm²"""@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Mesh_of___of_DELTArmA001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#3D_Mesh_of___of_DELTArmA001> rdf:type owl:NamedIndividual ,
-                                                                                                 <https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh> ;
-                                                                                        <http://www.w3.org/2004/02/skos/core#definition> "3d Mesh from the photogrammetric acquisition of the archaeological artifact NO01, workflow chain DELTArmA001. This concerns a coloured glass bead.   This Mesh is without texture and represents just the morphological surface of the object"@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Picture
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_Picture> rdf:type owl:NamedIndividual ,
+                                                                                                <https://photogrammetry.altervista.org/items/show/94#F8_Picture> ;
+                                                                                       rdfs:comment "exposure time	0.1 und 0.3 (two exposure times per image)"@en .
 
 
-###  http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud:_Depth_Noise_Filtering_ALFAfsB001
-<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Dense_Point_Cloud:_Depth_Noise_Filtering_ALFAfsB001> rdf:type owl:NamedIndividual ,
-                                                                                                                         <https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering> ;
-                                                                                                                <http://www.w3.org/2004/02/skos/core#altLabel> "ALFAfsB001_depth noise filtering"@en ;
-                                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "Concerning the dense point cloud resulting from the photogrammetric acquisition of the archaeological artifact AFMNM005, workflow chain ALFAfsB001 (which is a boar's jaw subjected to anthropic modifications), the depth noise filtering is based on adaptive feature extraction (AFE), gradient field estimation (GFE), and further accelerated gradient ascent (FAGA)."@en .
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_ProcessingDescription
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_ProcessingDescription> rdf:type owl:NamedIndividual ;
+                                                                                                     rdfs:comment """max_intersection_deviation		0,02 - 0,08
+average_point_distance (in Mesh)		0.11321688668448972
+Sensor		ATOS III Rev.02
+EllipseQuality		0,25"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_SurveyObject
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_SurveyObject> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+                                                                                            rdfs:comment """https://arachne.dainst.org/entity/7031131
+color	light
+material	non-reflective
+size in mm	30mm x 255mm x 250mm"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_TotalNumberofVertice
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_TotalNumberofVertice> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> ;
+                                                                                                    rdfs:comment 4636612 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_scale
+<https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_scale> rdf:type owl:NamedIndividual ,
+                                                                                              <https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale> ;
+                                                                                     rdfs:comment "1:1" .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
+                                                                                          rdfs:comment "Photogrammetry with compact camera, Acquisition of AF MNM 005"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONCOORDINATES
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONCOORDINATES> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates> ;
+                                                                                                     rdfs:comment "34°38'45.15\"N 133°56'17.43\"E"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONDESCRIPTION
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONDESCRIPTION> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description> ;
+                                                                                                     rdfs:comment "This is the acquisition record of the AF MNM 005 carried out with photogrammetry, Freehand spiral acquisition with three degrees of progressive inclination (75°, 45°, 15°)"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONMETHOD
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONMETHOD> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
+                                                                                                rdfs:comment """Bea-PG
+Link to exposition or article 
+https://diglib.eg.org/server/api/core/bitstreams/457a13a5-0da3-4210-8719-121d928db3a6/content"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONTRAJECTORY
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONTRAJECTORY> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
+                                                                                                    rdfs:comment """freehand spiral URI pag. 54
+https://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+                                                                                                 rdfs:comment "Vittorio Lauro Lumix DMC-Tz70"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE_TYPE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE_TYPE> rdf:type owl:NamedIndividual ,
+                                                                                                               <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+                                                                                                      rdfs:comment "Compact camera with built-in fixed lenses"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_RAW_DATA
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_RAW_DATA> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/111#F25_Acquisition_Raw_Data> ;
+                                                                                                   rdfs:comment """RAW DATA of Acquisition of AF MNM 005  
+https://drive.google.com/drive/folders/1TwvbMjRUFQMT-GBQcDK7kyqEEPKRLUPO?usp=sharing"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_SOFTWARE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_SOFTWARE> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
+                                                                                                   rdfs:comment "SILKYPIX"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AcquisitionDATE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AcquisitionDATE> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date> ;
+                                                                                              <http://purl.org/dc/elements/1.1/date> "09/03/2019" .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSE_POINT_CLOUD_NUMBER_OF_POINT
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSE_POINT_CLOUD_NUMBER_OF_POINT> rdf:type owl:NamedIndividual ,
+                                                                                                                         <https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> ;
+                                                                                                                rdfs:comment 75399 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSIFICATIONALGORITHM
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSIFICATIONALGORITHM> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method> ;
+                                                                                                     rdfs:comment "mathematical detail unknown, certain use of decimation algorithms to manage point cloud density with application of density reduction techniques to optimize computational resources and optimization of point cloud management to reduce computational load."@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DEPTH_NOISE_FILTERING
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DEPTH_NOISE_FILTERING> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering> ;
+                                                                                                    rdfs:comment "Adaptive feature extraction (AFE), gradient field estimation (GFE) and further accelerated gradient ascent (FAGA)"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DIGITAL_SCALE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DIGITAL_SCALE> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale> ;
+                                                                                            <http://purl.org/dc/elements/1.1/date> "1:1" .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DOMINANT_GEOMETRY_TYPE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DOMINANT_GEOMETRY_TYPE> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type> ;
+                                                                                                     rdfs:comment """Parallelepiped URI pag. 66
+https://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Database_Architecture
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Database_Architecture> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/183#F96_Database_Architecture> ;
+                                                                                                    rdfs:comment "Omeka S version 3.2.3"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Database_Project
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Database_Project> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/182#F95_Database_Project_Implementation> ;
+                                                                                               rdfs:comment """Project BeArcheo Database 
+https://bearchaeo.unito.it/omeka-s/s/bearchaeo-resources-site/page/welcome"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DigitalTwin
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DigitalTwin> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
+                                                                                          rdfs:comment "https://sketchfab.com/3d-models/yaioi-boar-jaw-3136f87dde21439c953f62d2e19293d4"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Exporting_Description
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Exporting_Description> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/156#F69_Exporting_Description> ;
+                                                                                                    rdfs:comment "Final Use of the 3D model outside of the Database, here it will annotate all the uses of the 3d Model, in this case project BeaVIR and Video Presentation"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Final_3D_model_physical__carrier
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Final_3D_model_physical__carrier> rdf:type owl:NamedIndividual ,
+                                                                                                                        <https://photogrammetry.altervista.org/items/show/155#F68_Digital_Twin_Physical_Carrier> ;
+                                                                                                               rdfs:comment "BeArchaeo Project I.R.I.A.E. 3D Hardware Carrier n°001"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Interactive_Project
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Interactive_Project> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation> ;
+                                                                                                  rdfs:comment """BeaVir 
+Minamikata Room 
+https://vr.bearchaeo.unito.it/"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Interactive_Software
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Interactive_Software> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software> ;
+                                                                                                   rdfs:comment "Unity 2021.3.3f1"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MATCHING_ALGORITHM
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MATCHING_ALGORITHM> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method> ;
+                                                                                                 rdfs:comment "Recap 3d proprietary software:  feature-based approach, probably integrating AI techniques"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DATE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DATE> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date> ;
+                                                                                             <http://purl.org/dc/elements/1.1/date> "16/03/2019"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DESCRIPTION
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DESCRIPTION> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description> ;
+                                                                                                    rdfs:comment "elimination of the elements of the table and the set and focus on the find"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DEVICE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_DEVICE> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device> ;
+                                                                                               rdfs:comment "DELL Vostro 3525 AMD Ryzen™ 7 5700U"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_OPERATOR
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_OPERATOR> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator> ;
+                                                                                                 <http://purl.org/dc/elements/1.1/date> """Vittorio Lauro
+orcid: https://orcid.org/0000-0003-3446-6127"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_SOFTWARE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MODELLING_SOFTWARE> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software> ;
+                                                                                                 rdfs:comment "Blender 7.4"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Modelling
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Modelling> rdf:type owl:NamedIndividual ,
+                                                                                                 <https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date> ;
+                                                                                        rdfs:comment "Modifying  of AF MNM 005 Digital Twin"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBEROFPICTURE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBEROFPICTURE> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture> ;
+                                                                                              rdfs:comment 180 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBER_OF_TEXTURE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBER_OF_TEXTURE> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture> ;
+                                                                                                rdfs:comment 1 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Number_of_final_destination
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Number_of_final_destination> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination> ;
+                                                                                                          rdfs:comment 3 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_CARRIER
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_CARRIER> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier> ;
+                                                                                              rdfs:comment "BeArchaeo Project Hardware Storage"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_SET
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_SET> rdf:type owl:NamedIndividual ,
+                                                                                                   <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> ;
+                                                                                          rdfs:comment "Photo Set of AF MNM 005 Acquisition"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PLACE_OF_ACQUISITION
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PLACE_OF_ACQUISITION> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition> ;
+                                                                                                   rdfs:comment "Okayama City Buried Cultural Property Center"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_POINT_CLOUD_VERTEX_QUALITY
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_POINT_CLOUD_VERTEX_QUALITY> rdf:type owl:NamedIndividual ,
+                                                                                                                  <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality> ;
+                                                                                                         rdfs:comment "no Vertex Quality"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING> rdf:type owl:NamedIndividual ,
+                                                                                                  <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
+                                                                                         rdfs:comment "Processing of AF MNM 005 Digital Twin, based on photogrammetric acquisition, using structure from motion technique"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_DEVICE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_DEVICE> rdf:type owl:NamedIndividual ,
+                                                                                                         <https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device> ;
+                                                                                                rdfs:comment "DELL Vostro 3525 AMD Ryzen™ 7 5700U and external server by Recap 3D"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_SOFTWARE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_SOFTWARE> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
+                                                                                                  rdfs:comment "Recap Autodesk 3D 2019"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Project_Video
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Project_Video> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/items/show/162#F75_Project_Video> ;
+                                                                                            rdfs:comment "DELTAfsB04 Presentation for Izumo Exhibition"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_RECONSTRUCTIONALGORITHM
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_RECONSTRUCTIONALGORITHM> rdf:type owl:NamedIndividual ,
+                                                                                                               <https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method> ;
+                                                                                                      rdfs:comment "Neural Marching Cube and Neural Dual Contouring"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SMOOTHING_FILTER
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SMOOTHING_FILTER> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter> ;
+                                                                                               rdfs:comment "Laplacian Smoothing"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SurveyObject
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SurveyObject> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+                                                                                           rdfs:comment """AF MNM 005
+https://bearchaeo.unito.it/omeka-s/s/bearchaeo-resources-site/item/2041#?c=0&m=0&s=0&cv=0&xywh=-274%2C0%2C1506%2C719"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TEXTURING_TYPE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TEXTURING_TYPE> rdf:type owl:NamedIndividual ,
+                                                                                                      <https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type> ;
+                                                                                             rdfs:comment "Single jpg."@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TYPE_OF_OBJECT_SCALE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TYPE_OF_OBJECT_SCALE> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
+                                                                                                   rdfs:comment """Medium object URI pag. 52
+https://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Video_Editing_Software
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Video_Editing_Software> rdf:type owl:NamedIndividual ,
+                                                                                                              <https://photogrammetry.altervista.org/items/show/161#F74_Video_Editing_Software> ;
+                                                                                                     rdfs:comment "Video PAD Editor"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_acquisitionOPERATOR
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_acquisitionOPERATOR> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator> ;
+                                                                                                  rdfs:comment """Vittorio Lauro
+orcid: https://orcid.org/0000-0003-3446-6127"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_processingOperator
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_processingOperator> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator> ;
+                                                                                                 rdfs:comment """Vittorio Lauro
+orcid: https://orcid.org/0000-0003-3446-6127"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AR/MR_Project
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AR/MR_Project> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/items/show/185#F98_AR/MR_Project_Implementation> ;
+                                                                                            rdfs:comment """BeaVir CAVE 
+Article Link 
+https://dl.acm.org/doi/10.1007/978-3-031-44751-8_39"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_COLOR_BALANCE/_MULTIBAND_TEXTURE
+<https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_COLOR_BALANCE/_MULTIBAND_TEXTURE> rdf:type owl:NamedIndividual ,
+                                                                                                                        <https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture> ;
+                                                                                                               rdfs:comment "Color Balancing  + Gradient Ramps"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_AcquisitionDescription
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_AcquisitionDescription> rdf:type owl:NamedIndividual ,
+                                                                                                               <https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description> ;
+                                                                                                      rdfs:comment """camera_focal_length (in mm)	40
+Light Intensity	100
+projector deviation	0.07778481336545273
+scale deviation	
+camera angle	0.4706199955076422"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_AcquisitionSoftware
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_AcquisitionSoftware> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
+                                                                                                   rdfs:comment "GOM‘s intelligent ATOS Professional"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Calibration
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Calibration> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument> ;
+                                                                                           rdfs:comment """Set Definition 
+Calibration Volume depth	263.5035303923889
+Calibration Volume length	337.2812802309544
+Calibration Volume width	257.4264686411049"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_CapturingDevice
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_CapturingDevice> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+                                                                                               rdfs:comment """ATOS Triple Scan 
+Sensor 
+ATOS III Rev.02"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_CapturingDeviceType
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_CapturingDeviceType> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+                                                                                                   rdfs:comment "Industrial Optical 3D Digitizer"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_DigitalTwin
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_DigitalTwin> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
+                                                                                           rdfs:comment "https://ars3d.rgzm.de/object.htm?id=ars3do:95c8cc98-06a8-4bb6-a85b-fcc93c98689f"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Environment
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Environment> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type> ;
+                                                                                           rdfs:comment """Set:
+height_variance/ height_variation	243.77158472996985
+area	631cm²"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_NumberOfPicture
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_NumberOfPicture> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture> ;
+                                                                                               rdfs:comment 7 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Picture
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_Picture> rdf:type owl:NamedIndividual ,
+                                                                                                <https://photogrammetry.altervista.org/items/show/94#F8_Picture> ;
+                                                                                       rdfs:comment "exposure time	0,25 und 0.75 (two exposure times per image)"@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_ProcessingDescription
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_ProcessingDescription> rdf:type owl:NamedIndividual ;
+                                                                                                     rdfs:comment """max_intersection_deviation	0,04 - 0,07 (längere Werte)
+average_point_distance (in Mesh)	0.11838185253093024
+Sensor	ATOS III Rev.02
+EllipseQuality	0,25"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_SurveyObject
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_SurveyObject> rdf:type owl:NamedIndividual ,
+                                                                                                     <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+                                                                                            rdfs:comment """https://arachne.dainst.org/entity/7031203
+color	light
+material	non-reflective
+
+size in mm	335mm x 255mm x 265mm"""@en .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_TotalNumberofVertice
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_TotalNumberofVertice> rdf:type owl:NamedIndividual ,
+                                                                                                             <https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> ;
+                                                                                                    rdfs:comment 4509344 .
+
+
+###  https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_scale
+<https://photogrammetry.altervista.org/collections/show/3#20200514GAMMAsbB001_scale> rdf:type owl:NamedIndividual ,
+                                                                                              <https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale> ;
+                                                                                     rdfs:comment "1:1" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
