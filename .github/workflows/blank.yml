@@ -31,7 +31,7 @@ jobs:
            mkdir public/pods
            mkdir public/mainzed
            mkdir public/aligment
-           java -jar widoco.jar -ontFile main/PODS_1_1_7.ttl -outFolder public/pods -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+           java -jar widoco.jar -ontFile main/PODS_1_2.ttl -outFolder public/pods -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
            java -jar widoco.jar -ontFile main/PODS_1_1_8_Mainzed.ttl -outFolder public/mainzed -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
@@ -48,7 +48,7 @@ jobs:
     needs: widoco
     with: 
         version: v018
-        rdffilepath: PODS_1_1_7.ttl
+        rdffilepath: PODS_1_2.ttl
         docpath: docs
         prefixns: https://photogrammetry.altervista.org/collections/show/3
         prefixnsshort: pods
