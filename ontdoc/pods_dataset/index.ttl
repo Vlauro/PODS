@@ -1,0 +1,274 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://ldf.fi/void-ext#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://photogrammetry.altervista.org/collections/show/3/pods_dataset> a void:Dataset,
+        <http://www.w3.org/ns/adms#Asset>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "pods_dataset"@en ;
+    ns1:averageLiteralLength 0 ;
+    ns1:averageObjectIRILength 0 ;
+    ns1:averagePropertyIRILength 44 ;
+    ns1:averageSubjectIRILength 0 ;
+    ns1:datatypes 0 ;
+    ns1:distinctBlankNodes 0 ;
+    ns1:distinctIRIReferences 1715 ;
+    ns1:distinctLiterals 0 ;
+    ns1:distinctRDFNodes 1715 ;
+    ns1:languages 0 ;
+    ns1:propertyClasses 0 ;
+    dc:language <http://www.lexvo.org/page/iso639-1/en> ;
+    dcterms:modified "2024-11-06T17:27:48"^^xsd:dateTime ;
+    dcterms:subject <http://dbpedia.org/resource/Location>,
+        <http://dbpedia.org/resource/OGC_GeoSPARQL>,
+        <http://dbpedia.org/resource/Time>,
+        <http://www.wikidata.org/entity/Q121810372>,
+        foaf:Person ;
+    dcterms:title "pods_dataset"@en ;
+    vann:preferredNamespacePrefix "pods"^^xsd:string ;
+    vann:preferredNamespaceUri "https://photogrammetry.altervista.org/collections/show/3/"^^xsd:anyURI ;
+    void:classPartition <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D11_Digital_Measurement_Event>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D13_Digital_Information_Carrier>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D14_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D1_Digital_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D2_Digitization_Process>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D7_Digital_Machine_Event>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D8_Digital_Device>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_D9_Data_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E11_Modification>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E12_Production>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E13_Attribute_Assignment>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E16_Measurement>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E18_Physical_Thing>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E1_CRM_Entity>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E22_Human-Made_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E24_Physical_Human-Made_Thing>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E28_Conceptual_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E29_Design_or_Procedure>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E2_Temporal_Entity>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E39_Actor>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E4_Period>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E52_Time-Span>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E53_Place>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E54_Dimension>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E55_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E57_Material>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E59_Primitive_Value>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E5_Event>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E60_Number>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E62_String>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E65_Creation>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E70_Thing>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E71_Human-Made_Thing>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E72_Legal_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E73_Information_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E77_Persistent_Item>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E7_Activity>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E90_Symbolic_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_E94_Space_Primitive>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F100_3D_Digital_Twin>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F101_Survey_Phase>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F102:_3D_Digital_Asset>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F103:_Calibration_(Camera_Calibration)>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F105:_Interrogation_Tools>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F10_Processing_Device>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F11_Modelling_Device>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F12_Acquisition_Trajectory>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F13_Acquisition_Method>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F14_Matching_Method>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F15_Recontruction_Method>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F16_Texturing_Method>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F17_Acquisition_Trajectory_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F18_Dominant_Geometry_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F19_Scale_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F1_Survey_Object>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F20_Acquisition_Device_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F21_Matching_Algorithm_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F22_Densification_Algorithm_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F23_Reconstruction_Algorithm_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F24__Texturing_Type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F25_Acquisition_Raw_Data>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F26_Point_Cloud>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F27_Densified_Point_Cloud>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F28_3D_Mesh>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F29_Textured_3D_Mesh>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F2_Acquisition>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F30_Acquisition_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F31_Processing_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F32_Modelling_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F33_Acquisition_Phase>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F34_Processing_Phase>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F35_Raw_Data_Carrier>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F36_Picture_Carrier>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F37_Survey_Operator>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F38_Processing_Operator>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F39_Modelling_Operator>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F3_Processing>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F40_Eidotype>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F41_Number_of_Picture>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F42_Place_Of_Acquisition>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F43_Survey_Date>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F44_Acquisition_Description>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F45__Acquisition_Coordinates>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F46:_Matching>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F47:_Densification>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F47__Densification>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F48_Densification_Method>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F49__Near_Sampling_Points_Range_SFM_Point_Seeds>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F4_Modelling>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F50_Point_Cloud_Measurement>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F51_Point_Cloud_Number_of_Point>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F52_Dense_Point_Cloud_Measurement>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F53_Dense_Point_Cloud_Number_of_Point>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F54_Point_Cloud_Vertex_Quality>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F55_Depth_Noise_Filtering>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F56_Mesh_Reconstruction>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F57_Texturing_Mesh>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F58_Modifying_Mesh>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F59_Digital_Scale>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F5_Exporting>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F60_Smoothing_Filter>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F61_Color_Balance/Multiband_Texture>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F62_Texture_Set_of_3D_Mesh>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F63_Number_of_Texture>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F64_Modelling_Description>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F65_Modelling_Date>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F66_Modelling_Determination>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F67_Modelling_Elimination>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F68_Digital_Twin_Physical_Carrier>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F69_Exporting_Description>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F6_Acquisition_Raw_Data>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F70_Number_of_Final_Destination>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F71_Final_Use_of_Digital_Twin>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F72_3D_Model_Video_Rendering>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F73_Editing_Video>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F74_Video_Editing_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F75_Project_Video>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F76_3D_Model_for_3D_Print>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F77_Printing_Digital_Twin>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F78_Material_for_3D_Printing>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F79_Printing_Device>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F7_Picture_Set>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F80_Printed_Digital_Twin>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F81_3D_Model_for_G.I.S.>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F82_Reference_GIS_System>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F83_GIS_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F84_3D_Model_for_Prospectus>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F85_CAD_Analysis>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F86_Software_CAD>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F87_3D_Model_Prospectus>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F88_Archaeometric_3D_Model>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F89_Project_Analysis>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F8_Picture>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F90_Data_Log_Analysis>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F91_Model_for_Interactive>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F92_Interactive_Project_Implementation>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F93_Interactive_Software>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F94_3D_Model_for_Database>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F95_Database_Project_Implementation>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F96_Database_Architecture>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F97_AR_3D_Model>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F98_AR/MR_Project_Implementation>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F99_AR_Software_Modelling>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_F9_Acquisition_Device>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_S10_Material_Substantial>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_S15_Observable_Entity>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_S21_Measurement>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_S4_Observation> ;
+    void:classes 149 ;
+    void:dataDump <https://Vlauro.github.io/PODS/ontdoc/index.ttl> ;
+    void:distinctObjects 1306 ;
+    void:distinctSubjects 393 ;
+    void:entities 1 ;
+    void:feature <http://www.w3.org/ns/formats/RDFa>,
+        <http://www.w3.org/ns/formats/Turtle> ;
+    void:properties 16 ;
+    void:propertyPartition <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_altLabel>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_comment>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_creator>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_definition>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_domain>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_editorialNote>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_example>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_imports>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_isDefinedBy>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_label>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_range>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_scopeNote>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_subClassOf>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_subPropertyOf>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_type>,
+        <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_versionInfo> ;
+    void:triples 2181 ;
+    void:uriSpace "https://photogrammetry.altervista.org/collections/show/3/"^^xsd:string ;
+    void:vocabulary ns1:,
+        dcam:,
+        dcmitype:,
+        dc:,
+        dcterms:,
+        qb:,
+        vann:,
+        <http://purl.org/vocommons/voaf#>,
+        void:,
+        doap:,
+        geo:,
+        rdf:,
+        rdfs:,
+        xsd:,
+        owl:,
+        skos:,
+        time:,
+        xml:,
+        <http://www.w3.org/ns/adms#>,
+        csvw:,
+        dcat:,
+        prof:,
+        odrl:,
+        org:,
+        prov:,
+        sh:,
+        sosa:,
+        ssn:,
+        foaf:,
+        brick:,
+        schema:,
+        wgs: ;
+    dcat:distribution <https://photogrammetry.altervista.org/collections/show/3/pods_dataset_dist_ttl> ;
+    dcat:keyword "Location"@en,
+        "OGC GeoSPARQL"@en,
+        "Person"@en,
+        "Q121810372"@en,
+        "Time"@en ;
+    dcat:landingPage <https://Vlauro.github.io/PODS/ontdoc> ;
+    foaf:homepage <https://Vlauro.github.io/PODS/ontdoc> ;
+    foaf:page <https://Vlauro.github.io/PODS/ontdoc/index.html> .
+

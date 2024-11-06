@@ -1,0 +1,1497 @@
+@prefix ns1: <http://www.w3.org/ns/solid/terms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://purl.org/vocommons/voaf#DatasetOccurrence> a owl:Class .
+
+<http://purl.org/vocommons/voaf#Vocabulary> a owl:Class .
+
+void:Dataset a owl:Class .
+
+<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+owl:AnnotationProperty a owl:Class .
+
+owl:DatatypeProperty a owl:Class .
+
+owl:NamedIndividual a owl:Class .
+
+owl:ObjectProperty a owl:Class .
+
+owl:Ontology a owl:Class .
+
+<http://www.w3.org/ns/adms#Asset> a owl:Class .
+
+<http://www.w3.org/ns/adms#AssetDistribution> a owl:Class .
+
+<http://www.w3.org/ns/adms#AssetRepository> a owl:Class .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl> a <http://www.w3.org/ns/ldp#RDFResource>,
+        ns1:ListedDocument,
+        ns1:TypeIndex,
+        "Public Type Index"@en ;
+    rdfs:comment "This Document contains a list of links to other Documents, along with the type of data that is to be included in those Documents"@en ;
+    rdfs:member <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Digital_Twin___ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Digital_Twin___BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Digital_Twin____DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Mesh_of__ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Mesh_of___of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#ACQUISITION_of_AF_MNM_005__ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AF_MNM_005_PROCESSING_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDeviceType_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDeviceType_for_BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDeviceType_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDevice_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDevice_for_BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDevice_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Coordinates_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_DESCRIPTION_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Location_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Method_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Method_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Method_of__BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Phase_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Phase_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Raw_Data_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Raw_Data_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Raw_Data_of__BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Software_for_BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Software_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Trajectory_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Trajectory_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Trajectory_of__BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_of_NO01_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_of_TBZ._K._BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Color_Balance_Texture_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D11_Digital_Measurement_Event>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D13_Digital_Information_Carrier>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D14_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D1_Digital_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D2_Digitization_Process>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D7_Digital_Machine_Event>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D8_Digital_Device>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D9_Data_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud:_Depth_Noise_Filtering_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud_Mesaurement_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud_of__ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_Alghoritm_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_Method_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_of_DELTArmA001.>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#DigitalScale_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E11_Modification>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E12_Production>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E13_Attribute_Assignment>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E16_Measurement>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E18_Physical_Thing>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E1_CRM_Entity>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E22_Human-Made_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E24_Physical_Human-Made_Thing>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E28_Conceptual_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E29_Design_or_Procedure>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E2_Temporal_Entity>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E39_Actor>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E4_Period>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E52_Time-Span>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E53_Place>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E54_Dimension>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E55_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E57_Material>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E59_Primitive_Value>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E5_Event>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E60_Number>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E62_String>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E65_Creation>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E70_Thing>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E71_Human-Made_Thing>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E72_Legal_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E73_Information_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E77_Persistent_Item>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E7_Activity>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E90_Symbolic_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E94_Space_Primitive>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Eidotype_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F100_3D_Digital_Twin>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F101_Survey_Phase>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F102:_3D_Digital_Asset>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F103:_Calibration_(Camera_Calibration)>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F105:_Interrogation_Tools>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F10_Processing_Device>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F11_Modelling_Device>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F12_Acquisition_Trajectory>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F13_Acquisition_Method>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F14_Matching_Method>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F15_Recontruction_Method>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F16_Texturing_Method>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F17_Acquisition_Trajectory_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F18_Dominant_Geometry_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F19_Scale_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F1_Survey_Object>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F20_Acquisition_Device_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F21_Matching_Algorithm_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F22_Densification_Algorithm_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F23_Reconstruction_Algorithm_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F24__Texturing_Type>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F25_Acquisition_Raw_Data>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F26_Point_Cloud>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F27_Densified_Point_Cloud>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F28_3D_Mesh>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F29_Textured_3D_Mesh>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F2_Acquisition>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F30_Acquisition_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F31_Processing_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F32_Modelling_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F33_Acquisition_Phase>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F34_Processing_Phase>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F35_Raw_Data_Carrier>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F36_Picture_Carrier>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F37_Survey_Operator>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F38_Processing_Operator>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F39_Modelling_Operator>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F3_Processing>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F40_Eidotype>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F41_Number_of_Picture>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F42_Place_Of_Acquisition>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F43_Survey_Date>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F44_Acquisition_Description>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F45__Acquisition_Coordinates>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F46:_Matching>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F47:_Densification>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F47__Densification>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F48_Densification_Method>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F49__Near_Sampling_Points_Range_SFM_Point_Seeds>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F4_Modelling>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F50_Point_Cloud_Measurement>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F51_Point_Cloud_Number_of_Point>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F52_Dense_Point_Cloud_Measurement>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F53_Dense_Point_Cloud_Number_of_Point>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F54_Point_Cloud_Vertex_Quality>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F55_Depth_Noise_Filtering>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F56_Mesh_Reconstruction>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F57_Texturing_Mesh>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F58_Modifying_Mesh>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F59_Digital_Scale>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F5_Exporting>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F60_Smoothing_Filter>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F61_Color_Balance/Multiband_Texture>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F62_Texture_Set_of_3D_Mesh>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F63_Number_of_Texture>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F64_Modelling_Description>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F65_Modelling_Date>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F66_Modelling_Determination>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F67_Modelling_Elimination>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F68_Digital_Twin_Physical_Carrier>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F69_Exporting_Description>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F6_Acquisition_Raw_Data>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F70_Number_of_Final_Destination>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F71_Final_Use_of_Digital_Twin>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F72_3D_Model_Video_Rendering>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F73_Editing_Video>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F74_Video_Editing_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F75_Project_Video>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F76_3D_Model_for_3D_Print>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F77_Printing_Digital_Twin>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F78_Material_for_3D_Printing>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F79_Printing_Device>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F7_Picture_Set>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F80_Printed_Digital_Twin>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F81_3D_Model_for_G.I.S.>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F82_Reference_GIS_System>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F83_GIS_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F84_3D_Model_for_Prospectus>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F85_CAD_Analysis>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F86_Software_CAD>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F87_3D_Model_Prospectus>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F88_Archaeometric_3D_Model>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F89_Project_Analysis>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F8_Picture>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F90_Data_Log_Analysis>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F91_Model_for_Interactive>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F92_Interactive_Project_Implementation>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F93_Interactive_Software>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F94_3D_Model_for_Database>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F95_Database_Project_Implementation>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F96_Database_Architecture>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F97_AR_3D_Model>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F98_AR/MR_Project_Implementation>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F99_AR_Software_Modelling>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F9_Acquisition_Device>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Final_Use_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#GeometryType_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#GeometryType_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Implementation_in_Pject_BeaVIR_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Interactive_Software_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_Algorithm_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_Method_of__DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_of_BETAfs001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_of_NO01__DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Mesh_Reconstruction_of_AFMNM005>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Mesh_Reconstruction_of_NO01_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#ModellingDetemination_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#ModellingElimination_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_3D_Mesh_of_NO01_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Date_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Description_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Device_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Operator_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Software_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_of_AFMNM005_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_of_NO01_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Number_of_Picture_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Number_of_Point_Dense_Point_Cloud_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Number_of_TExture_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Picture_Set__of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Picture_Set__of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Pocessing_Software_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Pocessing_Software_for_BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Pocessing_Software_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Point_Cloud_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Point_Cloud_of__ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Device_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Device_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Phase_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Phase_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_of_NO01_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_of_TBZ._K._BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Reconstruction_Algorithm_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Reconstruction_Algorithm_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Reconstruction_Method_of__DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S10_Material_Substantial>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S15_Observable_Entity>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S21_Measurement>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S4_Observation>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Scale_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Scale_for_BETAfs001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Scale_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Smoothing_Filter_of_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Date_of_AFMNM005_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_OPERATOR_of_AFMNM005_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Object_for__ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Object_for__BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Object_for__DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Textured_3D_Mesh_of_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Textured_3D_Mesh_of__ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Mesh_of_NO01__DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Method_of__DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Type_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Type_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#TrajectoryType_for_ALFAfsB001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#TrajectoryType_for_BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#TrajectoryType_for_DELTArmA001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#interactive_software_for_BETAfsF001>,
+        <https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#processing_operator_ALFAfsB001> .
+
+<https://photogrammetry.altervista.org/items/show/111#F25_Acquisition_Raw_Data> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/122#F36_Picture_Carrier> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier> .
+
+<https://photogrammetry.altervista.org/items/show/135#F49__Near_Sampling_Points_Range_SFM_Point_Seeds> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+<https://photogrammetry.altervista.org/items/show/136#F50_Point_Cloud_Measurement> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S21_Measurement#S21_Measurement> .
+
+<https://photogrammetry.altervista.org/items/show/137#F51_Point_Cloud_Number_of_Point> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> .
+
+<https://photogrammetry.altervista.org/items/show/149#F62_Texture_Set_of_3D_Mesh> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/155#F68_Digital_Twin_Physical_Carrier> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D13_Digital_Information_Carrier#D13_Digital_Information_Carrier> .
+
+<https://photogrammetry.altervista.org/items/show/156#F69_Exporting_Description> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> .
+
+<https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> .
+
+<https://photogrammetry.altervista.org/items/show/159#F72_3D_Model_Video_Rendering> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/160#F73_Editing_Video> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/161#F74_Video_Editing_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/162#F75_Project_Video> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/163#F76_3D_Model_for_3D_Print> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin> a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#E12_Production> .
+
+<https://photogrammetry.altervista.org/items/show/165#F78_Material_for_3D_Printing> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material> .
+
+<https://photogrammetry.altervista.org/items/show/166#F79_Printing_Device> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> .
+
+<https://photogrammetry.altervista.org/items/show/167#F80_Printed_Digital_Twin> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E18_Physical_Thing#E18_Physical_Thing> .
+
+<https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S.> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/170#F83_GIS_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/171#F84_3D_Model_for_Prospectus> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/172#F85_CAD_Analysis> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/173#F86_Software_CAD> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/176#F89_Project_Analysis> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/177#F90_Data_Log_Analysis> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<https://photogrammetry.altervista.org/items/show/178#F91_Model_for_Interactive> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/181#F94_3D_Model_for_Database> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/182#F95_Database_Project_Implementation> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/183#F96_Database_Architecture> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/184#F97_AR_3D_Model> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/185#F98_AR/MR_Project_Implementation> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/186#F99_AR_Software_Modelling> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> .
+
+<https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> .
+
+<https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/91#F5_Exporting> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/94#F8_Picture> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E16_Measurement#E16_Measurement> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Digital_Twin___ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/3D_Digital_Twin___ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Digital_Twin___BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/3D_Digital_Twin___BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Digital_Twin____DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/3D_Digital_Twin____DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Mesh_of__ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/3D_Mesh_of__ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#3D_Mesh_of___of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/3D_Mesh_of___of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#ACQUISITION_of_AF_MNM_005__ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/ACQUISITION_of_AF_MNM_005__ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AF_MNM_005_PROCESSING_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AF_MNM_005_PROCESSING_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDeviceType_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AcquisitionDeviceType_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDeviceType_for_BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AcquisitionDeviceType_for_BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDeviceType_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AcquisitionDeviceType_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDevice_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AcquisitionDevice_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDevice_for_BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AcquisitionDevice_for_BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#AcquisitionDevice_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/AcquisitionDevice_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Coordinates_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Coordinates_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_DESCRIPTION_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_DESCRIPTION_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Location_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Location_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Method_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Method_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Method_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Method_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Method_of__BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Method_of__BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Phase_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Phase_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Phase_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Phase_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Raw_Data_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Raw_Data_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Raw_Data_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Raw_Data_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Raw_Data_of__BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Raw_Data_of__BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Software_for_BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Software_for_BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Software_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Software_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Trajectory_of_ALFAfsB001> ns1:forClass <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Trajectory_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Trajectory_of_DELTArmA001> ns1:forClass <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Trajectory_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_Trajectory_of__BETAfsF001> ns1:forClass <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_Trajectory_of__BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_of_NO01_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_of_NO01_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Acquisition_of_TBZ._K._BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Acquisition_of_TBZ._K._BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Color_Balance_Texture_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Color_Balance_Texture_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D11_Digital_Measurement_Event> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D11_Digital_Measurement_Event> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D13_Digital_Information_Carrier> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D13_Digital_Information_Carrier> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D14_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D14_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D1_Digital_Object> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D1_Digital_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D2_Digitization_Process> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D2_Digitization_Process> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D7_Digital_Machine_Event> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E65_Creation#E65_Creation> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D7_Digital_Machine_Event> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D8_Digital_Device> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E22_Human-Made_Object#E22_Human-Made_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D8_Digital_Device> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#D9_Data_Object> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/D9_Data_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud:_Depth_Noise_Filtering_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Dense_Point_Cloud:_Depth_Noise_Filtering_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud_Mesaurement_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Dense_Point_Cloud_Mesaurement_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Dense_Point_Cloud_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Dense_Point_Cloud_of__ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Dense_Point_Cloud_of__ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_Alghoritm_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Densification_Alghoritm_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_Method_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Densification_Method_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/133#F47:_Densification> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Densification_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Densification_of_DELTArmA001.> ns1:forClass <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Densification_of_DELTArmA001.> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#DigitalScale_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/DigitalScale_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E11_Modification> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E11_Modification> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E12_Production> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E12_Production> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E13_Attribute_Assignment> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E13_Attribute_Assignment> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E16_Measurement> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E16_Measurement> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E18_Physical_Thing> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E72_Legal_Object#E72_Legal_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E18_Physical_Thing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E1_CRM_Entity> ns1:forClass <#> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E1_CRM_Entity> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E22_Human-Made_Object> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E22_Human-Made_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E24_Physical_Human-Made_Thing> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E24_Physical_Human-Made_Thing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E28_Conceptual_Object> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E28_Conceptual_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E29_Design_or_Procedure> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E29_Design_or_Procedure> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E2_Temporal_Entity> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E2_Temporal_Entity> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E39_Actor> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E77_Persistent_Item#E77_Persistent_Item> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E39_Actor> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E4_Period> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E2_Temporal_Entity#E2_Temporal_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E4_Period> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E52_Time-Span> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E52_Time-Span> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E53_Place> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E53_Place> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E54_Dimension> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E54_Dimension> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E55_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E55_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E57_Material> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E57_Material> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E59_Primitive_Value> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E59_Primitive_Value> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E5_Event> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E5_Event> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E60_Number> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E60_Number> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E62_String> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E62_String> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E65_Creation> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E65_Creation> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E70_Thing> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E77_Persistent_Item#E77_Persistent_Item> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E70_Thing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E71_Human-Made_Thing> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E71_Human-Made_Thing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E72_Legal_Object> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E72_Legal_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E73_Information_Object> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E90_Symbolic_Object#E90_Symbolic_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E73_Information_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E77_Persistent_Item> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E77_Persistent_Item> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E7_Activity> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E5_Event#E5_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E7_Activity> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E90_Symbolic_Object> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E90_Symbolic_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#E94_Space_Primitive> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/E94_Space_Primitive> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Eidotype_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/126#F40_Eidotype> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Eidotype_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F100_3D_Digital_Twin> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F100_3D_Digital_Twin> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F101_Survey_Phase> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F101_Survey_Phase> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F102:_3D_Digital_Asset> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F102:_3D_Digital_Asset> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F103:_Calibration_(Camera_Calibration)> ns1:forClass <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F103:_Calibration_(Camera_Calibration)> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)> ns1:forClass <https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F105:_Interrogation_Tools> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F105:_Interrogation_Tools> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F10_Processing_Device> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F10_Processing_Device> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F11_Modelling_Device> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F11_Modelling_Device> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F12_Acquisition_Trajectory> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F12_Acquisition_Trajectory> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F13_Acquisition_Method> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F13_Acquisition_Method> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F14_Matching_Method> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F14_Matching_Method> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F15_Recontruction_Method> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F15_Recontruction_Method> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F16_Texturing_Method> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F16_Texturing_Method> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F17_Acquisition_Trajectory_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F17_Acquisition_Trajectory_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F18_Dominant_Geometry_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F18_Dominant_Geometry_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F19_Scale_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F19_Scale_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F1_Survey_Object> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S10_Material_Substantial#S10_Material_Substantial> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F1_Survey_Object> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F20_Acquisition_Device_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F20_Acquisition_Device_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F21_Matching_Algorithm_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F21_Matching_Algorithm_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F22_Densification_Algorithm_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F22_Densification_Algorithm_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F23_Reconstruction_Algorithm_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F23_Reconstruction_Algorithm_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F24__Texturing_Type> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F24__Texturing_Type> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F25_Acquisition_Raw_Data> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F25_Acquisition_Raw_Data> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F26_Point_Cloud> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F26_Point_Cloud> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F27_Densified_Point_Cloud> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F27_Densified_Point_Cloud> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F28_3D_Mesh> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F28_3D_Mesh> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F29_Textured_3D_Mesh> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F29_Textured_3D_Mesh> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F2_Acquisition> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D2_Digitization_Process#D2_Digitization_Process> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F2_Acquisition> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F30_Acquisition_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F30_Acquisition_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F31_Processing_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F31_Processing_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F32_Modelling_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F32_Modelling_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F33_Acquisition_Phase> ns1:forClass <https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F33_Acquisition_Phase> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F34_Processing_Phase> ns1:forClass <https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F34_Processing_Phase> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F35_Raw_Data_Carrier> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D13_Digital_Information_Carrier#D13_Digital_Information_Carrier> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F35_Raw_Data_Carrier> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F36_Picture_Carrier> ns1:forClass <https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F36_Picture_Carrier> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F37_Survey_Operator> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F37_Survey_Operator> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F38_Processing_Operator> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F38_Processing_Operator> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F39_Modelling_Operator> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F39_Modelling_Operator> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F3_Processing> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F3_Processing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F40_Eidotype> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F40_Eidotype> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F41_Number_of_Picture> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F41_Number_of_Picture> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F42_Place_Of_Acquisition> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F42_Place_Of_Acquisition> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F43_Survey_Date> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F43_Survey_Date> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F44_Acquisition_Description> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F44_Acquisition_Description> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F45__Acquisition_Coordinates> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F45__Acquisition_Coordinates> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F46:_Matching> ns1:forClass <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F46:_Matching> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F47:_Densification> ns1:forClass <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F47:_Densification> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F47__Densification> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F47__Densification> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F48_Densification_Method> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F48_Densification_Method> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F49__Near_Sampling_Points_Range_SFM_Point_Seeds> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F49__Near_Sampling_Points_Range_SFM_Point_Seeds> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F4_Modelling> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F4_Modelling> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F50_Point_Cloud_Measurement> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S21_Measurement#S21_Measurement> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F50_Point_Cloud_Measurement> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F51_Point_Cloud_Number_of_Point> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F51_Point_Cloud_Number_of_Point> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F52_Dense_Point_Cloud_Measurement> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S21_Measurement#S21_Measurement> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F52_Dense_Point_Cloud_Measurement> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F53_Dense_Point_Cloud_Number_of_Point> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F53_Dense_Point_Cloud_Number_of_Point> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F54_Point_Cloud_Vertex_Quality> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F54_Point_Cloud_Vertex_Quality> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F55_Depth_Noise_Filtering> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F55_Depth_Noise_Filtering> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F56_Mesh_Reconstruction> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F56_Mesh_Reconstruction> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F57_Texturing_Mesh> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F57_Texturing_Mesh> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F58_Modifying_Mesh> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F58_Modifying_Mesh> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F59_Digital_Scale> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F59_Digital_Scale> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F5_Exporting> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F5_Exporting> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F60_Smoothing_Filter> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F60_Smoothing_Filter> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F61_Color_Balance/Multiband_Texture> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F61_Color_Balance/Multiband_Texture> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F62_Texture_Set_of_3D_Mesh> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F62_Texture_Set_of_3D_Mesh> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F63_Number_of_Texture> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F63_Number_of_Texture> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F64_Modelling_Description> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F64_Modelling_Description> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F65_Modelling_Date> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F65_Modelling_Date> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F66_Modelling_Determination> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F66_Modelling_Determination> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F67_Modelling_Elimination> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F67_Modelling_Elimination> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F68_Digital_Twin_Physical_Carrier> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D13_Digital_Information_Carrier#D13_Digital_Information_Carrier> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F68_Digital_Twin_Physical_Carrier> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F69_Exporting_Description> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F69_Exporting_Description> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F6_Acquisition_Raw_Data> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F6_Acquisition_Raw_Data> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F70_Number_of_Final_Destination> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F70_Number_of_Final_Destination> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F71_Final_Use_of_Digital_Twin> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F71_Final_Use_of_Digital_Twin> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F72_3D_Model_Video_Rendering> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F72_3D_Model_Video_Rendering> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F73_Editing_Video> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F73_Editing_Video> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F74_Video_Editing_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F74_Video_Editing_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F75_Project_Video> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F75_Project_Video> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F76_3D_Model_for_3D_Print> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F76_3D_Model_for_3D_Print> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F77_Printing_Digital_Twin> ns1:forClass <http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#E12_Production> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F77_Printing_Digital_Twin> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F78_Material_for_3D_Printing> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F78_Material_for_3D_Printing> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F79_Printing_Device> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F79_Printing_Device> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F7_Picture_Set> ns1:forClass <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F7_Picture_Set> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F80_Printed_Digital_Twin> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E18_Physical_Thing#E18_Physical_Thing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F80_Printed_Digital_Twin> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F81_3D_Model_for_G.I.S.> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F81_3D_Model_for_G.I.S.> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F82_Reference_GIS_System> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F82_Reference_GIS_System> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F83_GIS_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F83_GIS_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F84_3D_Model_for_Prospectus> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F84_3D_Model_for_Prospectus> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F85_CAD_Analysis> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F85_CAD_Analysis> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F86_Software_CAD> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F86_Software_CAD> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F87_3D_Model_Prospectus> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F87_3D_Model_Prospectus> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F88_Archaeometric_3D_Model> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F88_Archaeometric_3D_Model> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F89_Project_Analysis> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F89_Project_Analysis> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F8_Picture> ns1:forClass <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F8_Picture> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F90_Data_Log_Analysis> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F90_Data_Log_Analysis> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F91_Model_for_Interactive> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F91_Model_for_Interactive> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F92_Interactive_Project_Implementation> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F92_Interactive_Project_Implementation> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F93_Interactive_Software> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F93_Interactive_Software> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F94_3D_Model_for_Database> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F94_3D_Model_for_Database> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F95_Database_Project_Implementation> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F95_Database_Project_Implementation> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F96_Database_Architecture> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F96_Database_Architecture> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F97_AR_3D_Model> ns1:forClass <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F97_AR_3D_Model> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F98_AR/MR_Project_Implementation> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F98_AR/MR_Project_Implementation> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F99_AR_Software_Modelling> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F99_AR_Software_Modelling> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#F9_Acquisition_Device> ns1:forClass <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/F9_Acquisition_Device> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Final_Use_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/158#F71_Final_Use_of_Digital_Twin> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Final_Use_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#GeometryType_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/GeometryType_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#GeometryType_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/GeometryType_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Implementation_in_Pject_BeaVIR_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Implementation_in_Pject_BeaVIR_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Interactive_Software_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Interactive_Software_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_Algorithm_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Matching_Algorithm_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_Method_of__DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Matching_Method_of__DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Matching_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_of_BETAfs001> ns1:forClass <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Matching_of_BETAfs001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Matching_of_NO01__DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/132#F46:_Matching> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Matching_of_NO01__DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Mesh_Reconstruction_of_AFMNM005> ns1:forClass <https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Mesh_Reconstruction_of_AFMNM005> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Mesh_Reconstruction_of_NO01_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Mesh_Reconstruction_of_NO01_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#ModellingDetemination_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/153#F66_Modelling_Determination> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/ModellingDetemination_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#ModellingElimination_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/154#F67_Modelling_Elimination> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/ModellingElimination_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_3D_Mesh_of_NO01_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_3D_Mesh_of_NO01_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Date_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_Date_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Description_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_Description_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Device_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_Device_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Operator_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_Operator_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_Software_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_Software_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_of_AFMNM005_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_of_AFMNM005_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Modelling_of_NO01_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Modelling_of_NO01_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Number_of_Picture_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Number_of_Picture_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Number_of_Point_Dense_Point_Cloud_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Number_of_Point_Dense_Point_Cloud_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Number_of_TExture_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Number_of_TExture_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Picture_Set__of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Picture_Set__of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Picture_Set__of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Picture_Set__of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Pocessing_Software_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Pocessing_Software_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Pocessing_Software_for_BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Pocessing_Software_for_BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Pocessing_Software_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Pocessing_Software_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Point_Cloud_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Point_Cloud_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Point_Cloud_of__ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Point_Cloud_of__ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Device_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Processing_Device_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Device_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Processing_Device_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Phase_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Processing_Phase_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_Phase_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Processing_Phase_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_of_NO01_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Processing_of_NO01_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Processing_of_TBZ._K._BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/89#F3_Processing> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Processing_of_TBZ._K._BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Reconstruction_Algorithm_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Reconstruction_Algorithm_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Reconstruction_Algorithm_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Reconstruction_Algorithm_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Reconstruction_Method_of__DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Reconstruction_Method_of__DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S10_Material_Substantial> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/S10_Material_Substantial> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S15_Observable_Entity> ns1:forClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/S15_Observable_Entity> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S21_Measurement> ns1:forClass <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S4_Observation#S4_Observation> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/S21_Measurement> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#S4_Observation> ns1:forClass <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/S4_Observation> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Scale_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Scale_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Scale_for_BETAfs001> ns1:forClass <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Scale_for_BETAfs001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Scale_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Scale_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Smoothing_Filter_of_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Smoothing_Filter_of_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Date_of_AFMNM005_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Survey_Date_of_AFMNM005_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_OPERATOR_of_AFMNM005_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Survey_OPERATOR_of_AFMNM005_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Object_for__ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Survey_Object_for__ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Object_for__BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Survey_Object_for__BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Survey_Object_for__DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Survey_Object_for__DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Textured_3D_Mesh_of_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Textured_3D_Mesh_of_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Textured_3D_Mesh_of__ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Textured_3D_Mesh_of__ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Mesh_of_NO01__DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Texturing_Mesh_of_NO01__DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Method_of__DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/102#F16_Texturing_Method> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Texturing_Method_of__DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Type_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Texturing_Type_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#Texturing_Type_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/Texturing_Type_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#TrajectoryType_for_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/TrajectoryType_for_ALFAfsB001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#TrajectoryType_for_BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/TrajectoryType_for_BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#TrajectoryType_for_DELTArmA001> ns1:forClass <https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/TrajectoryType_for_DELTArmA001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#interactive_software_for_BETAfsF001> ns1:forClass <https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/interactive_software_for_BETAfsF001> .
+
+<https://Vlauro.github.io/PODS/ontdoc/settings/publicTypeIndex.ttl#processing_operator_ALFAfsB001> ns1:forClass <https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator> ;
+    ns1:instance <https://Vlauro.github.io/PODS/ontdoc/processing_operator_ALFAfsB001> .
+
+<https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/items/show/102#F16_Texturing_Method> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> .
+
+<https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> .
+
+<https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> .
+
+<https://photogrammetry.altervista.org/items/show/126#F40_Eidotype> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> .
+
+<https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place> .
+
+<https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span> .
+
+<https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> .
+
+<https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive> .
+
+<https://photogrammetry.altervista.org/items/show/133#F47:_Densification> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/89#F3_Processing> .
+
+<https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S21_Measurement#S21_Measurement> .
+
+<https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> .
+
+<https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+<https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> .
+
+<https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> .
+
+<https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> .
+
+<https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+<https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+<https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> .
+
+<https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> .
+
+<https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span> .
+
+<https://photogrammetry.altervista.org/items/show/153#F66_Modelling_Determination> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> .
+
+<https://photogrammetry.altervista.org/items/show/154#F67_Modelling_Elimination> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> .
+
+<https://photogrammetry.altervista.org/items/show/158#F71_Final_Use_of_Digital_Twin> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E18_Physical_Thing#E18_Physical_Thing> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E72_Legal_Object#E72_Legal_Object> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E22_Human-Made_Object#E22_Human-Made_Object> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E2_Temporal_Entity#E2_Temporal_Entity> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E2_Temporal_Entity#E2_Temporal_Entity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E5_Event#E5_Event> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E65_Creation#E65_Creation> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E72_Legal_Object#E72_Legal_Object> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E90_Symbolic_Object#E90_Symbolic_Object> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E16_Measurement#E16_Measurement>,
+        <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D2_Digitization_Process#D2_Digitization_Process> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event> .
+
+<http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S10_Material_Substantial#S10_Material_Substantial> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing>,
+        <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> .
+
+<http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S4_Observation#S4_Observation> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> .
+
+<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#E12_Production> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification> .
+
+<https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object>,
+        <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> .
+
+<https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity>,
+        <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure>,
+        <https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase> .
+
+<https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure>,
+        <https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase> .
+
+<https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D13_Digital_Information_Carrier#D13_Digital_Information_Carrier> .
+
+<https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/90#F4_Modelling> .
+
+<https://photogrammetry.altervista.org/items/show/180#F93_Interactive_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> .
+
+<http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S10_Material_Substantial#S10_Material_Substantial> .
+
+<https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D2_Digitization_Process#D2_Digitization_Process> .
+
+<https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> .
+
+<https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> .
+
+<https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> .
+
+<https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> .
+
+<https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E90_Symbolic_Object#E90_Symbolic_Object> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E77_Persistent_Item#E77_Persistent_Item> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D13_Digital_Information_Carrier#D13_Digital_Information_Carrier> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S21_Measurement#S21_Measurement> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S4_Observation#S4_Observation> .
+
+<https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object>,
+        <http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> .
+
+<https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> .
+
+<https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> .
+
+<https://photogrammetry.altervista.org/items/show/132#F46:_Matching> a owl:Class ;
+    rdfs:subClassOf <https://photogrammetry.altervista.org/items/show/89#F3_Processing> .
+
+<https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E77_Persistent_Item#E77_Persistent_Item> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E60_Number#E60_Number> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E59_Primitive_Value#E59_Primitive_Value> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E5_Event#E5_Event> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E22_Human-Made_Object#E22_Human-Made_Object> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E77_Persistent_Item#E77_Persistent_Item> .
+
+<http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S15_Observable_Entity#S15_Observable_Entity> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> .
+
+<https://photogrammetry.altervista.org/items/show/89#F3_Processing> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<https://photogrammetry.altervista.org/items/show/90#F4_Modelling> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity> .
+
+<http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity> a owl:Class .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object> .
+
+<http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object> .
+
+<https://photogrammetry.altervista.org/items/show/188#F102:_3D_Digital_Asset> a owl:Class ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D9_Data_Object#D9_Data_Object> .
+
+<http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event> a owl:Class ;
+    rdfs:subClassOf <http://cidoc-crm.org/cidoc-crm/7.1.3/E11_Modification#E11_Modification>,
+        <http://cidoc-crm.org/cidoc-crm/7.1.3/E65_Creation#E65_Creation> .
+
+owl:Class a owl:Class .
+
