@@ -1136,7 +1136,7 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1"
+    "@value" : "2.1"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionCoordinate",
@@ -7503,6 +7503,93 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "The detailed description of the processes relating to the processing of the acquired raw data. The description includes the structural details of the processing device or point cloud extraction and their densification that have not found space in the other classes or that are specific to a particular acquisition or processing tool. To the extent that the acquisition and processing processes are integrated, the description must be replicated between the Processing Description class and the Acquisition Description."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/290#F111_Video_Format_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VideoRenderingFormatType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F111 Video Format Type\n\nSubclass of: E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "AVI"
+  }, {
+    "@language" : "en",
+    "@value" : "MKV"
+  }, {
+    "@language" : "en",
+    "@value" : "MOV"
+  }, {
+    "@language" : "en",
+    "@value" : "MP4"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the type of video format used in a digital media object. Video format types can vary based on encoding standards and container formats, which can affect compatibility, quality, and file size. The choice of format is essential for ensuring the usability and performance of the video in different contexts, including playback on specific devices, streaming, and archival."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/291#F112_Video_Resolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VideoRenderingResolution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F112 Video Resolution\n\nSubclass of: E54_Dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "1280x720 (HD)"
+  }, {
+    "@language" : "en",
+    "@value" : "1920x1080 (Full HD)"
+  }, {
+    "@language" : "en",
+    "@value" : "3840x2160 (4K UHD)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the resolution of a video, which is defined as the number of pixels displayed in each dimension (width x height). Video resolution is a crucial factor affecting the quality and clarity of a video, as well as its file size. Higher resolutions provide better visual detail but require more storage and processing power. Common resolutions are often standardized and impact the video’s suitability for specific display types and use cases."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/292#F113_Video_Duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VideoRenderingDuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F113 Video Duration\n\nSubclass of: E54_Dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "1 hour and 15 minutes"
+  }, {
+    "@language" : "en",
+    "@value" : "2 minutes and 34 seconds"
+  }, {
+    "@language" : "en",
+    "@value" : "30 seconds"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the duration of a video, measured in time (hours, minutes, seconds). The duration is an essential metric for understanding the length of content and its suitability for different contexts, such as teaching modules, presentations, or quick informational clips. Video duration can influence the viewer's engagement and is often constrained by platform requirements or project specifications."
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing",
