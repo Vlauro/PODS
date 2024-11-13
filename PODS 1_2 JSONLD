@@ -272,6 +272,26 @@
     "@value" : "URI:\thttp://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity\nSubClass Of:\n-\nSuperClass Of:\nE2 Temporal Entity\nE52 Time-Span\nE53 Place\nE54 Dimension\nE59 Primitive Value\nE77 Persistent Item\nE92 Spacetime Volume\nScope Note:\nThis class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model.\n\nIt is an abstract concept providing for three general properties:\n\nIdentification by name or appellation, and in particular by a preferred identifier\nClassification by type, allowing further refinement of the specific subclass to which an instance belongs\nAttachment of free text and other unstructured data for the expression of anything not captured by formal properties\nAll other classes within the CIDOC CRM are directly or indirectly specialisations of E1 CRM Entity.\n\nExamples:\nthe earthquake in Lisbon 1755 (E5) (Chester, 2001)"
   } ]
 }, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URI:\thttp://www.cidoc-crm.org/cidoc-crm/E41_Appellation\nSubClass Of:\nE90 Symbolic Object\nSuperClass Of:\nE35 Title\nE42 Identifier\nE61 Time Primitive\nE94 Space Primitive\nE95 Spacetime Primitive\nScope Note:\nThis class comprises all signs, either meaningful or not, or arrangements of signs following a specific syntax, that are used or can be used to refer to and identify a specific instance of some class within a certain context.\n\nInstances of E41 Appellation do not identify things by their meaning, even if they happen to have one, but by convention, tradition, or agreement. Instances of E41 Appellation are cultural constructs; as such, they have a context, a history, and a use in time and space by some group of users. A given instance of E41 Appellation can have alternative forms, i.e. other instances of E41 Appellation that are regarded as equivalent, regardless of the thing it denotes.\n\nDifferent languages may use different appellations for the same thing, such as the names of major cities. Some appellations may be formulated using a valid noun phrase of a particular language. In these cases, the respective instances of E41 Appellation should also be declared as instances of E33 Linguistic Object. Then the language using the appellation can be declared with the property P72 has language: E56 Language.\n\nInstances of E41 Appellation may be used to identify any instance of E1 CRM Entity and sometimes are characteristic for instances of more specific subclasses of E1 CRM Entity, such as for instances of E52 Time-Span (for instance “dates”), E39 Actor, E53 Place or E28 Conceptual Object. Postal addresses and E-mail addresses are characteristic examples of identifiers used by services transporting things between clients.\n\nEven numerically expressed identifiers for extents in space or time are also regarded as instances of E41 Appellation, such as Gregorian dates or spatial coordinates, even though they allow for determining some time or location by a known procedure starting from a reference point and by virtue of that fact play a double role as instances of E59 Primitive Value.\n\nE41 Appellation should not be confused with the act of naming something. Cf. E15 Identifier Assignment.\n\nExamples:\n“Martin”\n“Aquae Sulis Minerva”\n“the Merchant of Venice” (E35) (McCullough, 2005)\n“Spigelia marilandica (L.) L.” [not the species, just the name] (Hershberger, Robacker and Jenkins, 2015)\n“information science” [not the science itself, but the name used to refer to the subject matter in an English-speaking context]\n“安” [Chinese “an”, meaning “peace”]\n“6°5’29”N 45°12’13”W” [example of a spatial coordinate]\n“Black queen’s bishop 4” [chess coordinate, example of an identifier in a conceptual space (E89)]\n“19-MAR-1922” [example of date]\n“+41 22 418 5571” [example of contact point]\n“weasel@paveprime.com” [example of contact point]\n“CH-1211, Genève” [example of place appellation]\n“1-29-3 Otsuka, Bunkyo-ku, Tokyo, 121, Japan” [example of a postal address]\n“the poop deck of H.M.S Victory” [example of a section definition on a human-made object (E22)]\n“the Venus de Milo’s left buttock” [example of a section definition on a human-made object (E22)]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E90_Symbolic_Object#E90_Symbolic_Object"
+  } ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier#E42_Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URI:\thttp://www.cidoc-crm.org/cidoc-crm/E42_Identifier\nSubClass Of:\nE41 Appellation\nSuperClass Of:\n-\nScope Note:\nThis class comprises strings or codes assigned to instances of E1 CRM Entity in order to identify them uniquely and permanently within the context of one or more organisations. Such codes are often known as inventory numbers, registration codes, etc. and are typically composed of alphanumeric sequences. Postal addresses, telephone numbers, URLs and e-mail addresses are characteristic examples of identifiers used by services transporting things between clients.\n\nThe class E42 Identifier is not normally used for machine-generated identifiers used for automated processing unless these are also used by human agents.\n\nExamples:\n“MM.GE.195”\n“13.45.1976”\n“OXCMS: 1997.4.1” (fictitious)\n“ISSN 0041-5278” [Identifier for “The UNESCO Courier (Print)”]\nISRC “FIFIN8900186” [Identifier for : Kraft (29 min 14 s) / Magnus Lindberg, comp. ; Toimii Ensemble ; Swedish Radio symphony orchestra ; Esa-Pekka Salonen, dir.]\nShelf mark “Res 8 P 10”\n“Guillaume de Machaut (1300?-1377)” [a controlled personal name heading that follows the French rules] (Reaney, 1974)\n“+41 22 418 5571”\n“weasel@paveprime.com”\n“Rue David Dufour 5, CH-1211, Genève”\n“1-29-3 Otsuka, Bunkyo-ku, Tokyo, 121, Japan”"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"
+  } ]
+}, {
   "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1136,7 +1156,7 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "2.1"
+    "@value" : "2.2"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionCoordinate",
@@ -2107,6 +2127,483 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "1:1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_3D_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing inside https://drive.google.com/drive/folders/1JLq-aJO_2W8rZm9qucD1QnBf-w39T7c7?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c https://drive.google.com/file/d/1vEtB_0AC_ulWYOAdcxZgFGvocaekpY_N/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Coordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "49°59'19.3099\"N //   8°13'35.590\"E"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Xiaomi Redmi Note 11 Pro 5G 2201116SG property of Vittorio Lauro"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FOPPA Manual"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Acquisition carried out with spiral acquisition as described in the FOPPA manual: https://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Raw_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1iAHhD7mHjB3m330ZV1S5gJ_iLN-Apbuh/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Redmi Note 11 Pro 5G Camera Integrated System, Android framework 11 RKQ1.211001.001"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Trajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Free Hand Spiral"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Acquisition_Trajectory_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "fs - FOPPA Free Hand Spiral"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Calibration_(Camera_Calibration)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "\"Adjusted calibration based on extrapolated information\n6 mm \nImage width 4000 Image length 3000 Make Xiaomi Model 2201116SG Date/Time 2024:11:07 13:27:55 Exposure time 1/50 sec. Date and time (original) 2024:11:07 13:27:55 Shutter speed value 5.64 EV (1/49 sec.) Aperture value 1.83 EV (f/1.9) Exposure bias value 0.00 EV Max aperture value 1.83 EV (f/ 1.9) Focal length 5.9 mm\""
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Dense_Point_Cloud_Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr inside wokflow"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam in meshlab"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture inside workflow"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Densification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Zephyr uses Multiview Stereo (MVS) algorithms to convert the sparse point cloud into a dense cloud. Specifically, it leverages advanced MVS approaches, optimized to improve the resolution and density of the cloud.\n3Dflow’s proprietary technology improves densification management for large datasets, with algorithms designed to reduce noise while maintaining geometric details.\nZephyr also uses interpolation and filtering techniques to obtain a smooth and detailed point cloud."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam\nPolycam uses a Patch-based MVS (PMVS) approach, often combined with point fusion and interpolation techniques.\nThis method divides the image into “patches” or small sections, and for each of them calculates 3D points based on the correlation between multiple views.\nDensification is optimized for mobile processing (when used locally), reducing the computational load without sacrificing too much quality. With the cloud option, it can make use of more powerful resources for more detailed densification.\nPolycam uses a hybrid approach: if the device has LiDAR, the LiDAR data is integrated to increase the accuracy of the point cloud."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture\nReality Capture uses a technique based on Depth Maps MVS, where depth maps are generated from multiple images, and these are fused to create a dense and accurate point cloud.\nThis software also uses smoothing filters and noise reduction techniques to obtain a clean and high-quality point cloud."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Densification_Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The three densifications carried out for the respective processing with the different Zephyr, Polycam and Reality Capture software are affected in the description by the limitations of the software which do not provide details on the proprietary algorithms."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Dominant_Geometry_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FOPPA - parallelepiped"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Matching",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "// 20241107ZETAfsB001b PolyCam\nPolycam: Polycam, designed to be user-friendly and mobile-friendly, often leverages Feature Matching in combination with LiDAR (for devices that support it), using technologies such as ORB (Oriented FAST and Rotated BRIEF) for feature detection in the images. It is lighter than Zephyr to maintain calculation speed and usability even on non-specialized devices."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr\nZephyr 3D: Zephyr uses a Feature Matching technique based mainly on algorithms such as SIFT (Scale-Invariant Feature Transform) or SURF (Speeded Up Robust Features), although the process can be optimized with other matching techniques developed internally by 3Dflow. The goal is to identify distinctive key points in images and associate them with each other to build an accurate 3D representation."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture \nReality Capture: Reality Capture is one of the most advanced software in terms of matching, using a combination of SIFT and advanced Structure-from-Motion (SfM) techniques. Reality Capture stands out for the optimization of the Feature Matching process which reduces calculation time, offering better performance than many competing software, especially for very large datasets."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Matching_Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "All three systems of processing are based on the principle of extracting color points from photographs with proprietary algorithms whose initial parameters are known"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Near_Sampling_Points_Range_SFM_Point_Seeds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/135#F49__Near_Sampling_Points_Range_SFM_Point_Seeds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr  Interval 1 Value 0.1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Number_of_Picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "50"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Place_of_Acquisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "C0.05 room, Applied Science University of Mainz"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Point_Cloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing inside https://drive.google.com/drive/folders/1JLq-aJO_2W8rZm9qucD1QnBf-w39T7c7?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Processing https://drive.google.com/file/d/1LIDyy73GtzYrLx_xXd8N49GIPPsktVTX/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Point_Cloud_Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/136#F50_Point_Cloud_Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr inside wokflow"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture inside workflow"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Point_Cloud_Number_of_Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/137#F51_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr 2609"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Sparse Point Cloud 31887"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam Processing"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Processing"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Processing_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "\"20241107ZETAfsB001a Zephyr Processing Device OS Name        Microsoft Windows 11 Pro\nVersion        10.0.22631 Build 22631\nOther OS Description         Not Available\nOS Manufacturer        Microsoft Corporation\nSystem Name        DESKTOP-PU77HKC\nSystem Manufacturer        HP\nSystem Model        HP ZBook Firefly 14 inch G8 Mobile Workstation PC\nSystem Type        x64-based PC\nSystem SKU        2C9Q2EA#ABD\nProcessor        11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz, 2803 Mhz, 4 Core(s), 8 Logical Processor(s)\nBIOS Version/Date        HP T76 Ver. 01.18.00, 28/08/2024  //  20241107ZETAfsB001b PolyCam Processing  Device  Polycam Server // 20241107ZETAfsB001c RealityCapture Processing OS Name        Microsoft Windows 11 Pro\nVersion        10.0.22631 Build 22631\nOther OS Description         Not Available\nOS Manufacturer        Microsoft Corporation\nSystem Name        DESKTOP-PU77HKC\nSystem Manufacturer        HP\nSystem Model        HP ZBook Firefly 14 inch G8 Mobile Workstation PC\nSystem Type        x64-based PC\nSystem SKU        2C9Q2EA#ABD\nProcessor        11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz, 2803 Mhz, 4 Core(s), 8 Logical Processor(s)\nBIOS Version/Date        HP T76 Ver. 01.18.00, 28/08/2024\""
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Processing_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://orcid.org/0000-0003-3446-6127"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Processing_Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/120#F34_Processing_Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107 ZETA faB001 The processing was based on the use of 3 different software designed to demonstrate the differences in the survey in the context of the development of the PODS ontology"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Processing_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr 7.531"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam https://poly.cam/"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c Reality Capture 1.4.1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Raw_Data_Carrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "2 Carrier: personal account Unito GMAIL of Vittorio Lauro// BeArchaeo storage hardware 01"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Survey_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "07 / 11 / 2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Survey_Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://www.ebl.lmu.de/fragmentarium/HS.1445"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Survey_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://orcid.org/0000-0003-3446-6127"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Survey_Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Acquisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001 Acquisition of the 3D printed copy of the original object"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Acquisition_Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The digital print of the find was positioned on a partially transparent mirrored cube placed in the center of a relief disk equipped with a target. The targets were not taken into consideration in the survey nor connected to the processing. A closed survey set has not been prepared and the lighting present is that of the room with four ceiling neon lights not perpendicular to the find. The find, a 3D printed copy of the original find, appears to be composed of a highly reflective and reflective plastic/metallic material with yellow glitter on a light brown background. The color of the printed copy does not match the original color of the find. The photos were acquired in a number of 50 with an inclination from the survey plane of 0.45.75 degrees with 16 photos for each inclination and 2 perpendicular photos. Each tilt is made up of a complete circle around the object"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Acquisition_Device_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mobile Phone"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Densification_Algorithm_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing Multiview Stereo (MVS), proprietary algorithms"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam Processing   Patch-based MVS, hybrid algorithms"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Processing Depth Map-based MVS, efficient MVS"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Densified_Point_Cloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing inside https://drive.google.com/drive/folders/1JLq-aJO_2W8rZm9qucD1QnBf-w39T7c7?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c https://drive.google.com/drive/folders/1WUiaMy4M9KT34ejYjqYAf3UXQLP86VvH?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Eydotipe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/126#F40_Eidotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1kkIzge9O1KaOb2_qtN55W_JPQYTBbUO_/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Matching_Algorithm_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing SIFT (Scale-Invariant Feature Transform), SURF (Speeded Up Robust Features), proprietary optimization techniques"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam Processing ORB (Oriented FAST and Rotated BRIEF)"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Processing SIFT (Scale-Invariant Feature Transform), advanced Structure-from-Motion (SfM)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Picture_Set",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1iAHhD7mHjB3m330ZV1S5gJ_iLN-Apbuh/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Scale_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FOPPA - B Medium Object (1 cm to 30 cm)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Textured_3D_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Processing inside https://drive.google.com/drive/folders/1JLq-aJO_2W8rZm9qucD1QnBf-w39T7c7?usp=drive_link"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method",
@@ -7590,6 +8087,233 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "This class defines the duration of a video, measured in time (hours, minutes, seconds). The duration is an essential metric for understanding the length of content and its suitability for different contexts, such as teaching modules, presentations, or quick informational clips. Video duration can influence the viewer's engagement and is often constrained by platform requirements or project specifications."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/293#F114_AR/VR_Project_Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ARVRProjectDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F114 AR/VR Project Description\nSubclass of: E62_String"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"A collaborative AR application for educational purposes that visualizes complex scientific concepts in 3D.\""
+  }, {
+    "@language" : "en",
+    "@value" : "An immersive VR experience for historical site exploration, enabling users to navigate and interact with reconstructions of ancient architecture.\""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class provides a detailed description of an AR/VR project, encompassing the project's objectives, key features, intended user experience, and any relevant background information. The description serves as an informative overview of the AR/VR project, summarizing its purpose and primary functionalities in a concise manner. It may also include technical specifications and usage contexts."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/294#F115_AR/VR_Project_Title/DOI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ARVRProjectTitleDOI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F115 AR/VR Project Title/DOI\n\nSubclass of: E41_Appellation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Ancient Rome VR Experience\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"DOI: 10.1234/ar.vr.2024.001\""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class captures the title or DOI (Digital Object Identifier) of an AR/VR project. The title provides a recognizable name for the project, while the DOI serves as a unique identifier for accessing or referencing the project, especially for academic or research purposes. The presence of a DOI aids in the formal citation and retrieval of the project in digital repositories"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/295#F116_AR/VR_Project_Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ARVRProjectCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F116 AR/VR Project Category\n\nSubclass of: E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Educational"
+  }, {
+    "@language" : "en",
+    "@value" : "Entertainment"
+  }, {
+    "@language" : "en",
+    "@value" : "Simulation"
+  }, {
+    "@language" : "en",
+    "@value" : "Training"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the category of an AR/VR project, which classifies the project based on its primary function or domain of application. Categories may include educational, entertainment, simulation, or training purposes, providing context on the project's use case and target audience."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/296#F117_AR/VR_Project_Platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ARVRProjectPlatform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F117 AR/VR Project Platform\n\nSubclass of: D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Microsoft HoloLens"
+  }, {
+    "@language" : "en",
+    "@value" : "Oculus Quest"
+  }, {
+    "@language" : "en",
+    "@value" : "Unity"
+  }, {
+    "@language" : "en",
+    "@value" : "Unreal Engine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class indicates the specific software platform or environment on which the AR/VR project is built or runs. Platforms may include dedicated AR/VR hardware systems, gaming engines, or software development environments. The platform can impact the compatibility, performance, and user experience of the AR/VR application."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/297#F118_AR/VR_Project_Real_Coordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ARVRProjectRealCoordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F118 AR/VR Project Real Coordinates\n\nSubclass of: E94_Space Primitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Latitude: 37.7749, Longitude: -122.4194 (San Francisco, CA)"
+  }, {
+    "@language" : "en",
+    "@value" : "Latitude: 41.9028, Longitude: 12.4964 (Rome, Italy)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the real-world coordinates used in an AR/VR project, which can be essential for geolocated or context-sensitive AR applications. These coordinates anchor virtual elements in specific real-world locations, enhancing the realism and situational relevance of AR experiences."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/298#F119_Mobile_Application_Operational_System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MobileApplicationOperationalSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F119 Mobile Application Operational System\n\nSubclass of: D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Android"
+  }, {
+    "@language" : "en",
+    "@value" : "HarmonyOS"
+  }, {
+    "@language" : "en",
+    "@value" : "Windows Mobile"
+  }, {
+    "@language" : "en",
+    "@value" : "iOS"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the operational system on which a mobile application is designed to run. It includes details about compatibility with specific operating systems, which determines the application's usability across different devices and platforms."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/299#F120_Programming_Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ProgrammingLanguage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E90_Symbolic_Object#E90_Symbolic_Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F120 Programming Language\n\nSubclass of: E90_Symbolic Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "C#"
+  }, {
+    "@language" : "en",
+    "@value" : "JavaScript"
+  }, {
+    "@language" : "en",
+    "@value" : "Python"
+  }, {
+    "@language" : "en",
+    "@value" : "Swift"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class indicates the programming language used to develop an application or project, which is crucial for understanding its technical foundation. Programming languages can affect the performance, flexibility, and maintainability of the codebase, and may be chosen based on project requirements or platform compatibility."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/300#F121_Educational_Platform_URL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EducationalPlatformURL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier#E42_Identifier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F121 Educational Platform URL\n\nSubclass of: E42_Identifier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"https://www.coursera.org\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"https://www.edx.org\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"https://www.khanacademy.org\""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class provides the URL or web address of an educational platform where relevant resources, content, or tools can be accessed. This identifier is crucial for digital resources in the educational domain, allowing easy access to the platform and ensuring consistent referencing."
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing",
