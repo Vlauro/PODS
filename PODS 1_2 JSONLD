@@ -292,6 +292,13 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"
   } ]
 }, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "URI (forward direction):\thttp://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension\nURI (inverse direction):\thttp://www.cidoc-crm.org/cidoc-crm/P40i_was_observed_in\nDomain:\nE16 Measurement\nRange:\nE54 Dimension\nSubProperty Of:\nE13 Attribute Assignment. P141 assigned (was assigned by): E1 CRM Entity\nSuperProperty Of:\n-\nQuantification:\nmany to many, necessary (1,n:0,n)\n\nScope Note:\nThis property records the dimension that was observed in an E16 Measurement Event.\n\nE54 Dimension can be any quantifiable aspect of E70 Thing. Weight, image colour depth and monetary value are dimensions in this sense. One measurement activity may determine more than one dimension of one object.\n\nDimensions may be determined either by direct observation or using recorded evidence. In the latter case the measured Thing does not need to be present or extant.\n\nEven though knowledge of the value of a dimension requires measurement, the dimension may be an object of discourse prior to, or even without, any measurement being made.\n\nProperties:\n-\nExamples:\nThe measurement of the height of silver cup 232 on 31st August 1997 (E16) observed dimension silver cup 232 height (E54). [which has unit mm (E58), has value 224 (E60)] (fictitious)\nThe carbon 14 dating of the “Schoeninger Speer II” in 1996 (E16) observed dimension the carbon 14 based temporal distance from 1996 to the growth of the wood of the “Schoeninger Speer II” (E60). [The carbon 14 dating of an approximately 400.000 year old complete Old Palaeolithic wooden spear found in Schoeningen, Niederachsen, Germany, in 1995. See also: E16 Measurement.] (Kouwenhoven, 1997)"
+  } ]
+}, {
   "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -965,38 +972,6 @@
     "@value" : "\"The Acquisition Trajectory class refers to the physical path or series of positions followed by an acquisition device (such as a camera or laser scanner) during the data acquisition phase of photogrammetric or other survey processes. This trajectory defines the movement or stationary positions of the device relative to the object or area being documented, affecting the quality, coverage, and accuracy of the data captured. The Acquisition Trajectory can include linear paths, spirals, concentric movements, or modular setups in the case of a laser scanner, depending on the methodology adopted. Accurate documentation of the trajectory is essential for ensuring comprehensive and consistent capture of an object’s geometry, which is vital for subsequent processing and modeling phases.\" ;"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@language" : "en",
-    "@value" : "\"Relevant for:\" Archaeometric analysis"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Processing_Densification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Definition of the class F47 Densification as a subclass of F3 Processing"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "\"The densification of a LiDAR point cloud to enhance the resolution and clarity of a 3D terrain model.\""
-  }, {
-    "@language" : "en",
-    "@value" : "Example:\n\"The application of dense matching techniques to generate a more detailed point cloud in architectural surveys.\""
-  }, {
-    "@language" : "en",
-    "@value" : "Example:\n\"The densification of a photogrammetric point cloud by increasing the number of points using stereo-matching algorithms.\""
-  } ],
-  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "en",
-    "@value" : "Scope Note:\nThe Densification class refers to the process of enriching the initial sparse point cloud obtained from the Matching phase by adding more data points. This step employs algorithms that interpolate or calculate additional points to create a more detailed and dense representation of the object or scene being scanned. Densification is crucial for achieving higher accuracy and detail in 3D reconstruction processes such as meshing."
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
@@ -1020,7 +995,7 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/admin/items/show/253#Y62_has_modelling_operator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/90#F4_Modelling"
   } ],
@@ -1036,7 +1011,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y62: has modelling operator\n\nSubproperty of: P14 carried out by\nDomain: F4 Modelling\nRange: F39 Modelling Operator"
+    "@value" : "Y62: has modelling operator (performed modeling) \n\nSubproperty of: P14 carried out by\nDomain: F4 Modelling\nRange: F39 Modelling Operator"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -1156,7 +1131,40 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "2.2"
+    "@value" : "2.35"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Acquisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y12_was_continued_by_Processing_Phase" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Processing"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/192#Y1:_is_acquired_object_of" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Subject"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_PictureSet"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionTrajectory"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/198#Y7_has_method_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionMethod"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/199#Y8_happened_on_acquisition_device" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDevice"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/200#Y9_has_acquisition_device_type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDeviceType"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/202#Y11_used_acquisition_software" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionSoftware"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/266#Y93:_was_continued_by_subsequent_phase" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Processing"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionCoordinate",
@@ -1166,6 +1174,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "42°50′32.06″N 12°45′24.94″E"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/212#Y21:_has_coordinates_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Acquisition"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDate",
@@ -1179,6 +1190,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Tempietto sul Clitunno date of Acquisition \n15/03/2012"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Acquisition"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDevice",
@@ -1231,6 +1245,15 @@
     "@value" : "Composite: [Linear A (6 pictures) + Half Circle Prospective A (34 pictures)  + Half Circle Prospective B (5 pictures) + Linear B (4 pictures) + Linear C (4 pictures)  + Linear D (5 pictures)  + Linear E (6 pictures) + Linear F (4 pictures)  + Linear G (5 pictures) + Azimutal Spiral A (22 pictures) +  Azimutal Spiral B (22 pictures) + Linear H (4 pictures) +  Linear I (5 pictures) + Linear L (4 pictures)  + Free Hand Azimutal Spiral A ( 6 Pictures) + Free Hand Azimutal Spiral B ( 4 Pictures)  + Free Hand Azimutal Spiral C ( 7 Pictures) + Free Hand Azimutal Spiral D ( 5 Pictures) + Free Hand Half Circle Prospective A (6 Pictures) + Free Hand Circle (36 pictures) + Free Hand Linear A (11 Pictures) + Free Hand Linear B (9 Pictures) +  Free Hand Linear C (5 Pictures)."
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DPMesaurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
+  } ],
+  "https://photogrammetry.altervista.org/collections/show/3#has_observed_number_of_points" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloudNumberofPoint"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloud",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1242,6 +1265,9 @@
   }, {
     "@language" : "en",
     "@value" : "https://sketchfab.com/3d-models/assemblamento-nuvole-scalate-mesh-8ec2999f45da4df3b4b2bb03d2492a1a"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/264#Y95:_was_measured_in_number_of_points" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DPMesaurement"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloudNumberofPoint",
@@ -1265,6 +1291,42 @@
   }, {
     "@language" : "en",
     "@value" : "Tempietto Clitunno Esterno 2019\nhttps://sketchfab.com/3d-models/tempietto-clitunno--esterno2019-d411fc2689b64680a238ea0fc32f36a0"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Exporting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
+  } ],
+  "https://photogrammetry.altervista.org/collections/show/3#Y71:_has_number_of_final_destination" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfFinalUse"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_MatchingMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/214#Y23_has_type_of_matching" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingAlgorithm"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Modelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/90#F4_Modelling"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/240#Y49_has_created_Digital_Twin" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DigitalTwin"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/252#Y61_used_modelling_software" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingSoftware"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/254#Y63_has_date_of_modelling" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingDate"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/257#Y67_was_continued_by_Exporting_phase" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Exporting"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ModellingDate",
@@ -1307,17 +1369,46 @@
     "@value" : "219"
   } ]
 }, {
-  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberofTexture",
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_PMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture"
+    "@id" : "https://photogrammetry.altervista.org/items/show/136#F50_Point_Cloud_Measurement"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "MosaicoV1"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "6"
+  "https://photogrammetry.altervista.org/collections/show/3#has_observed_number_of_points" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePoint_Cloud_Number_of_Point"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_PictureSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
+  } ],
+  "https://photogrammetry.altervista.org/collections/show/3#has_number_of_picture" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_NumberOfPicture"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/206#Y15:_is_composed_of_picture" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SinglePicture"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/217#Y26__used_processing_software" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingSoftware"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/221#Y30_has_created_point_cloud" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePointCloud"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/222#Y32_has_method_of_matching" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_MatchingMethod"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/223#Y31_has_created_densified_point_cloud" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_DensePointCloud"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/233#Y42_was_continued_by_Modelling_phase" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Modelling"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_ProcessingAlgorithm",
@@ -1346,7 +1437,7 @@
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Registration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"
+    "@id" : "https://photogrammetry.altervista.org/items/show/320#F141_Alignment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1361,6 +1452,15 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "sample information picture acquisition of Tempietto sul Clitunno \nImage informations: 2816x2112, 72dpi, bit depth 24, resolution unit 2, colour rappresentation sRGB, compresseb bits/pixel 5."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePointCloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/264#Y95:_was_measured_in_number_of_points" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_PMeasurement"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_SparsePoint_Cloud_Number_of_Point",
@@ -1381,6 +1481,10 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The small temple of Clitunno is a small temple-shaped chapel in the municipality of Campello sul Clitunno (PG).[1][2] It is located approximately 1 km downstream from the sources of the Clitunno river (\"Fonti del Clitunno\"), in an area where other springs are located (\"Vene del Tempio\"), in the hamlet of Pissignano. It is part of the serial site \"Longobards in Italy: places of power\", including seven places full of architectural, pictorial and sculptural evidence of Lombard art, registered on the UNESCO World Heritage List in June 2011\nWikipedia source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "https://it.wikipedia.org/wiki/Tempietto_del_Clitunno"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20180904GAMMAsbB002_AcquisitionDescription",
@@ -1504,12 +1608,51 @@
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#Y12_was_continued_by_Processing_Phase" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Photogrammetry with compact camera, Acquisition of AF MNM 005"
+  } ],
+  "https://photogrammetry.altervista.org/collections/show/3#Y20_has_acquisition_description" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONDESCRIPTION"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/192#Y1:_is_acquired_object_of" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SurveyObject"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_SET"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONTRAJECTORY"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/198#Y7_has_method_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONMETHOD"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/199#Y8_happened_on_acquisition_device" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/200#Y9_has_acquisition_device_type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_DEVICE_TYPE"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/201#Y10_has_created_raw_data" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_RAW_DATA"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/202#Y11_used_acquisition_software" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_SOFTWARE"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/208#Y17:_has_acquisition_operator" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_acquisitionOPERATOR"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/209#Y18:_has_place_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PLACE_OF_ACQUISITION"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_AcquisitionDATE"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONCOORDINATES",
@@ -1540,6 +1683,12 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Bea-PG\nLink to exposition or article \nhttps://diglib.eg.org/server/api/core/bitstreams/457a13a5-0da3-4210-8719-121d928db3a6/content"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DOMINANT_GEOMETRY_TYPE"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DIGITAL_SCALE"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONTRAJECTORY",
@@ -1690,6 +1839,24 @@
     "@value" : "Project BeArcheo Database \nhttps://bearchaeo.unito.it/omeka-s/s/bearchaeo-resources-site/page/welcome"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Dense_Point_Cloud_Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
+  } ],
+  "https://photogrammetry.altervista.org/collections/show/3#has_observed_number_of_points" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSE_POINT_CLOUD_NUMBER_OF_POINT"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DensificationMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/219#Y28__has_type_of_densification" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DENSIFICATIONALGORITHM"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DigitalTwin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1800,6 +1967,15 @@
     "@value" : "Blender 7.4"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MeatchingMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/214#Y23_has_type_of_matching" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MATCHING_ALGORITHM"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Modelling",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1848,6 +2024,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "BeArchaeo Project Hardware Storage"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/205#Y14:_stores_acquisition_Picture" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SinglePicture"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PICTURE_SET",
@@ -1858,6 +2037,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Photo Set of AF MNM 005 Acquisition"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/206#Y15:_is_composed_of_picture" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SinglePicture"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PLACE_OF_ACQUISITION",
@@ -1868,6 +2050,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Okayama City Buried Cultural Property Center"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/212#Y21:_has_coordinates_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITIONCOORDINATES"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_POINT_CLOUD_VERTEX_QUALITY",
@@ -1888,6 +2073,33 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Processing of AF MNM 005 Digital Twin, based on photogrammetric acquisition, using structure from motion technique"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/213#Y22_had_acquisition_input" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_ACQUISITION_RAW_DATA"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/215#Y24_happened_on_processing_device" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_DEVICE"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/217#Y26__used_processing_software" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_SOFTWARE"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/218#Y27_has_method_of_densification" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DensificationMethod"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/221#Y30_has_created_point_cloud" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PointCloud"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/222#Y32_has_method_of_matching" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_MeatchingMethod"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/223#Y31_has_created_densified_point_cloud" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_densified_cloud_point"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/231#Y40:_has_processing_operator" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_processingOperator"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/233#Y42_was_continued_by_Modelling_phase" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Modelling"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PROCESSING_DEVICE",
@@ -1908,6 +2120,15 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Recap Autodesk 3D 2019"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_PointCloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/226#Y35_has_vertex_quality_assignment" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_POINT_CLOUD_VERTEX_QUALITY"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Project_Video",
@@ -1938,6 +2159,12 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Laplacian Smoothing"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SinglePicture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/94#F8_Picture"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_SurveyObject",
@@ -1988,6 +2215,18 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Vittorio Lauro\norcid: https://orcid.org/0000-0003-3446-6127"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_densified_cloud_point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/227#Y36_has_Depth_Noise_Filtering" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_DEPTH_NOISE_FILTERING"
+  } ],
+  "https://photogrammetry.altervista.org/items/show/264#Y95:_was_measured_in_number_of_points" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Dense_Point_Cloud_Measurement"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_processingOperator",
@@ -2129,6 +2368,22 @@
     "@value" : "1:1"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_3D_Digital_Twin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a https://drive.google.com/file/d/1arxwW_1e0_hOPwaPToLU0azDodzsEju-/view?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b https://drive.google.com/file/d/1ykbOukKmiTrUldtVITgHs92Jfccq_bDd/view?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c https://drive.google.com/file/d/1glLdPI1AbxJBPHkMiFd_49Mass3_VLfR/view?usp=drive_link"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_3D_Mesh",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2222,7 +2477,7 @@
     "@value" : "fs - FOPPA Free Hand Spiral"
   } ]
 }, {
-  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Calibration_(Camera_Calibration)",
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Calibration_Camera_Calibration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"
@@ -2230,6 +2485,22 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "\"Adjusted calibration based on extrapolated information\n6 mm \nImage width 4000 Image length 3000 Make Xiaomi Model 2201116SG Date/Time 2024:11:07 13:27:55 Exposure time 1/50 sec. Date and time (original) 2024:11:07 13:27:55 Shutter speed value 5.64 EV (1/49 sec.) Aperture value 1.83 EV (f/1.9) Exposure bias value 0.00 EV Max aperture value 1.83 EV (f/ 1.9) Focal length 5.9 mm\""
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Color_Balance/Multiband_Texture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/148#F61_Color_Balance/Multiband_Texture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Color Balance: color matching+multiband texturing en"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam single band texturing"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Color Balance: color matching+multiband texturing"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Dense_Point_Cloud_Measurement",
@@ -2246,6 +2517,22 @@
   }, {
     "@language" : "en",
     "@value" : "20241107ZETAfsB001c RealityCapture inside workflow"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Dense_Point_Cloud_Number_of_Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Densified Point Cloud 264210"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam dense point cloud 56370"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Densified Point Cloud 1767147"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Densification",
@@ -2274,6 +2561,41 @@
     "@value" : "The three densifications carried out for the respective processing with the different Zephyr, Polycam and Reality Capture software are affected in the description by the limitations of the software which do not provide details on the proprietary algorithms."
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Depth_Noise_Filtering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/141#F55_Depth_Noise_Filtering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr statistical outlier removal,"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam a median filtering and derivatives"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture bilateral filtering, multi-scale filters"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Digital_Scale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "1:1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Digital_Twin_Physical_Carrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/155#F68_Digital_Twin_Physical_Carrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Processing Computer"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Dominant_Geometry_Type",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2282,6 +2604,38 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "FOPPA - parallelepiped"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Exporting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Export according to theoriginal formats\n20241107ZETAfsB001a Zephyr obj"
+  }, {
+    "@language" : "en",
+    "@value" : "Export according to theoriginal formats\n20241107ZETAfsB001b PolyCam gbl"
+  }, {
+    "@language" : "en",
+    "@value" : "Export according to theoriginal formats\n20241107ZETAfsB001c RealityCapture obj"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Exporting_Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/156#F69_Exporting_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Export to original formats with verification of differences between the various models\n\n20241107ZETAfsB001b PolyCam gbl"
+  }, {
+    "@language" : "en",
+    "@value" : "Export to original formats with verification of differences between the various models\n\n20241107ZETAfsB001c RealityCapture obj"
+  }, {
+    "@language" : "en",
+    "@value" : "Export to original formats with verification of differences between the various models\n20241107ZETAfsB001a Zephyr obj //"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Matching",
@@ -2310,6 +2664,118 @@
     "@value" : "All three systems of processing are based on the principle of extracting color points from photographs with proprietary algorithms whose initial parameters are known"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Mesh_Reconstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Description of the Process"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/90#F4_Modelling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The modeling followed three different processes both in terms of mesh reconstruction and mesh modification, aimed at preserving and transmitting the most data for each model."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "11/11/2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/151#F64_Modelling_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr\nPoisson Surface Reconstruction algorithm, a method that takes a dense point cloud as input and estimates an implicit function that represents the surface.\nModeling is differentiated based on processes\nModeling not performed and preservation of the original exported model"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam\nuses a mesh reconstruction method oriented towards simplicity and speed, often with Delaunay Triangulation or variants to create a mesh from the point cloud. This technique generates triangles between adjacent points, building a lightweight mesh suitable for mobile devices.\nDeletion of any element of the set and preservation of only the detected surface of the artifact"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture\ncombination of algorithms, in which Depth Map Fusion and Poisson Surface Reconstruction play a key role. Depth maps are generated from the images and combined to create a continuous and accurate representation of the surface. Poisson Surface Reconstruction is then used to obtain a complete and detailed mesh.\ndeletion of the set and preservation of the detected face of the artifact except for a flap of the set preserved to maintain the metric information and 3D models indicating the position of the cameras at the time of acquisition."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Determination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/153#F66_Modelling_Determination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001 face detected"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/97#F11_Modelling_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "OS Name        Microsoft Windows 11 Pro\nVersion        10.0.22631 Build 22631\nOther OS Description         Not Available\nOS Manufacturer        Microsoft Corporation\nSystem Name        DESKTOP-PU77HKC\nSystem Manufacturer        HP\nSystem Model        HP ZBook Firefly 14 inch G8 Mobile Workstation PC\nSystem Type        x64-based PC\nSystem SKU        2C9Q2EA#ABD\nProcessor        11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz, 2803 Mhz, 4 Core(s), 8 Logical Processor(s)\nBIOS Version/Date        HP T76 Ver. 01.18.00, 28/08/2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Elimination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/154#F67_Modelling_Elimination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001 set deleted"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://orcid.org/0000-0003-3446-6127"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modelling_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/118#F32_Modelling_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Blender 3.2.1"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Modifying_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/144#F58_Modifying_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr MultiTexture\nModeling is differentiated based on processes\nModeling not performed and preservation of the original exported model"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam\nDeletion of any element of the set and preservation of only the detected surface of the artifact"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture\ndeletion of the set and preservation of the detected face of the artifact except for a flap of the set preserved to maintain the metric information and 3D models indicating the position of the cameras at the time of acquisition."
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Near_Sampling_Points_Range_SFM_Point_Seeds",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2320,6 +2786,16 @@
     "@value" : "20241107ZETAfsB001a Zephyr  Interval 1 Value 0.1"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Number_of_Final_Destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Number_of_Picture",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2328,6 +2804,19 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "50"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Number_of_Texture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a \n2"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c \n2"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Place_of_Acquisition",
@@ -2377,6 +2866,22 @@
   }, {
     "@language" : "en",
     "@value" : "20241107ZETAfsB001c RealityCapture Sparse Point Cloud 31887"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Point_Cloud_Vertex_Quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr  No Vertex Quality"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam yes Vertex Quality"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Yes Vertex Quality"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Processing",
@@ -2451,6 +2956,61 @@
     "@value" : "2 Carrier: personal account Unito GMAIL of Vittorio Lauro// BeArchaeo storage hardware 01"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Reconstruction_Algorithm_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/109#F23_Reconstruction_Algorithm_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Mesh Reconstruction\nZephyr: reconstruction based on Poisson Surface Reconstruction algorithms"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b Mesh Reconstruction\nSimplified Polycam Reconstruction Based on Delaunay Triangulation"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c Mesh Reconstruction\nReality Capture: Combination of Poisson Surface Reconstruction and Depth Map Fusion."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Reconstruction_Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/101#F15_Recontruction_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr\nZephyr primarily uses the Poisson Surface Reconstruction algorithm, a method that takes a dense point cloud as input and estimates an implicit function that represents the surface. This algorithm is effective at generating detailed, closed surfaces, and Zephyr allows for some adjustment of parameters, such as reconstruction depth and mesh level of detail. Additionally, Zephyr includes decimation and smoothing capabilities to optimize the final mesh, making it suitable for rendering or exporting for gaming or augmented reality."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam\nPolycam uses a mesh reconstruction method geared toward simplicity and speed, often with Delaunay Triangulation or variations to create a mesh from the point cloud. This technique generates triangles between adjacent points, building a lightweight, mobile-friendly mesh. Polycam also implements automatic simplification techniques to reduce the number of polygons in the mesh, while maintaining a good balance between quality and performance. When using LiDAR, Polycam embeds the LiDAR data into the mesh to improve surface accuracy and maintain geometric consistency."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture\nReality Capture uses a combination of algorithms, with Depth Map Fusion and Poisson Surface Reconstruction playing a key role. Depth maps are generated from the images and combined to create a continuous and accurate representation of the surface. Poisson Surface Reconstruction is then used to obtain a complete and detailed mesh. Reality Capture is known for its optimization, which allows it to handle even large datasets, offering fast computation times without compromising the level of detail."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Registration_Fusion_of_Multiple_Point_Clouds_or_3D_Models",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Single acquisition"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Smoothing_Filter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/147#F60_Smoothing_Filter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr bilateral smoothing"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture bilateral filtering, anisotropic smoothing,"
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Survey_Date",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2489,6 +3049,67 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "20241107ZETAfsB001"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Texture_Set_of_3D_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/149#F62_Texture_Set_of_3D_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Texture LINK\nhttps://drive.google.com/file/d/1WcyJDBBrBzAWEIBnOQYEGVibseRhXRUo/view?usp=drive_link \n\nhttps://drive.google.com/file/d/1t7veokrQ0it6Ortra0pfiGdMltTDEceH/view?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c Texture LINK \nhttps://drive.google.com/file/d/172eI95aGx2uaYUShRmBwO3eiM7_7G-yi/view?usp=drive_link \n\nhttps://drive.google.com/file/d/1TpvlHkukrs-sHA-Dl-q1ajoW4D2kmlvt/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Texturing_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Coloring for adding texture"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam coloring of faces and creation of material inside the GLB"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Coloring for adding texture"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Texturing_Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/102#F16_Texturing_Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr Zephyr primarily uses the Poisson Surface Reconstruction algorithm, a method that takes a dense point cloud as input and estimates an implicit function that represents the surface. This algorithm is effective at generating detailed, closed surfaces, and Zephyr allows for some adjustment of parameters, such as reconstruction depth and mesh level of detail. Additionally, Zephyr includes decimation and smoothing capabilities to optimize the final mesh, making it suitable for rendering or exporting for gaming or augmented reality."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b PolyCam Polycam uses a mesh reconstruction method geared toward simplicity and speed, often with Delaunay Triangulation or variations to create a mesh from the point cloud. This technique generates triangles between adjacent points, building a lightweight, mobile-friendly mesh. Polycam also implements automatic simplification techniques to reduce the number of polygons in the mesh, while maintaining a good balance between quality and performance. When using LiDAR, Polycam embeds the LiDAR data into the mesh to improve surface accuracy and maintain geometric consistency."
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture Reality Capture uses a combination of algorithms, with Depth Map Fusion and Poisson Surface Reconstruction playing a key role. Depth maps are generated from the images and combined to create a continuous and accurate representation of the surface. Poisson Surface Reconstruction is then used to obtain a complete and detailed mesh. Reality Capture is known for its optimization, which allows it to handle even large datasets, offering fast computation times without compromising the level of detail."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001_Texturing_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/110#F24__Texturing_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001a Zephyr MultiTexture Jpg"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001b Single PolyCam included in information format"
+  }, {
+    "@language" : "en",
+    "@value" : "20241107ZETAfsB001c RealityCapture two texture PNG"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAfsB001__Acquisition",
@@ -2604,6 +3225,679 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "20241107ZETAfsB001a Zephyr Processing inside https://drive.google.com/drive/folders/1JLq-aJO_2W8rZm9qucD1QnBf-w39T7c7?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_3D_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1qG6q6HxFt1ZdY0_tl_am_anOAfXnj1b-/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Acquisition_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ATOS III triple Scan Rev.02.1 160449"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Acquisition_Device_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Triple Scan photo scanner"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Acquisition_Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ATOS III Practice Description Manual"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Acquisition_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Atos III  Professional"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Calibration_Camera_Calibration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "0_calibration_calibration_deviation om:hasValue ex:d62a5c10-2ad7-1032-23ba-73a53c98624a_sensor_0_calibration_calibration_deviation_value .\nex:d62a5c10-2ad7-1032-23ba-73a53c98624a_ms_0_measurement1_rp1006 rdf:type giga:ReferencePoint .\nex:d62a5c10-2ad7-1032-23ba-73a53c98624a_ms_0_measurement0_algorithm rdfs:label \"MS 0 Measurement 12 Algorithm\"@en. \nex:d62a5c10-2ad7-1032-23ba-73a53c98624a_ms_0_measurement1_mssetup_reference_point_exposure_time_value rdfs:label \"Referenzpunktbelichtungszeit Messwert ( MS 0 Measurement 1 Setup)\"@de .\nex:d62a5c10-2ad7-1032-23ba-73a53c98624a_ms_0_measurement0_corner_mask_size rdf:type giga:Corner_mask_size ."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Dense_Point_Cloud_Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Information extrapolated from cloud query in postproduction"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Dense_Point_Cloud_Number_of_Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "938555"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Matching_Algorithm_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "rdfs:range xsd:integer .FeatureDetectionAlgorithm\nex:d62a5c10-2ad7-1032-23ba-73a53c98624a_sensor_0_capturingdevice_calibration_projector_focal_length_value om:hasNumericalValue \"90.0\"^^xsd:float .\ngiga:verification rdf:type owl:ObjectProperty .\ngiga:Measuring_volume_length rdfs:label \"Measuring volume length\"@en"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Modelling_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "11/07/2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Modelling_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "[Engineer] https://orcid.org/0000-0002-5232-1944"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Place_Of_Acquisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "C0.05 room, Applied Science University of Mainz"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Point_Cloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1j3wrmWPYqoQSNWc3j9mFMXkcLqVwn8mz/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ProcessingFunction: Unknown"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Processing_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Processing Computer Device in C.0 5 Room at the Mainz University of Applied Sciences"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Processing_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "[Engineer] https://orcid.org/0000-0002-5232-1944"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Processing_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ATOS III Professional GOM Software 2021 Hotfix 9"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Raw_Data_Carrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "2 Digital Carrier: Processing Computer // BeArchaeo storage hardware 01"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Survey_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "11 / 07 / 2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Survey_Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "https://www.ebl.lmu.de/fragmentarium/HS.1445"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1_Survey_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "[Engineer] https://orcid.org/0000-0002-5232-1944"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_1__Acquisition_Raw_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/111#F25_Acquisition_Raw_Data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "picture+volume information+calibration information: https://drive.google.com/file/d/1ks4DMV7oHzAE5BWj8mKG7zmQFx-5PDVj/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_3D_Mesh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/114#F28_3D_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1D6yVdi4q3OxcSyPg7jI6ERPb4AaOZfi-/view?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/file/d/1OiXQHKqAxpl-G5pdu-zOqVSE2SgNqUw9/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Acquisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107EPSILONsbB002 Acquisition of the 3D printed copy of the original object"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Acquisition_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ATOS III triple Scan Rev.02.1 160449"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Acquisition_Device_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Triple Scan photo scanner"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Acquisition_Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ATOS III Practice Description Manual Procedure"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Acquisition_Raw_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/drive/folders/1gC16IBZbfBD82VseGTjZfDm37aRCTkxN?usp=drive_link"
+  }, {
+    "@language" : "en",
+    "@value" : "picture+volume information+calibration information https://drive.google.com/file/d/1pNH2kPIuL-6YSruFpqcN2eLd4qVdpv3b/view?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Acquisition_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Atos III"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Calibration_Camera_Calibration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/189#F103:_Calibration_(Camera_Calibration)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "\"ex:c514328a-2267-d973-da19-c0c86393d883_sensor_0_capturingdevice_calibration_projector_focal_length om:hasValue ex:c514328a-2267-d973-da19-c0c86393d883_sensor_0_capturingdevice_calibration_projector_focal_length_value .\nex:c514328a-2267-d973-da19-c0c86393d883_ms_0_measurement0_mssetup_image_height_value om:hasNumericalValue \"\"2472\"\"^^xsd:integer .\nex:c514328a-2267-d973-da19-c0c86393d883_ms_0_measurement2_mscheck_lighting_change_sigma_value rdfs:label \"\"Lichtänderung (Sigma) Messwert ( MS 0 Measurement 2 Measurement Check)\"\"@de\""
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Dense_Point_Cloud_Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Information extrapolated from cloud query in postproduction"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Dense_Point_Cloud_Number_of_Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Side A 475466"
+  }, {
+    "@language" : "en",
+    "@value" : "Side B 744821"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Modelling_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "11/07/2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Modelling_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/125#F39_Modelling_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[Engineer] https://orcid.org/0000-0002-5232-1944"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Picture_Set_Link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://drive.google.com/drive/folders/1gC16IBZbfBD82VseGTjZfDm37aRCTkxN?usp=drive_link"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Place_Of_Acquisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "C0.05 room, Applied Science University of Mainz"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Point_Cloud_Vertex_Quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F54_Point_Cloud_Vertex_Quality#F54_Point_Cloud_Vertex_Quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "no"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Processing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ProcessingFunction: Unknown"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Processing_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Processing Computer Device in C.0 5 Room at the Mainz University of Applied Sciences"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Processing_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/124#F38_Processing_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[Engineer] https://orcid.org/0000-0002-5232-1944"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Processing_Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ATOS III Professional GOM Software 2021 Hotfix 9"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Raw_Data_Carrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "2 Digital Carrier: Processing Computer"
+  }, {
+    "@language" : "en",
+    "@value" : "BeArchaeo storage hardware 01"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Survey_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "11 / 07 / 2024"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Survey_Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "https://www.ebl.lmu.de/fragmentarium/HS.1445"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Survey_Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[Engineer] https://orcid.org/0000-0002-5232-1944"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20241107ZETAsbB001_2_Survey_Phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/187#F101_Survey_Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "20241107ZETAsbB002"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#F130_Database_Data_Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DatabaseDataModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F130 Database Data Model\n\nSubclass of: D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Document-oriented model (e.g., MongoDB)"
+  }, {
+    "@language" : "en",
+    "@value" : "Graph model (e.g., Neo4j)"
+  }, {
+    "@language" : "en",
+    "@value" : "Key-value store"
+  }, {
+    "@language" : "en",
+    "@value" : "Relational model"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the data model used in the database, which determines how data is logically organized and how relationships between data entities are structured. The data model type affects data storage, retrieval efficiency, and the flexibility of the database."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#F136_CFD_Project_Title/DOI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CFDProjectTitleDOI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F136 CFD Project Title/DOI\n\nSubclass of: E41_Appellation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"DOI: 10.1000/cfd.project.2024.002\""
+  }, {
+    "@language" : "en",
+    "@value" : "\"Simulation of Airflow Around a Building Structure\""
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class captures the title or DOI (Digital Object Identifier) of a Computational Fluid Dynamics (CFD) project, providing a unique identifier for academic referencing and retrieval in digital databases. The title or DOI ensures that the CFD project can be properly cited and accessed."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#F140_S.U._Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SUMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F140 S.U. Material\n\nSubclass of: E57_Material"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Burnt organic material mixed with pottery sherds"
+  }, {
+    "@language" : "en",
+    "@value" : "Clay with small inclusions of limestone"
+  }, {
+    "@language" : "en",
+    "@value" : "Sandy silt with charcoal fragments"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class describes the material composition of the stratigraphic unit (S.U.), which provides insight into the nature of the deposits and aids in determining the function or chronology of the context."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#P3_has_note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URI (forward direction):\thttp://www.cidoc-crm.org/cidoc-crm/P3_has_note\nURI (inverse direction):\t-\nDomain:\nE1 CRM Entity\nRange:\nE62 String\nSubProperty Of:\n-\nSuperProperty Of:\nE52 Time-Span. P79 beginning is qualified by: E62 String\nE52 Time-Span. P80 end is qualified by: E62 String\nE90 Symbolic Object. P190 has symbolic content: E62 String\nQuantification:\none to many (0,n:0,1)\n\nScope Note:\nThis property is a container for all informal descriptions about an object that have not been expressed in terms of CIDOC CRM constructs.\n\nIn particular, it captures the characterisation of the item itself, its internal structures, appearance, etc.\n\nLike property P2 has type (is type of), this property is a consequence of the restricted focus of the CIDOC CRM. The aim is not to capture, in a structured form, everything that can be said about an item; indeed, the CIDOC CRM formalism is not regarded as sufficient to express everything that can be said. Good practice requires use of distinct note fields for different aspects of a characterisation. The P3.1 has type property of P3 has note allows differentiation of specific notes, e.g. “construction”, “decoration”, etc.\n\nAn item may have many notes, but a note is attached to a specific item.\n\nProperties:\nP3.1 has type: E55 Type\n\nExamples:\nCoffee mug – OXCMS:1983.1.1 (E19) has note “chipped at edge of handle” (E62) has type Condition (E55). (fictitious)"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#Y20_has_acquisition_description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_acquisition_description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#P3_has_note"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Y20: has acquisition description\n\nSubproperty of: P3 has note\nDomain\nF2 Acquisition\nRange\nF44 Acquisition Description"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This property refers to a description (F44) of the acquisition event (F2). It provides additional notes or commentary on the method, conditions, or purpose of the data collection."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#Y71:_has_number_of_final_destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/158#F71_Final_Use_of_Digital_Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tridimensional_digital_twin_has_number_of_use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Y71: has number of final destination\n(Not a subproperty)\n\nDomain\nF71 Final Use of 3D Model\n\nRange\nF70 Number of Final Destination"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The F71 Final Use of the 3D Model has F70 Number of Final Destination, such as three different output formats: video rendering, printing, and research."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This property indicates the number of final destinations (F70) for the 3D model based on the final use (F71)."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#has_number_of_picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_number_of_picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Y16: has number of picture\n\nNot a subproperty of any other property\nDomain\nF7 Picture Set\nRange\nF41 Number of Picture"
+  }, {
+    "@value" : "This property describes the number of individual pictures contained in a picture set (F7). It specifies the quantity of images used in an acquisition process."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#has_number_of_texture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/149#F62_Texture_Set_of_3D_Mesh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_number_of_texture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/150#F63_Number_of_Texture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Y58: has number of texture\n\n(Not a subproperty)\nDomain: F62 Texture Set of 3D Mesh\nRange: F63 Number of Texture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A F62 Texture Set of 3D Mesh has F63 Number of Texture, indicating the number of individual texture files used in the set."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the number of textures (F63) present in a texture set (F62) for a 3D mesh."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#has_observed_number_of_points",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Y94: has observed number of points\nSubproperty of: P40 observed dimension\n\nDomain\nF50 Point Cloud Measurement, F52 Dense Point Cloud Measurement\n\nRange\nF51 Point Cloud Number of Points, F53 Dense Point Cloud Number of Points"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A F50 Point Cloud Measurement records an observed number of F51 Point Cloud Number of Points, such as 500,000 points in a basic scan."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This property refers to the number of points observed in a Point Cloud (F51) or Dense Point Cloud (F53) during a Point Cloud Measurement (F50) or a Dense Point Cloud Measurement (F52). It captures the quantity of individual data points that have been identified and recorded in the measurement phase, allowing for the specification of the point cloud's resolution."
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method",
@@ -4267,7 +5561,7 @@
     "@value" : "Modelling_ModifyngTexturedMeshDate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span"
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E71_Human-Made_Thing#E71_Human-Made_Thing"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -4441,7 +5735,7 @@
     "@value" : "Exporting_FinalTridimensionalDigitalTwin"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -4491,7 +5785,7 @@
     "@value" : "Exporting_EditingRenderingVideo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -4791,7 +6085,7 @@
     "@value" : "Exporting_CADAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -4891,7 +6185,7 @@
     "@value" : "Exporting_ArchaeometricAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -4966,7 +6260,7 @@
     "@value" : "Exporting_InteractiveProjectImplementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5038,7 +6332,7 @@
     "@value" : "Exporting_DatabaseImplementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5113,7 +6407,7 @@
     "@value" : "Exporting_AR-MRProjectImplementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"
+    "@id" : "https://photogrammetry.altervista.org/items/show/91#F5_Exporting"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5534,9 +6828,11 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/200#Y9_has_acquisition_device_type",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
+  }, {
+    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5544,6 +6840,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
+  }, {
+    "@id" : "https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L17_measured_thing_of_type_(was_type_of_thing_measured_by)"
@@ -5676,7 +6974,7 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/206#Y15:_is_composed_of_picture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
   } ],
@@ -5692,7 +6990,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y15: is composed of picture\n\nSubproperty of: P106 is composed of\nDomain: F7 Picture Set\nRange: F8 Picture"
+    "@value" : "Y15: is composed of picture (compose the picture set)\n\nSubproperty of: P106 is composed of\nDomain: F7 Picture Set\nRange: F8 Picture"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5729,7 +7027,7 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/208#Y17:_has_acquisition_operator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
   } ],
@@ -5745,7 +7043,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y17: has acquisition operator\n\nSubproperty of: P14 carried out by\n\nDomain: F2 Acquisition\nRange: F37 Survey Operator"
+    "@value" : "Y17: has acquisition operator (performed acquisition)\n\nSubproperty of: P14 carried out by\n\nDomain: F2 Acquisition\nRange: F37 Survey Operator"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5945,7 +7243,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y24: happened on processing device\n\nSubproperty of: L12 happened on device\nDomain\nF3 Processing\nRange\nF10 Processing Device, F56 Mesh Reconstruction, F57 Texturing Mesh"
+    "@value" : "Y24: happened on processing device (was processing device for)\n\nSubproperty of: L12 happened on device\nDomain\nF3 Processing\nRange\nF10 Processing Device, F56 Mesh Reconstruction, F57 Texturing Mesh"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5964,9 +7262,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "processing_is_composed_of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"
@@ -6019,7 +7314,7 @@
   "@id" : "https://photogrammetry.altervista.org/items/show/218#Y27_has_method_of_densification",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification"
+    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6074,9 +7369,6 @@
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/220#Y29_has_matching_input",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has_matching_input"
@@ -6127,6 +7419,9 @@
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/222#Y32_has_method_of_matching",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has_method_of_matching"
@@ -6153,7 +7448,7 @@
   "@id" : "https://photogrammetry.altervista.org/items/show/223#Y31_has_created_densified_point_cloud",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F47_Densification#F47__Densification"
+    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6395,7 +7690,7 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/231#Y40:_has_processing_operator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing"
   } ],
@@ -6411,7 +7706,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y40: has processing operator\n\nSubproperty of: P14 carried out by\nDomain: F3 Processing\nRange: F38 Processing Operator"
+    "@value" : "Y40: has processing operator  (performed processing) \n\n\nSubproperty of: P14 carried out by\nDomain: F3 Processing\nRange: F38 Processing Operator"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -6924,7 +8219,7 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/250#Y59__is_texture_set_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/149#F62_Texture_Set_of_3D_Mesh"
   } ],
@@ -7011,7 +8306,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has_date_of_acquisition"
+    "@value" : "has_date_of_modelling"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/152#F65_Modelling_Date"
@@ -7021,7 +8316,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y63: has date of acquisition\n\nSubproperty of: P4 has time span\nDomain: F58 Modifying Mesh\nRange: F65 Modelling Date"
+    "@value" : "Y63: has date of modelling\n\nSubproperty of: P4 has time span\nDomain: F58 Modifying Mesh\nRange: F65 Modelling Date"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -7766,7 +9061,7 @@
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/281#Y80:_is_in_GIS",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."
   } ],
@@ -7782,7 +9077,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Y80: is in GIS\nSubproperty of: P106i forms part of\n\nDomain\nF81 3D Model for GIS\n\nRange\nF82 Reference GIS System"
+    "@value" : "Y80: is in GIS (GIS hosts the model)\nSubproperty of: P106i forms part of\n\nDomain\nF81 3D Model for GIS\n\nRange\nF82 Reference GIS System"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -8314,6 +9609,488 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "This class provides the URL or web address of an educational platform where relevant resources, content, or tools can be accessed. This identifier is crucial for digital resources in the educational domain, allowing easy access to the platform and ensuring consistent referencing."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/301#F122_Educational_Platform_Supported_Browser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EducationalPlatformSupportedBrowser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F122 Educational Platform Supported Browser\n\nSubclass of: D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Google Chrome"
+  }, {
+    "@language" : "en",
+    "@value" : "Microsoft Edge"
+  }, {
+    "@language" : "en",
+    "@value" : "Mozilla Firefox"
+  }, {
+    "@language" : "en",
+    "@value" : "Safari"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the web browsers supported by an educational platform, which impacts accessibility and usability. Compatibility with certain browsers ensures a consistent user experience and helps avoid technical issues that may arise when using unsupported browsers."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/302#F123_Educational_Platform_Server_Web",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EducationalPlatformServerWeb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D13_Digital_Information_Carrier#D13_Digital_Information_Carrier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F123 Educational Platform Server Web\n\nSubclass of: Physical Carrier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Amazon Web Services (AWS)"
+  }, {
+    "@language" : "en",
+    "@value" : "Apache HTTP Server"
+  }, {
+    "@language" : "en",
+    "@value" : "Microsoft IIS"
+  }, {
+    "@language" : "en",
+    "@value" : "Nginx"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the specific web server on which the educational platform is hosted. Information about the server setup provides insights into the platform's infrastructure, reliability, and performance, as well as details about data security measures."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/303#F129_Database_Table_Schema_and_Structure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DatabaseTableSchemaAndStructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F129 Database Table Schema and Structure\n\nSubclass of: E29_Design or Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Schema defining user data with fields: user_id, username, email, password_hash"
+  }, {
+    "@language" : "en",
+    "@value" : "Table structure with relationships for an inventory database including products, suppliers, and orders tables"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class describes the schema and structure of database tables, detailing the organization of data within the database. It includes table definitions, field names, data types, relationships between tables, and indexing strategies, which are critical for efficient data management and retrieval."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/305#F131_GIS_Reference_System_and_Projection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GISReferenceSystemAndProjection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F131 GIS Reference System and Projection\n\nSubclass of: E29_Design or Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "ETRS89 (European Terrestrial Reference System 1989)"
+  }, {
+    "@language" : "en",
+    "@value" : "NAD83 (North American Datum 1983)"
+  }, {
+    "@language" : "en",
+    "@value" : "UTM Zone 33N"
+  }, {
+    "@language" : "en",
+    "@value" : "WGS84 (World Geodetic System 1984)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the geographic reference system and projection used in a GIS project, which establishes how spatial data is aligned on the earth's surface. Choosing an appropriate reference system and projection is essential for accurate spatial analysis and mapping."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/306#F132_GIS_Bounding_Box",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GISBoundingBox"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F132 GIS Bounding Box\n\nSubclass of: E94_Space Primitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Min Longitude: -74.259, Min Latitude: 40.477, Max Longitude: -73.700, Max Latitude: 40.917 (Bounding box of New York City)"
+  }, {
+    "@language" : "en",
+    "@value" : "Min Longitude: 12.238, Min Latitude: 41.689, Max Longitude: 12.744, Max Latitude: 42.017 (Bounding box of Rome, Italy)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the bounding box of a GIS dataset, defining the spatial extent of the data in terms of its minimum and maximum coordinates. The bounding box helps to limit the area of interest and manage data visualization and analysis within specified geographic boundaries."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/307#F133_GIS_Geospatial_Data_Format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GISGeospatialDataFormat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E90_Symbolic_Object#E90_Symbolic_Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F133 GIS Geospatial Data Format\n\nSubclass of: E90_Symbolic Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "GeoJSON (.geojson)"
+  }, {
+    "@language" : "en",
+    "@value" : "KML (Keyhole Markup Language)"
+  }, {
+    "@language" : "en",
+    "@value" : "Shapefile (.shp)"
+  }, {
+    "@language" : "en",
+    "@value" : "TIFF (Tagged Image File Format for raster data)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the data format of geospatial data used in a GIS project, which affects data interoperability, storage, and processing. The format determines how spatial data is encoded and read by GIS software."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/308#F134_Prospectus_Legal_Owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ProspectusLegalOwner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F134 Prospectus Legal Owner\n\nSubclass of: E39_Actor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "National Archaeological Museum"
+  }, {
+    "@language" : "en",
+    "@value" : "Professor John Doe (individual researcher)"
+  }, {
+    "@language" : "en",
+    "@value" : "Smith Consulting Ltd."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the legal owner of a prospectus, usually an individual or organization with ownership rights over the document. Legal ownership information is important for establishing intellectual property rights and responsibilities."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/309#F135_Prospectus_Former_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ProspectusFormerLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F135 Prospectus Former Location\n\nSubclass of: E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Historical Records Office, Rome"
+  }, {
+    "@language" : "en",
+    "@value" : "Private Collection, Berlin"
+  }, {
+    "@language" : "en",
+    "@value" : "University of Oxford Library Archives"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class documents the former location of a prospectus, which is relevant in cases where the document has been transferred or moved. Recording former locations can provide historical context for the document’s provenance and ownership history."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/311#F124_Printed_Digital_Twin_Former_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PrintedDigitalTwinFormerLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F124 Printed Digital Twin Former Location\n\nSubclass of: E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Exhibition Hall 3, National Museum of Archaeology"
+  }, {
+    "@language" : "en",
+    "@value" : "Storage Room, University of Cambridge Archaeology Department"
+  }, {
+    "@language" : "en",
+    "@value" : "Temporary Display at the Louvre Museum"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class documents the former location of a printed digital twin, providing context about its provenance and previous usage. Such information is crucial for tracking the movement and historical context of 3D printed replicas, especially in cultural heritage and museum contexts."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/312#F125_Interactive_Project_Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InteractiveProjectDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F125 Interactive Project Description\n\nSubclass of: E62_String"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A virtual reality experience that allows users to explore a reconstructed medieval castle."
+  }, {
+    "@language" : "en",
+    "@value" : "An interactive touch-screen exhibit showcasing ancient Roman artifacts with 3D models and augmented reality overlays."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class captures a detailed textual description of an interactive project, including its design, purpose, and features. This information is essential for understanding the nature of the project and its intended audience."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/313#F126_Interactive_Project_Platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InteractiveProjectPlatform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F126 Interactive Project Platform\n\nSubclass of: D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "ARKit for iOS"
+  }, {
+    "@language" : "en",
+    "@value" : "Unity Engine"
+  }, {
+    "@language" : "en",
+    "@value" : "Unreal Engine"
+  }, {
+    "@language" : "en",
+    "@value" : "WebGL for browser-based interaction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the platform or software environment used to run an interactive project. The platform determines compatibility, performance, and accessibility of the project."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/314#F127_Interactive_Project_Former_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InteractiveProjectFormerLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F127 Interactive Project Former Location\n\nSubclass of: E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Interactive Kiosk at the British Museum's \"Egyptian Mummies\" Exhibit"
+  }, {
+    "@language" : "en",
+    "@value" : "Multimedia Station at the \"Virtual Pompeii\" Exhibition in Naples"
+  }, {
+    "@language" : "en",
+    "@value" : "Temporary Installation at the Smithsonian National Museum"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the former physical location where an interactive project was used, such as a multimedia station in a museum or an installation at an exhibition. Tracking former locations provides a historical record of the project's deployment and audience engagement."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/315#F128_Interactive_Project_Running_Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InteractiveProjectRunningDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D8_Digital_Device#D8_Digital_Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F128 Interactive Project Running Device\n\nSubclass of: D8_Digital Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Interactive touchscreen monitor for a multimedia kiosk"
+  }, {
+    "@language" : "en",
+    "@value" : "Microsoft HoloLens for an augmented reality application"
+  }, {
+    "@language" : "en",
+    "@value" : "Oculus Quest 2 for a virtual reality experience"
+  }, {
+    "@language" : "en",
+    "@value" : "iPad Pro for a portable AR application"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the device used to execute the interactive project. Knowing the running device is essential for understanding the technical requirements and constraints of the project."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/316#F137_Environmental_Impact_Studies_Project_Title/DOI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EnvironmentalImpactStudiesProjectTitleDOI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F137 Environmental Impact Studies Project Title/DOI\n\nSubclass of: E41_Appellation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "\"Assessing the Environmental Impact of Urban Expansion in the Amazon Basin\""
+  }, {
+    "@language" : "en",
+    "@value" : "DOI: 10.1000/environmental.studies.2024.005"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class captures the title or DOI of a project focused on environmental impact studies. A title or DOI ensures that the project is uniquely identifiable and citable in academic or professional contexts."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/317#F138_S.U._Referenced_Place_of_Excavation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SUReferencedPlaceOfExcavation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F138 S.U. Referenced Place of Excavation\n\nSubclass of: E53_Place"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Layer 2, Göbekli Tepe, Turkey"
+  }, {
+    "@language" : "en",
+    "@value" : "Sector A, Pompeii, Italy"
+  }, {
+    "@language" : "en",
+    "@value" : "Site 24, Valley of the Kings, Egypt"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the specific location where the archaeological excavation took place, resulting in the recovery of the associated stratigraphic unit (S.U.). This information is critical for spatial and contextual analysis of archaeological findings."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/318#F139_S.U._Coordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SUCoordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E94_Space_Primitive#E94_Space_Primitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F139 S.U. Coordinates\n\nSubclass of: E94_Space Primitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Longitude: 31.235, Latitude: -22.745, Depth: 1.5m"
+  }, {
+    "@language" : "en",
+    "@value" : "X: 42.36, Y: 12.45, Z: -0.8 (local grid system)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the precise spatial coordinates of a stratigraphic unit (S.U.) within an excavation site. These coordinates are essential for documenting the exact location of an archaeological find in three-dimensional space."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/320#F141_Alignment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Modelling_ModelAlignment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/90#F4_Modelling"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F141 Alignment\n\nSubclass of: F4_Modelling"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Aligning a historical 3D model reconstructed from archive photographs with a modern-day scan of the same object."
+  }, {
+    "@language" : "en",
+    "@value" : "Aligning two dense point clouds of an archaeological artifact scanned using different devices (e.g., a photogrammetric model and a structured-light scanner model)."
+  }, {
+    "@language" : "en",
+    "@value" : "The alignment of a sparse point cloud obtained via drone photogrammetry with a dense point cloud generated from terrestrial laser scanning for a castle façade reconstruction."
+  }, {
+    "@language" : "en",
+    "@value" : "The registration of a dense point cloud with a 3D mesh generated through volumetric modeling for comparative analysis."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the process of aligning two spatial datasets, such as sparse point clouds, dense point clouds, 3D models, or any combination of these. Alignment is a fundamental step in 3D reconstruction and digital heritage workflows, ensuring that multiple datasets are spatially coherent and can be integrated into a single, unified representation. This process is essential for creating accurate and verifiable models, especially in contexts like cultural heritage, archaeology, and industrial design."
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing",
