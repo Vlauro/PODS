@@ -375,6 +375,16 @@
     "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D1_Digital_Object#D1_Digital_Object"
   } ]
 }, {
+  "@id" : "http://www.cidoc-crm.org/extensions/crmsci/S18_Alteration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URI:\thttp://www.cidoc-crm.org/extensions/crmsci/S18_Alteration\nSubClass Of:\nE5 Event\nSuperClass Of:\nS17 Physical Genesis\nE11 Modification\nScope Note:\nThis class comprises natural events or man-made processes that create, alter or change physical things, by affecting permanently their form or consistency without changing their identity. Examples include alterations on depositional features-layers by natural factors or disturbance by roots or insects, organic alterations, petrification, etc.\n\nExamples:\nthe petrification process of the Lesvos forest related to the intense volcanic activity in Lesvos island during late Oligocene - middle Miocene period (S18) (Marinos, 1997)\nthe flattening of the Lanhydrock Pedigree parchment after humidification (E11) (Pickwoad, N., 2016)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E5_Event#E5_Event"
+  } ]
+}, {
   "@id" : "http://www.cidoc-crm.org/extensions/crmsci/versions/2.0/S10_Material_Substantial#S10_Material_Substantial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1163,6 +1173,9 @@
   "https://photogrammetry.altervista.org/items/show/202#Y11_used_acquisition_software" : [ {
     "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionSoftware"
   } ],
+  "https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDate"
+  } ],
   "https://photogrammetry.altervista.org/items/show/266#Y93:_was_continued_by_subsequent_phase" : [ {
     "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Processing"
   } ]
@@ -1190,9 +1203,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Tempietto sul Clitunno date of Acquisition \n15/03/2012"
-  } ],
-  "https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition" : [ {
-    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_Acquisition"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20120315ALFAsmD001_AcquisitionDevice",
@@ -1871,9 +1881,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "https://sketchfab.com/3d-models/yaioi-boar-jaw-3136f87dde21439c953f62d2e19293d4"
-  } ],
-  "https://photogrammetry.altervista.org/collections/show/3#has_number_of_texture" : [ {
-    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBER_OF_TEXTURE"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Exporting",
@@ -2185,7 +2192,7 @@
     "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfs001_3Dmodelvideorendering"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/items/show/162#F75_Project_Video"
+    "@id" : "https://photogrammetry.altervista.org/items/show/160#F73_Editing_Video"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2229,9 +2236,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "AF MNM 005\nhttps://bearchaeo.unito.it/omeka-s/s/bearchaeo-resources-site/item/2041#?c=0&m=0&s=0&cv=0&xywh=-274%2C0%2C1506%2C719"
-  } ],
-  "https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type" : [ {
-    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TYPE_OF_OBJECT_SCALE"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TEXTURING_TYPE",
@@ -2252,6 +2256,15 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Medium object URI pag. 52\nhttps://github.com/Vlauro/FOPPA/blob/main/FOPPA%20Survey%20Manual.pdf"
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_TextureSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/149#F62_Texture_Set_of_3D_Mesh"
+  } ],
+  "https://photogrammetry.altervista.org/collections/show/3#has_number_of_texture" : [ {
+    "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_NUMBER_OF_TEXTURE"
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#20190309BETAfsB001_Video_Editing_Software",
@@ -3846,6 +3859,27 @@
     "@value" : "URI (forward direction):\thttp://www.cidoc-crm.org/cidoc-crm/P3_has_note\nURI (inverse direction):\t-\nDomain:\nE1 CRM Entity\nRange:\nE62 String\nSubProperty Of:\n-\nSuperProperty Of:\nE52 Time-Span. P79 beginning is qualified by: E62 String\nE52 Time-Span. P80 end is qualified by: E62 String\nE90 Symbolic Object. P190 has symbolic content: E62 String\nQuantification:\none to many (0,n:0,1)\n\nScope Note:\nThis property is a container for all informal descriptions about an object that have not been expressed in terms of CIDOC CRM constructs.\n\nIn particular, it captures the characterisation of the item itself, its internal structures, appearance, etc.\n\nLike property P2 has type (is type of), this property is a consequence of the restricted focus of the CIDOC CRM. The aim is not to capture, in a structured form, everything that can be said about an item; indeed, the CIDOC CRM formalism is not regarded as sufficient to express everything that can be said. Good practice requires use of distinct note fields for different aspects of a characterisation. The P3.1 has type property of P3 has note allows differentiation of specific notes, e.g. “construction”, “decoration”, etc.\n\nAn item may have many notes, but a note is attached to a specific item.\n\nProperties:\nP3.1 has type: E55 Type\n\nExamples:\nCoffee mug – OXCMS:1983.1.1 (E19) has note “chipped at edge of handle” (E62) has type Condition (E55). (fictitious)"
   } ]
 }, {
+  "@id" : "https://photogrammetry.altervista.org/collections/show/3#Y16:_has_number_of_picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_number_of_picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Y16: has number of picture\n\nNot a subproperty of any other property\nDomain\nF7 Picture Set\nRange\nF41 Number of Picture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This property describes the number of individual pictures contained in a picture set (F7). It specifies the quantity of images used in an acquisition process."
+  } ]
+}, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#Y20_has_acquisition_description",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -3969,6 +4003,16 @@
 }, {
   "@id" : "https://photogrammetry.altervista.org/collections/show/3#has_observed_number_of_points",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/136#F50_Point_Cloud_Measurement"
+  }, {
+    "@id" : "https://photogrammetry.altervista.org/items/show/138#F52_Dense_Point_Cloud_Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/137#F51_Point_Cloud_Number_of_Point"
+  }, {
+    "@id" : "https://photogrammetry.altervista.org/items/show/139#F53_Dense_Point_Cloud_Number_of_Point"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension"
   } ],
@@ -6916,8 +6960,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"
-  }, {
-    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6925,8 +6967,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"
-  }, {
-    "@id" : "https://photogrammetry.altervista.org/items/show/157#F70_Number_of_Final_Destination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L17_measured_thing_of_type_(was_type_of_thing_measured_by)"
@@ -7348,6 +7388,11 @@
     "@language" : "en",
     "@value" : "processing_is_composed_of"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
+  }, {
+    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"
   } ],
@@ -7454,6 +7499,9 @@
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/220#Y29_has_matching_input",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/133#F47:_Densification"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has_matching_input"
@@ -7479,6 +7527,9 @@
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/221#Y30_has_created_point_cloud",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/132#F46:_Matching"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has_created_point_cloud"
@@ -8487,6 +8538,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://photogrammetry.altervista.org/items/show/115#F29_Textured_3D_Mesh"
+  }, {
+    "@id" : "https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"
@@ -8602,8 +8655,6 @@
     "@id" : "https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."
   }, {
     "@id" : "https://photogrammetry.altervista.org/items/show/171#F84_3D_Model_for_Prospectus"
-  }, {
-    "@id" : "https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus"
   }, {
     "@id" : "https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"
   }, {
@@ -10176,6 +10227,248 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "en",
     "@value" : "This class defines the process of aligning two spatial datasets, such as sparse point clouds, dense point clouds, 3D models, or any combination of these. Alignment is a fundamental step in 3D reconstruction and digital heritage workflows, ensuring that multiple datasets are spatially coherent and can be integrated into a single, unified representation. This process is essential for creating accurate and verifiable models, especially in contexts like cultural heritage, archaeology, and industrial design."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/321#F142_Comparison_Activity_of_Different_3D_Models",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ComparisonActivity_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E16_Measurement#E16_Measurement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F142 Comparison Activity of Different 3D Models\n\nSubclass of: E16 Measurement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A comparison of two 3D models of a historical sculpture to detect degradation or damage over time, with the use of a digital twin as the reference model."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the activity of comparing two 3D models to assess their differences or similarities. The comparison could be based on various factors such as geometry, texture, scale, or resolution. It is typically used in contexts such as digital heritage, archaeology, and industrial design where precise and accurate models are critical. The input for this process often comes from digital twins or multiple 3D model datasets."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/322#F143_Tolerance_Threshold_Between_Two_3D_Models",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ToleranceThreshold_3DModels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://photogrammetry.altervista.org/items/show/321#F142_Comparison_Activity_of_Different_3D_Models"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F143 Tolerance Threshold Between Two 3D Models\n\nSubclass of: F142 Comparison Activity of Different 3D Models"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Setting a tolerance threshold of 0.5 mm between two 3D models of a prehistoric tool to ensure that minor differences do not affect its usability in a digital restoration project."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class focuses on the threshold of tolerance between two 3D models, specifically quantifying the permissible deviation between them. It is important to determine the level of accuracy that is acceptable for the specific application, whether for quality assurance, restoration, or analysis. The tolerance threshold ensures that differences between models are within an acceptable range."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/323#F144_Software_Used_for_the_Comparison_of_Two_3D_Models",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SoftwareUsed_Comparison3DModels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D14_Software#D14_Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F144 Software Used for the Comparison of Two 3D Models\nSubclass of: D14 Software"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Using \"CloudCompare\" software to compare two 3D models of an ancient amphora to identify differences in surface geometry."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the software tools used to perform the comparison between two 3D models. Different types of software can be used for various aspects of comparison, such as geometric alignment, texture mapping, or structural analysis. This class provides insights into the tools that support the evaluation of digital models."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/324#F145_Methodology_Adopted_for_the_Comparison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Methodology_Comparison3DModels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F145 Methodology Adopted for the Comparison\n\nSubclass of: E29 Design and Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A step-by-step methodology for comparing 3D models of architectural ruins, including initial cleaning, alignment via software, surface comparison, and documentation of any significant deviations."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class describes the methodology or procedure used for the comparison of two 3D models. The methodology may include steps for pre-processing, alignment, tolerance measurement, and reporting of results. It provides the process framework for ensuring that the comparison is scientifically sound and meets the intended objectives."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/325#F146_Surface_Detail_Resolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SurfaceDetailResolution_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F146 Surface Detail Resolution\n\nSubclass of: E54 Dimension"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The surface resolution of a 3D model of a Roman coin is set at 0.1 mm to capture all intricate engravings on its surface for accurate replication."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines the resolution of the 3D model’s surface, typically expressed in microns or millimeters. It is crucial for capturing fine details of an object, especially when the 3D model is used for replication or for creating precise casts. The higher the resolution, the more detailed the representation of the surface features."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/326#F147_Material_Tolerance_Requirements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MaterialToleranceRequirements_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F147 Material Tolerance Requirements\n\nSubclass of: E13 Attribute Assignment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "For a 3D printed copy of an ancient vase, a material tolerance of ±0.2 mm is required to ensure a precise replication of the artifact's dimensions."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class provides the material tolerance requirements during the printing or production process, specifying the acceptable margins of deviation. These requirements affect the precision and accuracy of the final replica, ensuring that it meets the desired specifications."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/327#F148_Scaling_Factor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ScalingFactor_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F148 Scaling Factor\n\nSubclass of: E13 Attribute Assignment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A scaling factor of 1:5 is applied to the 3D model of a medieval sculpture for educational purposes, reducing its size while maintaining proportional accuracy."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the scaling factor applied to the 3D model, whether it is at a 1:1 scale or modified for analysis or reproduction. The scaling factor ensures the model is properly adjusted to meet specific needs, whether it’s for physical reproduction, analysis, or restoration."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/328#F149_Production_Method_Compatibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ProductionMethodCompatibility_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F149 Production Method Compatibility\n\nSubclass of: E29 Design and Procedure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The 3D model of an ancient vase is compatible with SLA and resin printing technologies to achieve the level of surface detail necessary for museum display."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class defines which production or printing technologies are compatible with the 3D model to ensure an accurate reproduction. Technologies could include SLA (Stereolithography), FDM (Fused Deposition Modeling), or resin printing, depending on the material and detail requirements of the replica."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/329#F150_Baseline_Dataset_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BaselineDatasetDate_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span#E52_Time-Span"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F150 Baseline Dataset Date\n\nSubclass of: E52 Time-Span"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The baseline dataset date for the 3D model of a stone tablet is 2023-06-01, marking the start of digital preservation for the artifact."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class specifies the date the original 3D model was created. It serves as the baseline reference for tracking changes over time, which is especially important in monitoring the condition of artifacts or digital preservation efforts."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/330#F151_Surface_Deviation_Analysis_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SurfaceDeviationAnalysis_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D11_Digital_Measurement_Event#D11_Digital_Measurement_Event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F151 Surface Deviation Analysis Data\n\nSubclass of: D11 Digital Measurement Event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A surface deviation analysis of a 3D model of a statue, showing a 0.5 mm deviation in the nose area compared to the original."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class provides information on the surface deviation analysis of a 3D model compared to a previous reference model. It includes data on how much the current model deviates from the original, with a focus on dimensional accuracy and surface integrity."
+  } ]
+}, {
+  "@id" : "https://photogrammetry.altervista.org/items/show/331#F152_Restoration_Intervention_Metadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RestorationInterventionMetadata_3DModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crmsci/S18_Alteration"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "F152 Restoration Intervention Metadata\n\nSubclass of: S18 Alteration"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Metadata for the restoration of a 3D model of a fresco, which includes information on repainting efforts and structural repairs."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "This class describes any restoration interventions performed on an artifact, linked to the 3D model to document changes made during the restoration process. It helps track alterations and ensures a proper record of the restoration history."
   } ]
 }, {
   "@id" : "https://photogrammetry.altervista.org/items/show/89#F3_Processing",
