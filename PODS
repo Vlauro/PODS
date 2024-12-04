@@ -110,6 +110,64 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by">
+        <rdfs:comment xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by
+URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P105i_has_right_on
+Domain:
+E72 Legal Object
+Range:
+E39 Actor
+SubProperty Of:
+-
+SuperProperty Of:
+E18 Physical Thing. P52 has current owner (is current owner of): E39 Actor
+Quantification:
+many to many (0,n:0,n)
+
+Scope Note:
+This property identifies the instance of E39 Actor who holds the instances of E30 Right to an instance of E72 Legal Object.
+
+It is a superproperty of P52 has current owner (is current owner of) because ownership is a right that is held on the owned object.
+
+This property is a shortcut of the fully developed path from E72 Legal Object, P104 is subject to, E30 Right, P75i is possessed by to E39 Actor.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by">
+        <rdfs:comment xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
+URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P1i_identifies
+Domain:
+E1 CRM Entity
+Range:
+E41 Appellation
+SubProperty Of:
+-
+SuperProperty Of:
+E1 CRM Entity. P48 has preferred identifier (is preferred identifier of): E42 Identifier
+E71 Human-Made Thing. P102 has title (is title of): E35 Title
+E53 Place. P168 place is defined by (defines place): E94 Space Primitive
+E92 Spacetime Volume. P169i spacetime volume is defined by (defines spacetime volume): E95 Spacetime Primitive
+E52 Time-Span. P170i time is defined by (defines time): E61 Time Primitive
+Quantification:
+many to many (0,n:0,n)
+
+Scope Note:
+This property describes the naming or identification of any real-world item by a name or any other identifier.
+
+This property is intended for identifiers in general use, which form part of the world the model intends to describe, and not merely for internal database identifiers which are specific to a technical system, unless these latter also have a more general use outside the technical context. This property includes in particular identification by mathematical expressions such as coordinate systems used for the identification of instances of E53 Place. The property does not reveal anything about when, where and by whom this identifier was used. A more detailed representation can be made using the fully developed (i.e. indirect) path through E15 Identifier Assignment.
+
+This property is a shortcut for the path from E1 CRM Entity through P140i was attributed by, E15 Identifier Assignment, P37 assigned to E42 Identifier.
+
+It is also a shortcut for the path from E1 CRM Entity through P1 is identified by, E41 Appellation, P139 has alternative form to E41 Appellation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension">
@@ -1475,6 +1533,7 @@ Range: F64 Modelling Description</skos:definition>
     <!-- https://photogrammetry.altervista.org/collections/show/3#has_number_of_picture -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#has_number_of_picture">
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/207#Y16-Inverse:_is_number_of_pictures_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"/>
         <rdfs:label xml:lang="en">has_number_of_picture</rdfs:label>
@@ -1550,6 +1609,60 @@ F121 Educational Platform URL</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y11-Inverse:_is_software_used_for_acquisition -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y11-Inverse:_is_software_used_for_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/202#Y11_used_acquisition_software"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/116#F30_Acquisition_Software"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y11: used acquisition software
+Inverse: Y11-Inverse: is software used for acquisition
+Label: &quot;is software used for acquisition&quot;
+Domain: F30 Acquisition Software
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is software used for acquisition&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y113:_has_GIS_bounding_box -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y113:_has_GIS_bounding_box">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/306#F132_GIS_Bounding_Box"/>
+        <rdfs:label xml:lang="en">has_GIS_bounding_box</rdfs:label>
+        <skos:definition xml:lang="en">Y113: has GIS bounding box
+
+Subproperty of: none
+Domain
+F82 Reference GIS System
+Range
+F132 GIS Bounding Box</skos:definition>
+        <skos:example xml:lang="en">The GIS bounding box (F132) for the area of interest includes coordinates ranging from 40°N to 42°N latitude and 12°E to 14°E longitude.</skos:example>
+        <skos:example xml:lang="en">The Reference GIS System (F82) has a GIS bounding box (F132), which delineates the spatial extent of the archaeological site mapped in the GIS.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a Reference GIS System (F82) with a GIS Bounding Box (F132), representing the geographic extent or boundary of the geospatial data. It defines the minimum and maximum coordinates that describe the rectangular area in which the geospatial data resides.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y13-Inverse:_is_instruction_used_by_acquisition -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y13-Inverse:_is_instruction_used_by_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/204#Y13:_used_Acquisition_Instruction"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/119#F33_Acquisition_Phase"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y13: used Acquisition Instruction
+Inverse: Y13-Inverse: is instruction used by acquisition
+Label: &quot;is instruction used by acquisition&quot;
+Domain: F33 Acquisition Phase
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is instruction used by acquisition&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/collections/show/3#Y16:_has_number_of_picture -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y16:_has_number_of_picture">
@@ -1588,6 +1701,40 @@ F70 Number of Final Destination</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y9-Inverse:_is_acquisition_device_type_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y9-Inverse:_is_acquisition_device_type_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L17_measured_thing_of_type_(was_type_of_thing_measured_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/200#Y9_has_acquisition_device_type"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/106#F20_Acquisition_Device_Type"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y9: has acquisition device type
+Inverse: Y9-Inverse: is acquisition device type of
+Label: &quot;is acquisition device type of&quot;
+Domain: F20 Acquisition Device Type
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition device type of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/192#Y1-Inverse:_is_object_acquired_by -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/192#Y1-Inverse:_is_object_acquired_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L1_digitized_(was_digitized_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/192#Y1:_is_acquired_object_of"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/87#F1_Survey_Object"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y1: is acquired object of
+Inverse: Y1-Inverse: is object acquired by
+Label: &quot;is object acquired by&quot;
+Domain: F1 Survey Object
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is object acquired by&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/192#Y1:_is_acquired_object_of -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/192#Y1:_is_acquired_object_of">
@@ -1610,6 +1757,23 @@ F1 Survey Object</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/193#Y2-Inverse:_is_input_picture_set_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/193#Y2-Inverse:_is_input_picture_set_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y2: had pictures input
+Inverse: Y2-Inverse: is input picture set for
+Label: &quot;is input picture set for&quot;
+Domain: F7 Picture Set
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is input picture set for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/193#Y2:__had_pictures_input">
@@ -1625,6 +1789,23 @@ Domain: F2 Acquisition
 Range: F7 Picture Set</skos:definition>
         <skos:example xml:lang="en">-</skos:example>
         <skos:scopeNote xml:lang="en">This property refers to the set of pictures (F7) that were used as input during an acquisition event (F2). It connects the acquisition process to the photographic data that was collected or processed.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/194#Y3-Inverse:_is_acquisition_type_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/194#Y3-Inverse:_is_acquisition_type_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/194#Y3:_has_Type_Of_Acquisition"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/103#F17_Acquisition_Trajectory_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
+        <rdfs:comment xml:lang="en">Y3: has Type Of Acquisition
+Inverse: Y3-Inverse: is acquisition type of
+Label: &quot;is acquisition type of&quot;
+Domain: F17 Acquisition Trajectory Type
+Range: F12 Acquisition Trajectory</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition type of&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1652,6 +1833,7 @@ Range: F17 Acquisition Trajectory Type</skos:definition>
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/195#Y4_has_dominant_geometry_type">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/195#Y4-Inverse:_is_dominant_geometry_type_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"/>
         <rdfs:label xml:lang="en">has_dominant_geometry_type</rdfs:label>
@@ -1667,10 +1849,27 @@ Range: F18 Geometry Type</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/195#Y4-Inverse:_is_dominant_geometry_type_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/195#Y4-Inverse:_is_dominant_geometry_type_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/104#F18_Dominant_Geometry_Type"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
+        <rdfs:comment xml:lang="en">Y4: has dominant geometry type
+Inverse: Y4-Inverse: is dominant geometry type of
+Label: &quot;is dominant geometry type of&quot;
+Domain: F18 Geometry Type
+Range: F13 Acquisition Method</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is dominant geometry type of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/196#Y5_has_scale_type">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/196#Y5-Inverse:_is_scale_type_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"/>
         <rdfs:label xml:lang="en">has_scale_type</rdfs:label>
@@ -1686,10 +1885,27 @@ Range: F19 Scale Type</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/196#Y5-Inverse:_is_scale_type_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/196#Y5-Inverse:_is_scale_type_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/105#F19_Scale_Type"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
+        <rdfs:comment xml:lang="en">Y5: has scale type
+Inverse: Y5-Inverse: is scale type of
+Label: &quot;is scale type of&quot;
+Domain: F19 Scale Type
+Range: F13 Acquisition Method</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is scale type of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/197#Y6_used_trajectory">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/197#Y6-Inverse:_is_trajectory_used_by"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
         <rdfs:label xml:lang="en">used_trajectory</rdfs:label>
@@ -1705,10 +1921,27 @@ Range: F12 Acquisition Trajectory</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/197#Y6-Inverse:_is_trajectory_used_by -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/197#Y6-Inverse:_is_trajectory_used_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1Protocol_of_Ontological_Digital_Survey/extensions/versions/1_1/F12_Acquisition_Trajectory#F12_Acquisition_Trajectory"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y6: used trajectory
+Inverse: Y6-Inverse: is trajectory used by
+Label: &quot;is trajectory used by&quot;
+Domain: F12 Acquisition Trajectory
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is trajectory used by&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/198#Y7_has_method_of_acquisition -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/198#Y7_has_method_of_acquisition">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/198#Y7-Inverse:_is_acquisition_method_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
         <rdfs:label xml:lang="en">has_method_of_acquisition</rdfs:label>
@@ -1724,10 +1957,27 @@ Range: F13 Acquisition Method</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/198#Y7-Inverse:_is_acquisition_method_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/198#Y7-Inverse:_is_acquisition_method_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/99#F13_Acquisition_Method"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y7: has method of acquisition
+Inverse: Y7-Inverse: is acquisition method of
+Label: &quot;is acquisition method of&quot;
+Domain: F13 Acquisition Method
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition method of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/199#Y8_happened_on_acquisition_device -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/199#Y8_happened_on_acquisition_device">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L12_happened_on_device_(was_device_for)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/199#Y8-Inverse:_is_device_used_for_acquisition"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"/>
         <rdfs:label xml:lang="en">happened_on_acquisition_device</rdfs:label>
@@ -1739,6 +1989,22 @@ Domain: F2 Acquisition
 Range: F9 Acquisition Device</skos:definition>
         <skos:example xml:lang="en">-</skos:example>
         <skos:scopeNote xml:lang="en">This property refers to the acquisition device (F9) on which the acquisition process (F2) occurred. It links the acquisition event to the specific piece of hardware or equipment used.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/199#Y8-Inverse:_is_device_used_for_acquisition -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/199#Y8-Inverse:_is_device_used_for_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L12_happened_on_device_(was_device_for)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y8: happened on acquisition device
+Inverse: Y8-Inverse: is device used for acquisition
+Label: &quot;is device used for acquisition&quot;
+Domain: F9 Acquisition Device
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is device used for acquisition&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1767,6 +2033,7 @@ Range: F20 Acquisition Device Type</skos:definition>
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/201#Y10_has_created_raw_data">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/201#Y10-Inverse:_is_raw_data_created_by"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"/>
         <rdfs:label xml:lang="en">has_created_raw_data</rdfs:label>
@@ -1779,6 +2046,22 @@ Range: F6 Acquisition Raw Data</skos:definition>
         <skos:example xml:lang="en">The relation between the point cloud data generated and the  laser scanning session.</skos:example>
         <skos:example xml:lang="en">The relation between the raw images captured and the photogrammetric survey of a building façade.</skos:example>
         <skos:scopeNote xml:lang="en">This property refers to the raw data (F6) generated as a result of the acquisition event (F2). It connects the acquisition process to the unprocessed, primary data produced during the survey.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/201#Y10-Inverse:_is_raw_data_created_by -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/201#Y10-Inverse:_is_raw_data_created_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y10: has created raw data
+Inverse: Y10-Inverse: is raw data created by
+Label: &quot;is raw data created by&quot;
+Domain: F6 Acquisition Raw Data
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is raw data created by&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1821,6 +2104,23 @@ Range: F33 Acquisition Phase</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/205#Y14-Inverse:_is_acquisition_picture_stored_in -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/205#Y14-Inverse:_is_acquisition_picture_stored_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L19_stores_(is_stored_on)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/205#Y14:_stores_acquisition_Picture"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/94#F8_Picture"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/121#F35_Raw_Data_Carrier"/>
+        <rdfs:comment xml:lang="en">Y14: stores acquisition Picture
+Inverse: Y14-Inverse: is acquisition picture stored in
+Label: &quot;is acquisition picture stored in&quot;
+Domain: F8 Picture
+Range: F35 Raw Data Carrier</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition picture stored in&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/205#Y14:_stores_acquisition_Picture -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/205#Y14:_stores_acquisition_Picture">
@@ -1836,6 +2136,23 @@ Domain: F35 Raw Data Carrier
 Range: F8 Picture</skos:definition>
         <skos:example xml:lang="en">-</skos:example>
         <skos:scopeNote xml:lang="en">This property connects a raw data carrier (F35) to the pictures (F8) it stores. It identifies the images that were collected during the acquisition process and are saved on a specific storage device or medium.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/206#Y15-Inverse:_is_picture_part_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/206#Y15-Inverse:_is_picture_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P106_is_composed_of_(forms_part_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/206#Y15:_is_composed_of_picture"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/94#F8_Picture"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
+        <rdfs:comment xml:lang="en">Y15: is composed of picture
+Inverse: Y15-Inverse: is picture part of
+Label: &quot;is picture part of&quot;
+Domain: F8 Picture
+Range: F7 Picture Set</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is picture part of&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1859,6 +2176,38 @@ Range: F8 Picture</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/207#Y16-Inverse:_is_number_of_pictures_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/207#Y16-Inverse:_is_number_of_pictures_of">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/127#F41_Number_of_Picture"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/93#F7_Picture_Set"/>
+        <rdfs:comment xml:lang="en">Y16: has number of picture
+Inverse: Y16-Inverse: is number of pictures of
+Label: &quot;is number of pictures of&quot;
+Domain: F41 Number of Picture
+Range: F7 Picture Set</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is number of pictures of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/208#Y17-Inverse:_is_operator_of_acquisition -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/208#Y17-Inverse:_is_operator_of_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P14_carried_out_by_(performed)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/208#Y17:_has_acquisition_operator"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/123#F37_Survey_Operator"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y17: has acquisition operator
+Inverse: Y17-Inverse: is operator of acquisition
+Label: &quot;is operator of acquisition&quot;
+Domain: F37 Survey Operator
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is operator of acquisition&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/208#Y17:_has_acquisition_operator -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/208#Y17:_has_acquisition_operator">
@@ -1875,6 +2224,23 @@ Domain: F2 Acquisition
 Range: F37 Survey Operator</skos:definition>
         <skos:example xml:lang="en">-</skos:example>
         <skos:scopeNote xml:lang="en">This property links the acquisition process (F2) to the survey operator (F37) responsible for carrying out the data collection. It defines the role of the person or team who performed the acquisition.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/209#Y18-Inverse:_is_acquisition_place_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/209#Y18-Inverse:_is_acquisition_place_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P161_has_spatial_projection_(is_spatial_projection_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/209#Y18:_has_place_of_acquisition"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y18: has place of acquisition
+Inverse: Y18-Inverse: is acquisition place of
+Label: &quot;is acquisition place of&quot;
+Domain: F42 Place of Acquisition
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition place of&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3533,6 +3899,129 @@ F129 DatabaseTable Schema and Structure</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/363#Y111:_has_db_model -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/363#Y111:_has_db_model">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/182#F95_Database_Project_Implementation"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/collections/show/3#F130_Database_Data_Model"/>
+        <rdfs:label xml:lang="en">has_db_model</rdfs:label>
+        <skos:definition xml:lang="en">Y111: has db model
+
+Subproperty of: P16 used specific object
+Domain
+F95 Database Project Implementation
+Range
+F130 Database Data Model</skos:definition>
+        <skos:example xml:lang="en">The data model (F130) for the database (F95) organizes and connects tables for tracking metadata and project files in a cloud-based system.</skos:example>
+        <skos:example xml:lang="en">The database project implementation (F95) has a db model (F130) that defines entities such as users, projects, and interactions in the educational system.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Database Project Implementation (F95) with the data model (F130), which represents the conceptual structure of the data. It details how the data is stored, processed, and related within the database system, defining the logical structure of the data entities and their relationships.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/364#Y112:_has_GIS_reference_system -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/364#Y112:_has_GIS_reference_system">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/305#F131_GIS_Reference_System_and_Projection"/>
+        <rdfs:label xml:lang="en">has_GIS_reference_system</rdfs:label>
+        <skos:definition xml:lang="en">Y112: has GIS reference system
+
+Subproperty of: none
+Domain
+F82 Reference GIS System
+Range
+F131 GIS reference system and projection</skos:definition>
+        <skos:example xml:lang="en">The GIS reference system (F131) and projection, like UTM Zone 33N, are linked to the reference GIS system (F82) to ensure precise geospatial data analysis.</skos:example>
+        <skos:example xml:lang="en">The Reference GIS System (F82) has a GIS reference system and projection (F131), such as WGS84, used for mapping archaeological site locations.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Reference GIS System (F82) with a GIS reference system and projection (F131), specifying the spatial reference system used for mapping and geospatial data analysis. It defines the projection and coordinate system that allows geospatial data to be accurately positioned within a global or local context.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/366#Y114:_has_geospatial_data_format -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/366#Y114:_has_geospatial_data_format">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/169#F82_Reference_GIS_System"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/307#F133_GIS_Geospatial_Data_Format"/>
+        <rdfs:label xml:lang="en">has_geospatial_data_format</rdfs:label>
+        <skos:definition xml:lang="en">Y114: has geospatial data format
+
+Subproperty of: none
+Domain
+F82 Reference GIS System
+Range
+F133 GIS Geospatial Data Format</skos:definition>
+        <skos:example xml:lang="en">The GIS geospatial data format (F133) for the project includes KML files used to represent geospatial coordinates and features in Google Earth.</skos:example>
+        <skos:example xml:lang="en">The Reference GIS System (F82) uses a GIS geospatial data format (F133) such as GeoTIFF for raster data or Shapefile for vector data.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a Reference GIS System (F82) with a GIS Geospatial Data Format (F133), specifying the file format or structure used to store and exchange geospatial data. It indicates the format in which the GIS data is represented, ensuring compatibility with various GIS software and tools.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/367#Y115:_has_legal_owner_of_the_prospectus -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/367#Y115:_has_legal_owner_of_the_prospectus">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/308#F134_Prospectus_Legal_Owner"/>
+        <rdfs:label xml:lang="en">has_legal_owner_of_the_prospectus</rdfs:label>
+        <skos:definition xml:lang="en">Y115: has legal owner of the prospectus
+
+Subproperty of: P105 right held by
+Domain
+F87 3D Model Prospectus
+Range
+F134 Prospectus Legal Owner</skos:definition>
+        <skos:example xml:lang="en">The 3D model prospectus (F87) has a legal owner (F134), such as a museum or research institution that holds the copyright for the virtual reconstruction.</skos:example>
+        <skos:example xml:lang="en">The legal owner (F134) of the prospectus (F87) is the university department responsible for the 3D modeling project.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a 3D Model Prospectus (F87) with the Prospectus Legal Owner (F134), identifying the legal entity or individual that owns the rights to the 3D model or its associated documentation. It ensures proper attribution and protection of intellectual property related to the 3D model.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/368#Y116:_has_legal_and_former_location_archiving -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/368#Y116:_has_legal_and_former_location_archiving">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/174#F87_3D_Model_Prospectus"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/309#F135_Prospectus_Former_Location"/>
+        <rdfs:label xml:lang="en">has_legal_and_former_location_archiviation</rdfs:label>
+        <skos:definition xml:lang="en">Y116: has legal and former location archiving
+
+Subproperty of: none
+Domain
+F87 3D Model Prospectus
+Range
+F135 Prospectus Former Location</skos:definition>
+        <skos:example xml:lang="en">The 3D model prospectus (F87) has a legal and former location archiving (F135) in a specific archaeological site in Italy where the artifact was originally discovered.</skos:example>
+        <skos:example xml:lang="en">The prospectus (F87) notes the former location (F135) where the 3D model was archived before being digitized and stored in the current system.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a 3D Model Prospectus (F87) with the Prospectus Former Location (F135), specifying the previous geographical location or archive where the 3D model or related artifacts were originally found, recorded, or stored.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/369#Y117:_has_CFD_project_identifier -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/369#Y117:_has_CFD_project_identifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/176#F89_Project_Analysis"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/310#F136_CFD_Project_Title/DOI"/>
+        <rdfs:label xml:lang="en">has_CFD_project_identifier</rdfs:label>
+        <skos:definition xml:lang="en">Y117: has CFD project identifier
+
+Subproperty of: P1 is identified by
+Domain
+F89 Project Analysis
+Range
+F136 CFD Project Title/DOI</skos:definition>
+        <skos:example xml:lang="en">The CFD project identifier (F136) for the analysis (F89) includes the DOI of a publication that describes the computational fluid dynamics simulation.</skos:example>
+        <skos:example xml:lang="en">The project analysis (F89) has a CFD project identifier (F136), linking it to the CFD model used to simulate airflow in an architectural space.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a Project Analysis (F89) with a CFD Project Title/DOI (F136), linking the project with its computational fluid dynamics (CFD) analysis identifier. This ensures that each CFD analysis is properly cited and referenced, including project titles or DOIs for academic or professional use.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -5155,22 +5644,6 @@ Subclass of: D14_Software</skos:definition>
         <skos:example xml:lang="en">Key-value store</skos:example>
         <skos:example xml:lang="en">Relational model</skos:example>
         <skos:scopeNote xml:lang="en">This class defines the data model used in the database, which determines how data is logically organized and how relationships between data entities are structured. The data model type affects data storage, retrieval efficiency, and the flexibility of the database.</skos:scopeNote>
-    </owl:Class>
-    
-
-
-    <!-- https://photogrammetry.altervista.org/collections/show/3#F140_S.U._Material -->
-
-    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#F140_S.U._Material">
-        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material"/>
-        <rdfs:label xml:lang="en">SUMaterial</rdfs:label>
-        <skos:definition xml:lang="en">F140 S.U. Material
-
-Subclass of: E57_Material</skos:definition>
-        <skos:example xml:lang="en">Burnt organic material mixed with pottery sherds</skos:example>
-        <skos:example xml:lang="en">Clay with small inclusions of limestone</skos:example>
-        <skos:example xml:lang="en">Sandy silt with charcoal fragments</skos:example>
-        <skos:scopeNote xml:lang="en">This class describes the material composition of the stratigraphic unit (S.U.), which provides insight into the nature of the deposits and aids in determining the function or chronology of the context.</skos:scopeNote>
     </owl:Class>
     
 
@@ -7038,6 +7511,22 @@ Subclass of: E94_Space Primitive</skos:definition>
         <skos:example xml:lang="en">Longitude: 31.235, Latitude: -22.745, Depth: 1.5m</skos:example>
         <skos:example xml:lang="en">X: 42.36, Y: 12.45, Z: -0.8 (local grid system)</skos:example>
         <skos:scopeNote xml:lang="en">This class specifies the precise spatial coordinates of a stratigraphic unit (S.U.) within an excavation site. These coordinates are essential for documenting the exact location of an archaeological find in three-dimensional space.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/319#F140_S.U._Material -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/319#F140_S.U._Material">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material"/>
+        <rdfs:label xml:lang="en">SUMaterial</rdfs:label>
+        <skos:definition xml:lang="en">F140 S.U. Material
+
+Subclass of: E57_Material</skos:definition>
+        <skos:example xml:lang="en">Burnt organic material mixed with pottery sherds</skos:example>
+        <skos:example xml:lang="en">Clay with small inclusions of limestone</skos:example>
+        <skos:example xml:lang="en">Sandy silt with charcoal fragments</skos:example>
+        <skos:scopeNote xml:lang="en">This class describes the material composition of the stratigraphic unit (S.U.), which provides insight into the nature of the deposits and aids in determining the function or chronology of the context.</skos:scopeNote>
     </owl:Class>
     
 
