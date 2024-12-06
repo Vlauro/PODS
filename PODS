@@ -5648,6 +5648,22 @@ Subclass of: D14_Software</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- https://photogrammetry.altervista.org/collections/show/3#F161_Finite_Element_Analysis_(FEA)_Model_Integration -->
 
     <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#F161_Finite_Element_Analysis_(FEA)_Model_Integration">
@@ -7771,6 +7787,24 @@ Subclass of: F153 3D Model Spatial Metadata</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/337#ALFA -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/337#ALFA">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:creator xml:lang="en">Vittorio Lauro</dc:creator>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:description xml:lang="en">Defines the first phase of a survey project, typically coinciding with the initial examination or discovery of the object or site.</terms:description>
+        <terms:modified>2024-11-29</terms:modified>
+        <rdfs:label xml:lang="en">ALFA</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Initial Survey, Primary Survey Phase</skos:altLabel>
+        <skos:definition xml:lang="en">First survey coincident with the discovery or first survey project.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe the very first survey conducted on an object, coinciding with its discovery or its inclusion in an initial survey project.</skos:scopeNote>
+    </owl:Class>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/338#F158_Mesh_Density_and_Uniformity -->
 
     <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/338#F158_Mesh_Density_and_Uniformity">
@@ -7898,6 +7932,116 @@ subclass of: F47 Densification</skos:definition>
 In this process, registration involves the precise alignment of overlapping regions of point clouds or 3D models, ensuring that they share a common coordinate system and that the surfaces match accurately. This can be done manually or, more commonly, through automated algorithms that minimize alignment errors by detecting corresponding points or features across the datasets.
 Registration is an essential step, especially when working with large datasets or complex scenes that require the integration of multiple scans. This class describes the methodology and actions taken to perform the registration, including the matching of common features, alignment algorithms used, and optimization techniques to reduce errors.
 F165 is a subclass of F47 Densification, as registration often begins with individual densified point clouds—highly detailed datasets representing surfaces—which are then combined into a unified model for further processing or analysis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/371#BETA -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/371#BETA">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:creator xml:lang="en">Vittorio Lauro</dc:creator>
+        <dc:date>2024-12-6</dc:date>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:description xml:lang="en">BETA:
+First Survey on a classified object for more than 2 years</terms:description>
+        <terms:description xml:lang="en">Represents a survey phase where an object is examined for the first time following its classification, usually after a period exceeding two years.</terms:description>
+        <rdfs:label xml:lang="en">BETA</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Delayed Primary Survey, Post-Classification Survey</skos:altLabel>
+        <skos:definition xml:lang="en">First survey on a classified object conducted after more than 2 years.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to define the initial survey on an object that has already been classified but is being revisited after a significant temporal gap of more than 2 years.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/372#GAMMA:__Second_survey_on_an_already_surveyed_object -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/372#GAMMA:__Second_survey_on_an_already_surveyed_object">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator xml:lang="en">Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the phase of a survey project in which an object or site is reexamined, typically for validation, updates, or refinement of data.</terms:description>
+        <terms:modified xml:lang="en">2024-12-6</terms:modified>
+        <rdfs:label xml:lang="en">GAMMA</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Follow-Up Survey, Secondary Survey Phase</skos:altLabel>
+        <skos:definition xml:lang="en">Second survey conducted on an object already surveyed</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe a subsequent survey phase on an object that has already been the subject of a prior survey, allowing for comparative analysis or updated data collection.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/373#DELTA:_Third_survey_an_already_surveyed_object -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/373#DELTA:_Third_survey_an_already_surveyed_object">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator xml:lang="en">Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Represents the third phase of a survey conducted on an object previously examined, usually as part of ongoing research or to capture evolving details.</terms:description>
+        <terms:modified xml:lang="en">2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">DELTA</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Tertiary Survey, Third-Phase Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Third survey conducted on an already surveyed object.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe a third survey phase conducted on an object that has already been surveyed at least twice, often for further validation or refinement of previous data.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/374#EPSILON:_over_the_third_survey_of_an_already_surveyed_object -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/374#EPSILON:_over_the_third_survey_of_an_already_surveyed_object">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator xml:lang="en">Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the phase of a survey where an object is subject to an additional round of documentation or refinement after several prior surveys.</terms:description>
+        <terms:modified xml:lang="en">2024-12-6</terms:modified>
+        <rdfs:label xml:lang="en">EPSILON</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Quaternary Survey, Extended Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Fourth or subsequent survey conducted on an already surveyed object.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe a survey conducted after the third or more surveys on an object, typically indicating deeper investigation or updates to previous survey data.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/375#ZETA:_Survey_of_a_3d_print_of_surveyed_object -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/375#ZETA:_Survey_of_a_3d_print_of_surveyed_object">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the survey phase where a physical 3D printed replica of an object undergoes documentation and analysis, mirroring the original object’s survey data.</terms:description>
+        <terms:modified>2024-12-6</terms:modified>
+        <rdfs:label xml:lang="en">ZETA</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573 + https://www.wikidata.org/wiki/Q229367</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">3D Print Survey, Printed Model Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Survey of a 3D print of a surveyed object.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe a survey phase where a 3D print of a previously surveyed object is surveyed, often for comparison, quality assurance, or analysis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/376#ETA:__Virtual_survey_of_a_3d_survey_in_virtual_context -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/376#ETA:__Virtual_survey_of_a_3d_survey_in_virtual_context">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase"/>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Represents a virtual survey phase, where a 3D scanned object or model is analyzed within a digital or virtual space, facilitating advanced study, interaction, and visualization.</terms:description>
+        <terms:modified>2024-12-6</terms:modified>
+        <rdfs:label xml:lang="en">ETA</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Virtual 3D Survey, Digital Surveying</skos:altLabel>
+        <skos:definition xml:lang="en">Virtual survey of a 3D survey in a virtual context.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to refer to a survey performed on a 3D model or a scanned object in a virtual environment, often for visualization, analysis, or manipulation within digital or augmented spaces.</skos:scopeNote>
     </owl:Class>
     
 
