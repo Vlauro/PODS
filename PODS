@@ -1497,6 +1497,7 @@ Coffee mug – OXCMS:1983.1.1 (E19) has note “chipped at edge of handle” (E6
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y20_has_acquisition_description">
         <rdfs:subPropertyOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#P3_has_note"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Y20-Inverse:_is_acquisition_description_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"/>
         <rdfs:label xml:lang="en">has_acquisition_description</rdfs:label>
@@ -1677,6 +1678,87 @@ F7 Picture Set
 Range
 F41 Number of Picture</skos:definition>
         <skos:scopeNote xml:lang="en">This property describes the number of individual pictures contained in a picture set (F7). It specifies the quantity of images used in an acquisition process.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y20-Inverse:_is_acquisition_description_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y20-Inverse:_is_acquisition_description_of">
+        <rdfs:subPropertyOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#P3_has_note"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/130#F44_Acquisition_Description"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y20: has acquisition description
+Inverse: Y20-Inverse: is acquisition description of
+Label: &quot;is acquisition description of&quot;
+Domain: F44 Acquisition Description
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition description of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y21-Inverse:_is_acquisition_coordinates_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y21-Inverse:_is_acquisition_coordinates_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P169_defines_spacetime_volume_(spacetime_volume_is_defined_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/212#Y21:_has_coordinates_of_acquisition"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/131#F45__Acquisition_Coordinates"/>
+        <rdfs:comment xml:lang="en">Y21: has coordinates of acquisition
+Inverse Property: Y21-Inverse: &quot;is acquisition coordinates for
+Domain (Inverse): F2 Acquisition
+Range (Inverse): F45 Acquisition Coordinates
+
+Scope Note (Inverse):
+This inverse property indicates that a set of Acquisition Coordinates (F45) serves as the spatial reference for a particular Acquisition (F2). It highlights the relationship from the perspective of coordinates, specifying for which acquisition event they apply.
+
+Label (Inverse): is_acquisition_coordinates_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_acquisition_coordinates_for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y24-Inverse:_is_processing_device_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y24-Inverse:_is_processing_device_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L12_happened_on_device_(was_device_for)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/215#Y24_happened_on_processing_device"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/96#F10_Processing_Device"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
+        <rdfs:comment xml:lang="en">Y24: happened on processing device
+Inverse Property: Y24-Inverse: is processing device for
+Domain (Inverse): F10 Processing Device
+Range (Inverse): F3 Processing, F56 Mesh Reconstruction, F57 Texturing Mesh
+
+Scope Note (Inverse):
+This inverse property indicates that a given Processing Device (F10) is the hardware on which various processing activities or subphases (F3, F56, F57) take place. It provides a device-centric view, showing which processes were executed on it.
+
+Label (Inverse): is_processing_device_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_processing_device_for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Y30-Inverse:_was_created_by_matching -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#Y30-Inverse:_was_created_by_matching">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/221#Y30_has_created_point_cloud"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/132#F46:_Matching"/>
+        <rdfs:comment xml:lang="en">Y30: has created point cloud
+Inverse Property: Y30-Inverse: was created by matching
+Domain (Inverse): F26 Point Cloud
+Range (Inverse): F46 Matching
+
+Scope Note (Inverse):
+This inverse property states that a specific Point Cloud (F26) resulted from a Matching (F46) activity. Viewing from the point cloud’s perspective, it identifies which matching event generated it.
+
+Label (Inverse): was_created_by_matching</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;was_created_by_matching&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2265,6 +2347,23 @@ F42 Place of Acquisition</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/210#Y19-Inverse:_is_acquisition_date_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/210#Y19-Inverse:_is_acquisition_date_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P4_has_time-span_(is_time-span_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/129#F43_Survey_Date"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:comment xml:lang="en">Y19: has date of acquisition
+Inverse: Y19-Inverse: is acquisition date of
+Label: &quot;is acquisition date of&quot;
+Domain: F43 Survey Date
+Range: F2 Acquisition</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is acquisition date of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/210#Y19:_has_date_of_acquisition">
@@ -2309,6 +2408,7 @@ F2 Acquisition</skos:definition>
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/213#Y22_had_acquisition_input">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/213#Y22-Inverse:_is_acquisition_input_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/111#F25_Acquisition_Raw_Data"/>
         <rdfs:label xml:lang="en">had_acquisition_input</rdfs:label>
@@ -2325,10 +2425,31 @@ F25 Acquisition Raw Data</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/213#Y22-Inverse:_is_acquisition_input_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/213#Y22-Inverse:_is_acquisition_input_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/92#F6_Acquisition_Raw_Data"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
+        <rdfs:comment xml:lang="en">Y22: had acquisition input
+Inverse Property: Y22-Inverse: is acquisition input of
+Domain (Inverse): F25 Acquisition Raw Data
+Range (Inverse): F3 Processing
+
+Scope Note (Inverse):
+This inverse property shows that a set of Acquisition Raw Data (F25) acts as the input for a specific Processing event (F3). It represents the relationship from the data’s standpoint, identifying which processing activity utilized it as input.
+
+Label (Inverse): is_acquisition_input_of</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot; is_acquisition_input_of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/214#Y23_has_type_of_matching -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/214#Y23_has_type_of_matching">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/214#Y23-Inverse:_is_type_of_matching_for"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"/>
         <rdfs:label xml:lang="en">has_type_of_matching</rdfs:label>
@@ -2341,6 +2462,26 @@ Range
 21 Matching Algorithm Type</skos:definition>
         <skos:example xml:lang="en">The F14 Matching Method uses a F21 Matching Algorithm Type, such as a keypoint-based algorithm.</skos:example>
         <skos:scopeNote xml:lang="en">This property specifies the type of algorithm (F21) used during the matching method (F14) to align or correlate data.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/214#Y23-Inverse:_is_type_of_matching_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/214#Y23-Inverse:_is_type_of_matching_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/107#F21_Matching_Algorithm_Type"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"/>
+        <rdfs:comment xml:lang="en">Y23: has type of matching
+Inverse Property: Y23-Inverse: is type of matching for
+Domain (Inverse): F21 Matching Algorithm Type
+Range (Inverse): F14 Matching Method
+
+Scope Note (Inverse):
+The inverse property states that a particular Matching Algorithm Type (F21) is applied by a certain Matching Method (F14). Thus, from the algorithm type’s perspective, it specifies which matching method employs it.
+
+Label (Inverse): is_type_of_matching_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot; is_type_of_matching_for&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2371,6 +2512,7 @@ F10 Processing Device, F56 Mesh Reconstruction, F57 Texturing Mesh</skos:definit
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/216#Y25_Processing_is_composed_of">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/216#Y25-Inverse:_is_processing_component_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/132#F46:_Matching"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
@@ -2388,10 +2530,32 @@ F46 Matching / F47 Densification</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/216#Y25-Inverse:_is_processing_component_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/216#Y25-Inverse:_is_processing_component_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P9_consists_of_(forms_part_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/132#F46:_Matching"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
+        <rdfs:comment xml:lang="en">Y25: Processing is composed of
+Inverse Property: Y25-Inverse: is processing component of
+Domain (Inverse): F46 Matching / F47 Densification
+Range (Inverse): F3 Processing
+
+Scope Note (Inverse):
+From the perspective of a Matching (F46) or Densification (F47) activity, this inverse property indicates that such an activity forms part of a larger Processing (F3) procedure. It identifies these activities as components contributing to the overall processing phase.
+
+Label (Inverse): is_processing_component_of</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_processing_component_of&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/217#Y26__used_processing_software -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/217#Y26__used_processing_software">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/217#Y26-Inverse:_is_processing_software_for"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
@@ -2410,10 +2574,33 @@ F31 Processing Software</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/217#Y26-Inverse:_is_processing_software_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/217#Y26-Inverse:_is_processing_software_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L23_used_software_or_firmware_(was_software_or_firmware_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/117#F31_Processing_Software"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/142#F56_Mesh_Reconstruction"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/143#F57_Texturing_Mesh"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/89#F3_Processing"/>
+        <rdfs:comment xml:lang="en">Y26: used processing software
+Inverse Property: Y26-Inverse: is processing software for
+Domain (Inverse): F31 Processing Software
+Range (Inverse): F3 Processing, F56 Mesh Reconstruction, F57 Texturing Mesh
+
+Scope Note (Inverse):
+This inverse property shows that a particular Processing Software (F31) is utilized by certain processing events or subphases, such as general processing (F3), mesh reconstruction (F56), or texturing (F57). It provides a software-centric perspective, revealing which processes depend on it.
+
+Label (Inverse): is_processing_software_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot; is_processing_software_for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/218#Y27_has_method_of_densification -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/218#Y27_has_method_of_densification">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/218#Y27-Inverse:_is_densification_method_for"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"/>
         <rdfs:label xml:lang="en">has_method_of_densification</rdfs:label>
@@ -2429,10 +2616,31 @@ Range: F48 Densification Method</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/218#Y27-Inverse:_is_densification_method_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/218#Y27-Inverse:_is_densification_method_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
+        <rdfs:comment xml:lang="en">Y27: has method of densification
+Inverse Property: Y27-Inverse: is densification method for
+Domain (Inverse): F48 Densification Method
+Range (Inverse): F47 Densification
+
+Scope Note (Inverse):
+The inverse property states that a given Densification Method (F48) is applied within a Densification activity (F47). From the method’s viewpoint, it clarifies which densification activity employs it.
+
+Label (Inverse): is_densification_method_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_densification_method_for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/219#Y28__has_type_of_densification -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/219#Y28__has_type_of_densification">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/219#Y28-Inverse:_is_densification_type_for"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type"/>
         <rdfs:label xml:lang="en">has_type_of_densification</rdfs:label>
@@ -2448,10 +2656,31 @@ Range: F22 Densification Algorithm Type</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/219#Y28-Inverse:_is_densification_type_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/219#Y28-Inverse:_is_densification_type_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/108#F22_Densification_Algorithm_Type"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/134#F48_Densification_Method"/>
+        <rdfs:comment xml:lang="en">Y28: has type of densification
+Inverse Property: Y28-Inverse: is densification type for
+Domain (Inverse): F22 Densification Algorithm Type
+Range (Inverse): F48 Densification Method
+
+Scope Note (Inverse):
+This inverse property indicates that a certain Densification Algorithm Type (F22) is utilized by a specific Densification Method (F48). Thus, from the algorithm type’s perspective, it shows to which densification method it contributes.
+
+Label (Inverse): is_densification_type_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_densification_type_for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/220#Y29_has_matching_input -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/220#Y29_has_matching_input">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/220#Y29-Inverse:_is_matching_input_of"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"/>
         <rdfs:label xml:lang="en">has_matching_input</rdfs:label>
@@ -2464,6 +2693,26 @@ Range
 F26 Point Cloud</skos:definition>
         <skos:example xml:lang="en">A F47 Densification phase uses an input F26 Point Cloud, obtained from a preliminary laser scan.</skos:example>
         <skos:scopeNote xml:lang="en">This property links the densification phase (F47) to the input point cloud (F26) used in the matching process.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/220#Y29-Inverse:_is_matching_input_of -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/220#Y29-Inverse:_is_matching_input_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
+        <rdfs:comment xml:lang="en">Y29: has matching input
+Inverse Property: Y29-Inverse: is matching input of
+Domain (Inverse): F26 Point Cloud
+Range (Inverse): F47 Densification
+
+Scope Note (Inverse):
+From the point cloud’s perspective, this inverse property reveals that the Point Cloud (F26) serves as input for a Densification (F47) activity. It clarifies which densification process relied on a specific point cloud dataset.
+
+Label (Inverse): is_matching_input_of</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_matching_input_of&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2492,6 +2741,7 @@ F26 Point Cloud</skos:definition>
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/222#Y32_has_method_of_matching">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/222#Y32-Inverse:_is_matching_method_for"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/132#F46:_Matching"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"/>
         <rdfs:label xml:lang="en">has_method_of_matching</rdfs:label>
@@ -2508,10 +2758,31 @@ F14 Matching Method</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/222#Y32-Inverse:_is_matching_method_for -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/222#Y32-Inverse:_is_matching_method_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/100#F14_Matching_Method"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/132#F46:_Matching"/>
+        <rdfs:comment xml:lang="en">Y32: has method of matching
+Inverse Property: Y32-Inverse: is matching method for
+Domain (Inverse): F14 Matching Method
+Range (Inverse): F46 Matching
+
+Scope Note (Inverse):
+This inverse property demonstrates that a particular Matching Method (F14) is employed by a Matching (F46) activity. From the method’s viewpoint, it identifies the matching event that utilizes it.
+
+Label (Inverse): is_matching_method_for</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;is_matching_method_for&quot;</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://photogrammetry.altervista.org/items/show/223#Y31_has_created_densified_point_cloud -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/223#Y31_has_created_densified_point_cloud">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <owl:inverseOf rdf:resource="https://photogrammetry.altervista.org/items/show/223#Y31-Inverse:_was_created_by_densification"/>
         <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
         <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"/>
         <rdfs:label xml:lang="en">has_created_densified_point_cloud</rdfs:label>
@@ -2524,6 +2795,26 @@ Range
 F27 Densified Point Cloud</skos:definition>
         <skos:example xml:lang="en">The relation why a F47 Densification phase creates a F27 Densified Point Cloud with a higher density than the original input.</skos:example>
         <skos:scopeNote xml:lang="en">This property indicates that the result of the densification phase (F47) is a densified point cloud (F27).</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/223#Y31-Inverse:_was_created_by_densification -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/223#Y31-Inverse:_was_created_by_densification">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/113#F27_Densified_Point_Cloud"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
+        <rdfs:comment xml:lang="en">Y31: has created densified point cloud
+Inverse Property: Y31-Inverse: was created by densification
+Domain (Inverse): F27 Densified Point Cloud
+Range (Inverse): F47 Densification
+
+Scope Note (Inverse):
+From the densified point cloud’s perspective, this inverse property indicates which Densification (F47) process produced it. It helps trace the provenance and method behind the densified data set.
+
+Label (Inverse): was_created_by_densification</rdfs:comment>
+        <rdfs:label xml:lang="en">&quot;was_created_by_densification&quot;</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4018,6 +4309,382 @@ F136 CFD Project Title/DOI</skos:definition>
         <skos:example xml:lang="en">The CFD project identifier (F136) for the analysis (F89) includes the DOI of a publication that describes the computational fluid dynamics simulation.</skos:example>
         <skos:example xml:lang="en">The project analysis (F89) has a CFD project identifier (F136), linking it to the CFD model used to simulate airflow in an architectural space.</skos:example>
         <skos:scopeNote xml:lang="en">This property connects a Project Analysis (F89) with a CFD Project Title/DOI (F136), linking the project with its computational fluid dynamics (CFD) analysis identifier. This ensures that each CFD analysis is properly cited and referenced, including project titles or DOIs for academic or professional use.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/377#Y118:_has_video_format_type -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/377#Y118:_has_video_format_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/162#F75_Project_Video"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/290#F111_Video_Format_Type"/>
+        <rdfs:label xml:lang="en">has_video_format_type</rdfs:label>
+        <skos:definition xml:lang="en">Y118: has video format type
+
+Subproperty of: P2 has type
+Domain
+F75 Project Video
+Range
+F111 Video Format Type</skos:definition>
+        <skos:example xml:lang="en">The project video (F75) has a video format type (F111), such as MP4, for easy integration into the online educational platform.</skos:example>
+        <skos:example xml:lang="en">The video format type (F111) for the project video (F75) is AVI, suitable for high-definition video presentations.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a Project Video (F75) with a Video Format Type (F111), specifying the type of video file format used for storing and displaying the project’s video content. It ensures compatibility with video playback systems and software.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/378#Y119:_has_type_of_acquisition_environment -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/378#Y119:_has_type_of_acquisition_environment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/128#F42_Place_Of_Acquisition"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"/>
+        <rdfs:label xml:lang="en">has_type_of_acquisition_environment</rdfs:label>
+        <skos:definition xml:lang="en">Y119: has type of acquisition environment
+
+Subproperty of: P2 has type
+Domain
+F42 Place of Acquisition
+Range
+F166 Acquisition environment type</skos:definition>
+        <skos:example xml:lang="en">The acquisition environment type (F166) for the field survey project (F42) was an outdoor archaeological excavation site, with measurements taken in natural lighting conditions.</skos:example>
+        <skos:example xml:lang="en">The place of acquisition (F42) has a type of acquisition environment (F166), such as an indoor lab setup used for scanning artifacts.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Place of Acquisition (F42) with an Acquisition Environment Type (F166), specifying the environmental conditions or setup under which data was captured. This could include settings such as indoor, outdoor, laboratory, or field-based environments that affect the acquisition process.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/379#Y120:_has_point_cloud_input_for_processing -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/379#Y120:_has_point_cloud_input_for_processing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L10_had_input"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/112#F26_Point_Cloud"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/133#F47:_Densification"/>
+        <rdfs:label xml:lang="en">has_point_cloud_input_for_processing</rdfs:label>
+        <skos:definition xml:lang="en">Y120: has point cloud input for processing
+
+Subproperty of: L10 had input
+Domain
+F26 Point Cloud
+Range
+F47 Densification</skos:definition>
+        <skos:example xml:lang="en">A low-resolution point cloud (F26) was fed into the densification process (F47) to create a detailed 3D model of a cultural heritage artifact.</skos:example>
+        <skos:example xml:lang="en">The Point Cloud (F26) collected from the site has point cloud input for processing (F47), which was used to generate a high-density model for architectural restoration.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Point Cloud (F26) with the process of Densification (F47). It specifies that the point cloud, as an initial input, undergoes densification to enhance the resolution and accuracy of the data. Densification increases the number of points in the point cloud, making it more detailed and suitable for further processing, such as 3D modeling or analysis.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/380#Y121:_has_3D_Model_Spatial_Metadata -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/380#Y121:_has_3D_Model_Spatial_Metadata">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P15_was_influenced_by_(influenced)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/332#F153_3D_Model_Spatial_Metadata"/>
+        <rdfs:label xml:lang="en">has_3D_model_spatial_metadata</rdfs:label>
+        <skos:definition xml:lang="en">Y121: has 3D Model Spatial Metadata
+
+Subproperty of: P15i influenced
+Domain
+F100 Digital Twin
+Range
+F153 3D Model Spatial Metadata</skos:definition>
+        <skos:example xml:lang="en">The 3D Model Spatial Metadata (F153) in the Digital Twin (F100) includes the geospatial data required to align the virtual model with real-world coordinates.</skos:example>
+        <skos:example xml:lang="en">The Digital Twin (F100) has 3D Model Spatial Metadata (F153), which defines the scale and coordinate system used in the digital reconstruction of the building.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a Digital Twin (F100) with 3D Model Spatial Metadata (F153), specifying that the digital twin includes the metadata detailing the spatial characteristics of the 3D model. The metadata may include information on scale, dimensions, coordinate systems, or transformations that are vital for ensuring accurate placement and interaction within a real-world context.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/381#Y122:_was_influenced_by_eidotype -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/381#Y122:_was_influenced_by_eidotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P15_was_influenced_by_(influenced)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/126#F40_Eidotype"/>
+        <rdfs:label xml:lang="en">was_influenced_by_eidotype</rdfs:label>
+        <skos:definition xml:lang="en">Y122: was influenced by eidotype
+
+Subproperty of: P15 was influenced by
+Domain
+F2 Acquisition
+Range
+F40 Eidotype</skos:definition>
+        <skos:example xml:lang="en">The 3D scan (F2) of the ancient sculpture was influenced by the Eidotype (F40), which showed a conceptual reconstruction based on previous research.</skos:example>
+        <skos:example xml:lang="en">The Acquisition (F2) of the archaeological site was influenced by an Eidotype (F40) that depicted a historical reconstruction of the site.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links the Acquisition (F2) process with an Eidotype (F40), indicating that the acquisition was influenced or guided by the eidotype. An eidotype refers to an idealized or conceptual representation, such as a blueprint or reference model, which informs the acquisition process by providing a visual or theoretical guide for capturing the data.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/382#Y123:_has_exporting_description -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/382#Y123:_has_exporting_description">
+        <rdfs:subPropertyOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#P3_has_note"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/91#F5_Exporting"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/156#F69_Exporting_Description"/>
+        <rdfs:label xml:lang="en">has_exporting_description</rdfs:label>
+        <skos:definition xml:lang="en">Y123: has exporting description
+
+Subproperty of: P3 has note
+Domain
+F5 Exporting
+Range
+F69 Exporting Description</skos:definition>
+        <skos:example xml:lang="en">The Exporting (F5) of the 3D model was accompanied by an Exporting Description (F69) that outlined the use of the OBJ file format for digital preservation.</skos:example>
+        <skos:example xml:lang="en">The Exporting Description (F69) for the digital asset included details on the compression methods used to reduce file size without compromising quality.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links an Exporting (F5) activity with an Exporting Description (F69), providing a detailed account of the export process. This description typically includes technical specifications, such as file formats, data compression methods, or software used for exporting the data, ensuring that the exported file is usable for its intended purposes.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/383#Y124:_was_continued_by_subsequent_digital_machine_event -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/383#Y124:_was_continued_by_subsequent_digital_machine_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P134_continued_(was_continued_by)"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/versions/4.0/D7_Digital_Machine_Event#D7_Digital_Machine_Event"/>
+        <rdfs:label xml:lang="en">was_continued_by_subsequent_digital_machine_event</rdfs:label>
+        <skos:definition xml:lang="en">Y124: was continued by subsequent digital machine event
+
+Subproperty of: P134 continued
+Domain
+D7 Digital Machine Event
+Range
+D7 Digital Machine Event</skos:definition>
+        <skos:example xml:lang="en">A series of Digital Machine Events (D7) were initiated with data acquisition and later continued by modeling, followed by export to a digital platform.</skos:example>
+        <skos:example xml:lang="en">The initial Digital Machine Event (D7), involving data acquisition, was continued by a subsequent Digital Machine Event (D7) focused on the 3D modeling process.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects one Digital Machine Event (D7) to another subsequent Digital Machine Event (D7), indicating a continuation in the sequence of events related to digital processing or modeling. It is used to represent the flow from one stage of digital activity to another, such as from data acquisition to processing or modeling, ensuring a coherent workflow for the entire digital project.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/384#Y125:_used_Modelling_Phase_instruction -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/384#Y125:_used_Modelling_Phase_instruction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/90#F4_Modelling"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/343#F163_Modelling_Phase"/>
+        <rdfs:label xml:lang="en">used_modelling_phase_instruction</rdfs:label>
+        <skos:definition xml:lang="en">Subproperty of: P33 used specific technique
+Domain
+F4 Modelling
+Range
+F163 Modelling Phase</skos:definition>
+        <skos:example xml:lang="en">During the Modelling Phase (F163), specific techniques were employed to improve the precision of the 3D model by incorporating feedback from experts.</skos:example>
+        <skos:example xml:lang="en">The 3D modeling (F4) process used specific instructions from the Modelling Phase (F163), which outlined the steps for creating a detailed model of a historical artifact.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Modelling (F4) process to a Modelling Phase (F163), indicating that the modeling was guided or structured by specific instructions or methodologies outlined during the Modelling Phase. This phase may include techniques or instructions on how to create or refine a 3D model, helping to ensure consistency and accuracy across different modeling tasks.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/385#Y126:_used_Exporting_Phase_Instruction -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/385#Y126:_used_Exporting_Phase_Instruction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/91#F5_Exporting"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/344#F164_Exporting_Phase"/>
+        <rdfs:label xml:lang="en">used_exporting_phase_instruction</rdfs:label>
+        <skos:definition xml:lang="en">Y126: used Exporting Phase Instruction
+
+Subproperty of: P33 used specific technique
+Domain
+F5 Exporting
+Range
+F164 Exporting Phase</skos:definition>
+        <skos:example xml:lang="en">During the Exporting Phase (F164), the instructions were followed to convert the model into a VR-compatible file format for use in a virtual museum.</skos:example>
+        <skos:example xml:lang="en">The Exporting (F5) process used specific instructions from the Exporting Phase (F164), which included the export of a 3D model in both OBJ and STL formats for printing.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects an Exporting (F5) activity with specific instructions or methodologies outlined during the Exporting Phase (F164). It indicates that the exporting process followed a structured set of instructions designed to ensure that the digital data or models are exported correctly and in the desired formats for further use, analysis, or sharing. These instructions may include file formats, compression methods, and data handling protocols.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/386#Y127:_has_produced_registered_point_cloud -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/386#Y127:_has_produced_registered_point_cloud">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/347#F165_Registration_Activity"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/190#F104:_Registration_(Fusion_of_Multiple_Point_Clouds_or_3D_Models)"/>
+        <rdfs:label xml:lang="en">has_produced_registered_point_cloud</rdfs:label>
+        <skos:definition xml:lang="en">Y127: has produced registered point cloud
+
+Subproperty of: L11 had output
+Domain
+F165 Registration Activity
+Range
+F104 Registration (registered point cloud)</skos:definition>
+        <skos:example xml:lang="en">After performing the registration of multiple scans, the registration activity (F165) produced a registered point cloud (F104) for further processing in architectural design.</skos:example>
+        <skos:example xml:lang="en">The Registration Activity (F165) was successful and has produced a registered point cloud (F104), enabling a detailed 3D model of the archaeological site.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Registration Activity (F165) to the resulting Registered Point Cloud (F104). It indicates that the registration process has been completed and a point cloud, now aligned and merged from multiple scans, has been produced. This registered point cloud serves as a unified, coherent dataset ready for further analysis, 3D modeling, or visualization</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/387#Y128:_was_analyzed_with -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/387#Y128:_was_analyzed_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#O24_measured_(was_measured_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/191#F105:_Interrogation_Tools"/>
+        <rdfs:label xml:lang="en">was_analyzed_with</rdfs:label>
+        <skos:definition xml:lang="en">Y128: was analyzed with
+
+Subproperty of: O24 measured
+Domain
+F88 3D Model for Research
+Range
+F105 Interrogation Tools</skos:definition>
+        <skos:example xml:lang="en">The 3D Model for Research (F88) was analyzed with interrogation tools (F105) to measure the structural integrity of a historical building.</skos:example>
+        <skos:example xml:lang="en">The digital twin (F100) was analyzed with F105 Interrogation Tools, which allowed researchers to simulate environmental conditions affecting the model.</skos:example>
+        <skos:scopeNote xml:lang="en">This property indicates that a 3D model (F88) has been analyzed using specific interrogation tools (F105). These tools are designed to extract, measure, or manipulate the 3D data for research purposes. The analysis can involve measuring distances, examining surface properties, or simulating real-world conditions within the model.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/388#Y129:_has_acquisition_location_type -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/388#Y129:_has_acquisition_location_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/286#F106_Acquisition_Location_Type"/>
+        <rdfs:label xml:lang="en">has_acquisition_location_type</rdfs:label>
+        <skos:definition xml:lang="en">Y129: has acquisition location type
+
+Subproperty of: P2 has type
+Domain
+F2 Acquisition
+Range
+F106 Acquisition Location Type</skos:definition>
+        <skos:example xml:lang="en">The Acquisition (F2) in the lab was carried out in a controlled environment, with the Acquisition Location Type (F106) defined as a laboratory.</skos:example>
+        <skos:example xml:lang="en">The Acquisition (F2) of the cultural heritage artifact was conducted in an outdoor archaeological site and was classified under an Acquisition Location Type (F106) as a field location.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links an Acquisition event (F2) to the specific type of acquisition location (F106), detailing where the data was collected. The acquisition location type could refer to different environments, such as outdoor fieldwork, laboratory settings, or virtual environments, providing context for the data collection process.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/389#Y130:_was_influenced_by_calibration_instrument -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/389#Y130:_was_influenced_by_calibration_instrument">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P15_was_influenced_by_(influenced)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/admin/items/show/88#F2_Acquisition"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/287#F108_Calibration_of_the_Instrument"/>
+        <rdfs:label xml:lang="en">was_influenced_by_calibration_instrument</rdfs:label>
+        <skos:definition xml:lang="en">Y130: was influenced by calibration instrument
+
+Subproperty of: P15 was influenced by
+Domain
+F2 Acquisition
+Range
+F108 Calibration of the instrument</skos:definition>
+        <skos:example xml:lang="en">The Acquisition (F2) of the 3D scan data was influenced by the calibration instrument (F108) to ensure the measurements were accurate.</skos:example>
+        <skos:example xml:lang="en">The laser scanner (F2) used in the acquisition was influenced by calibration procedures (F108) to reduce systematic errors.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects the Acquisition (F2) event with the Calibration of the instrument (F108), indicating that the acquisition process was influenced or guided by the calibration of the equipment used to capture the data. Calibration ensures that the instruments provide accurate and reliable measurements, which is crucial for the success of the acquisition.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/390#Y131:_used_marker/calibration_tool -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/390#Y131:_used_marker/calibration_tool">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/95#F9_Acquisition_Device"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/288#F109_Marker_and_Calibration_Tools"/>
+        <rdfs:label xml:lang="en">used_marker_calibration_tool</rdfs:label>
+        <skos:definition xml:lang="en">Y131: used marker/calibration tool
+
+Subproperty of: P16 used specific object
+Domain
+F9 Acquisition Device
+Range
+F109 Marker and Calibration Tool</skos:definition>
+        <skos:example xml:lang="en">The Acquisition Device (F9) used markers and calibration tools (F109) to align the data capture accurately during the 3D scanning of the monument.</skos:example>
+        <skos:example xml:lang="en">The laser scanner (F9) employed a calibration tool (F109) to improve the accuracy of the point cloud acquisition.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects an Acquisition Device (F9) to a Marker or Calibration Tool (F109) used in the acquisition process. These tools are used to mark reference points or calibrate the device, ensuring accurate data capture during the acquisition phase. Markers and calibration tools are essential for improving the precision of the measurements, especially in complex environments.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/391#Y132:_had_interactive_application_output -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/391#Y132:_had_interactive_application_output">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L11_had_output_(was_output_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/346#F167_Interactive_Application"/>
+        <rdfs:label xml:lang="en">had_interactive_application_output</rdfs:label>
+        <skos:definition xml:lang="en">Y132: had interactive application output
+
+Subproperty of: L11 had output
+Domain
+F92 Interactive Project Implementation
+Range
+F167 Interactive Application</skos:definition>
+        <skos:example xml:lang="en">After the Interactive Project Implementation (F92), the output was an interactive educational application (F167) that displayed historical data through augmented reality (AR).</skos:example>
+        <skos:example xml:lang="en">The Interactive Project Implementation (F92) produced an Interactive Application (F167), which allowed users to explore the 3D model of an ancient city in a virtual environment.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects an Interactive Project Implementation (F92) to the Interactive Application (F167) that serves as the output of the project. It indicates that the interactive application is the result of the project, which may include a 3D model viewer, a virtual museum, or other interactive environments where users can explore or interact with the content. The output is the digital product delivered after the project implementation.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/392#Y133:_has_interactive_application_description -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/392#Y133:_has_interactive_application_description">
+        <rdfs:subPropertyOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#P3_has_note"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/346#F167_Interactive_Application"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/312#F125_Interactive_Project_Description"/>
+        <rdfs:label xml:lang="en">has_interactive_application_description</rdfs:label>
+        <skos:definition xml:lang="en">Y133: has interactive application description
+
+Subproperty of: P3 has note
+Domain
+F167 Interactive Application
+Range
+F125 Interactive Project Description</skos:definition>
+        <skos:example xml:lang="en">The Interactive Application (F167) has an Interactive Project Description (F125) that explains the navigation features, including zooming, rotating, and exploring a virtual reconstruction of an ancient monument.</skos:example>
+        <skos:example xml:lang="en">The description of the interactive application (F167) includes its role in a virtual museum, where users can interact with 3D models and gain insights into historical artifacts.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects an Interactive Application (F167) to a description (F125) that outlines the purpose, functionality, and features of the application. The description provides context about how the interactive application operates, its goals, and the experiences it provides to users. This may include details on the user interface, interactivity features, and the content or models presented.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/393#Y134:_has_interactive_project_platform_of_developing -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/393#Y134:_has_interactive_project_platform_of_developing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/179#F92_Interactive_Project_Implementation"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/313#F126_Interactive_Project_Platform"/>
+        <rdfs:label xml:lang="en">has_interactive_project_platform_of_developing</rdfs:label>
+        <skos:definition xml:lang="en">Y134: has interactive project platform of developing
+
+Subproperty of: P16 used specific object
+Domain
+F92 Interactive Project Implementation
+Range
+F126 Interactive Project Platform</skos:definition>
+        <skos:example xml:lang="en">The Interactive Project Implementation (F92) was developed using an Interactive Project Platform (F126) like Unity, which allowed for the creation of interactive 3D content.</skos:example>
+        <skos:example xml:lang="en">The project was developed on the Unreal Engine platform (F126), and its implementation (F92) included virtual tours and educational content related to historical monuments.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects an Interactive Project Implementation (F92) to the specific platform used to develop and implement the interactive project (F126). The platform may refer to a software or development environment used to create the interactive experience, such as Unity, Unreal Engine, or other VR/AR development tools.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/394#Y135:_happened_on_multimedia_device -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/394#Y135:_happened_on_multimedia_device">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#L12_happened_on_device_(was_device_for)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/346#F167_Interactive_Application"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/315#F128_Interactive_Project_Running_Device"/>
+        <rdfs:label xml:lang="en">happened_on_multimedia_device</rdfs:label>
+        <skos:definition xml:lang="en">Y135: happened on multimedia device
+
+Subproperty of: L12 happened on modelling device
+Domain
+F167 Interactive Application
+Range
+F128 Interactive Project Running Device</skos:definition>
+        <skos:example xml:lang="en">The Interactive Application (F167) happened on a multimedia device (F128) such as an Oculus VR headset, providing an immersive virtual tour experience.</skos:example>
+        <skos:example xml:lang="en">The educational AR application (F167) was run on multimedia devices (F128), like smartphones and tablets, enabling users to interact with historical data via augmented reality.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links an Interactive Application (F167) to the Multimedia Device (F128) on which the application is run or executed. The multimedia device could refer to a computer, tablet, smartphone, VR headset, or any other hardware that runs the interactive application. The property highlights the role of the device in presenting or running the interactive experience.</skos:scopeNote>
     </owl:ObjectProperty>
     
 
