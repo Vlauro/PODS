@@ -4689,6 +4689,49 @@ F128 Interactive Project Running Device</skos:definition>
     
 
 
+    <!-- https://photogrammetry.altervista.org/items/show/408#Y138:_gives_material_tolerance_requirements -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/408#Y138:_gives_material_tolerance_requirements">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/327#F148_Scaling_Factor"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/146#F59_Digital_Scale"/>
+        <rdfs:label xml:lang="en">gives_scaling_factor_ratio</rdfs:label>
+        <skos:definition xml:lang="en">Y138: gives material tolerance requirements
+
+
+
+Subproperty of: P140 assigned attribute to
+Domain
+F147 Material Tolerance Requirements
+Range
+F59 Digital Scale</skos:definition>
+        <skos:example xml:lang="en">A Scaling Factor (F148) gives a scaling factor ratio (F59) of 1:5, indicating the model is reduced to one-fifth of the artifact’s original size.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links the Scaling Factor (F148) to a Digital Scale (F59), indicating the ratio at which the model is represented (e.g., 1:1, 1:10). Recording this scaling factor is crucial for analyses, comparisons, or producing accurate replicas.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/409#Y139:_gives_scaling_factor_ratio -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/409#Y139:_gives_scaling_factor_ratio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/326#F147_Material_Tolerance_Requirements"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/165#F78_Material_for_3D_Printing"/>
+        <rdfs:label xml:lang="en">gives_material_tolerance_requirements</rdfs:label>
+        <skos:definition xml:lang="en">Y138: gives material tolerance requirements
+
+
+Subproperty of: P140 assigned attribute to
+Domain
+F147 Material Tolerance Requirements
+Range
+F78 Material for 3D Printing</skos:definition>
+        <skos:example xml:lang="en">Material Tolerance Requirements (F147) gives material tolerance requirements to a specific Material for 3D Printing (F78) that needs a tolerance of ±0.05 mm to achieve the desired dimensional accuracy.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects Material Tolerance Requirements (F147) with a Material for 3D Printing (F78), specifying the tolerance levels needed in the printing material. This ensures that the chosen printing material meets the exacting precision standards required by the model.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -6318,6 +6361,22 @@ Subclass of: D14_Software</skos:definition>
     <!-- https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase -->
 
     <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type">
         <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
     </owl:Class>
     
@@ -8709,6 +8768,280 @@ First Survey on a classified object for more than 2 years</terms:description>
         <skos:altLabel xml:lang="en">Virtual 3D Survey, Digital Surveying</skos:altLabel>
         <skos:definition xml:lang="en">Virtual survey of a 3D survey in a virtual context.</skos:definition>
         <skos:scopeNote xml:lang="en">Use this term to refer to a survey performed on a 3D model or a scanned object in a virtual environment, often for visualization, analysis, or manipulation within digital or augmented spaces.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/395#fs:_freehand_spiral -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/395#fs:_freehand_spiral">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">fs: freehand spiral
+The Spiral Acquisition method in the F.O.P.P.A. protocol systematically captures detailed information by focusing on an object&apos;s center, starting with perpendicular shots, then 45° and 75° inclinations. It effectively documents finds from multiple perspectives, emphasizing intricate details and adapting to cavities or corridor-like structures. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">fs (Freehand Spiral)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q193139 P737 https://www.wikidata.org/wiki/Q6482775 P1449 https://www.wikidata.org/wiki/Q17278</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Spiral Acquisition Method</skos:altLabel>
+        <skos:definition xml:lang="en">The Spiral Acquisition method systematically captures detailed information by focusing on an object&apos;s center, beginning with perpendicular shots, then 45° and 75° inclinations.</skos:definition>
+        <skos:scopeNote xml:lang="en">Used for capturing objects from multiple perspectives, especially for documenting intricate details, particularly for complex or cavity-like structures.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/396#lf:_linear_freehand -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/396#lf:_linear_freehand">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:creator>Vittorio Lauro</dc:creator>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:description xml:lang="en">Used to survey large buildings or extensive structures where maintaining proper overlap between images is essential for precise model creation.</terms:description>
+        <terms:description xml:lang="en">lf: linear freehand
+The Straight Line Acquisition method in the F.O.P.P.A. protocol surveys large buildings by moving the camera parallel to the structure while keeping it perpendicular. It ensures comprehensive coverage and captures intricate details. Maintaining at least 70% overlap between photos is crucial for accurate 3D model reconstruction and minimizing missed details. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">lf (Linear Freehand)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q193139 P737 https://www.wikidata.org/wiki/Q6482775 P1449 https://www.wikidata.org/wiki/Q37105</rdfs:seeAlso>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Linear Freehand Method</skos:altLabel>
+        <skos:definition xml:lang="en">The Straight Line Acquisition method surveys large buildings by moving the camera parallel to the structure while maintaining perpendicularity.</skos:definition>
+        <skos:scopeNote xml:lang="en">Ensures comprehensive coverage of large structures and emphasizes intricate details, requiring at least 70% overlap for accurate 3D reconstruction.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/397#ad:_aerial_wireless -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/397#ad:_aerial_wireless">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:creator xml:lang="en">Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">ad: aerial wireless
+The Aerial Acquisition technique in the F.O.P.P.A. protocol involves moving parallel to the ground with a downward-tilted camera, ideal for drones. It effectively documents archaeological trenches and extensive territories, providing comprehensive, elevated images for detailed data collection and insights into spatial layout and features. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">ad (Aerial Wireless)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q4688034 P737 https://www.wikidata.org/wiki/Q484000</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Aerial Acquisition, Drone Survey</skos:altLabel>
+        <skos:definition xml:lang="en">The Aerial Acquisition technique involves moving parallel to the ground with a downward-tilted camera, ideal for drone-based surveys.</skos:definition>
+        <skos:scopeNote xml:lang="en">Ideal for surveying archaeological trenches, large areas, or territories, providing elevated and comprehensive views for detailed spatial data collection.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/398#vl:_vertical_or_with_drone_or_with_rod -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/398#vl:_vertical_or_with_drone_or_with_rod">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">vl: vertical or with drone or with rod
+Vertical capture in the F.O.P.P.A. protocol involves systematic image acquisition along a vertical plane, ideal for tall structures. Drones or cameras on poles are recommended for flexibility and efficiency, ensuring comprehensive documentation of elevations like architectural elements and monuments. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">vl (Vertical or with Drone or with Rod)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q193139 P737 https://www.wikidata.org/wiki/Q6482775 P1449 https://www.wikidata.org/wiki/Q484000</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Vertical Capture, Drone or Rod Capture</skos:altLabel>
+        <skos:definition xml:lang="en">Vertical capture involves systematic image acquisition along a vertical plane, suitable for tall structures. Drones or cameras on rods are recommended for flexibility and efficiency.</skos:definition>
+        <skos:scopeNote xml:lang="en">This method is primarily used for capturing architectural elevations and monuments, ensuring thorough documentation of vertical surfaces.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/399#sb:_spiral_with_rotating_base -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/399#sb:_spiral_with_rotating_base">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">A survey method using a rotating base for precise capturing of objects with a 5-15° increment, ideal for reflective surfaces.</terms:description>
+        <terms:description xml:lang="en">sb: spiral with rotating base
+The rotating base survey in the F.O.P.P.A. protocol involves rotating the object on a neutral-colored base with four camera positions (0°, 15°, 45°, 75°). The base rotates 5-15° between photos, ensuring detailed capture. Reflective objects require an absorbent background like velvet. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">sb (Spiral with Rotating Base)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q111973380</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Rotating Base Survey, Spiral Base Method</skos:altLabel>
+        <skos:definition xml:lang="en">A rotating base survey involves rotating the object on a neutral-colored base with four camera positions (0°, 15°, 45°, 75°), capturing images at each rotation angle.</skos:definition>
+        <skos:scopeNote xml:lang="en">Used for capturing reflective objects with an absorbent background, ensuring a detailed, comprehensive documentation process.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/400#el:_easel_linear -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/400#el:_easel_linear">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">el: easel linear
+Acquisition with a camera fixed on a tripod involves moving the camera laterally at equidistant points, perpendicular to the object. It&apos;s useful for analyzing walls with small, colorimetrically distinct features. Each photo must overlap at least 70% with the preceding one, requiring numerous acquisitions. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">el (Easel Linear)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q193139 P737 https://www.wikidata.org/wiki/Q6482775 P1449 https://www.wikidata.org/wiki/Q37105 + https://www.wikidata.org/wiki/Q1444534</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Easel Camera Survey, Tripod Linear Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Acquisition with a camera fixed on a tripod involves lateral camera movement at equidistant points, perpendicular to the object, ensuring 70% overlap.</skos:definition>
+        <skos:scopeNote xml:lang="en">Ideal for small, color-distinct features, typically used for walls with intricate details and small object analysis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/401#sm:_structured_mixed -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/401#sm:_structured_mixed">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">sm: structured mixed
+Structured mixed acquisition combines linear, spiral, and vertical surveys, adhering to the parameters of each method. While generally avoided for large structures, it&apos;s effective for irregular small objects and body parts. Specific guidelines for human body part surveys are detailed in Appendix #1 of the FOPPA Manual.</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">sm (Structured Mixed)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Mixed Acquisition, Multi-Method Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Structured mixed acquisition combines linear, spiral, and vertical surveys, adapting each method to its specific parameters.</skos:definition>
+        <skos:scopeNote xml:lang="en">Effective for irregular small objects and body parts, though generally avoided for large structures. Specific guidelines for human body parts are in Appendix #1 of the FOPPA Manual.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/402#mu:_mixed_unstructured -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/402#mu:_mixed_unstructured">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:creator>Vittorio Lauro</dc:creator>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:description xml:lang="en">mu: mixed unstructured
+Unstructured mixed acquisition is used for irregular environments where standard modules don&apos;t apply. It requires photos to share at least 80% of representation, maintaining camera orientation. This method is necessary for areas like deep tunnels and involves taking numerous photographs to ensure detailed coverage. Further information in the FOPPA Manual</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">mu (Mixed Unstructured)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q94701573</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Unstructured Mixed Acquisition, Irregular Environment Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Unstructured mixed acquisition is used in irregular environments where standard modules do not apply, requiring at least 80% photo overlap with consistent camera orientation.</skos:definition>
+        <skos:scopeNote xml:lang="en">Used in environments like deep tunnels where conventional survey methods do not fit, ensuring detailed coverage by taking numerous photographs.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/403#rm:_rotating_base_microscope -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/403#rm:_rotating_base_microscope">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">rm: rotating base microscope
+Rotating base acquisitions with a microscope camera are tailored for objects smaller than 2cm. Specific measures address challenges like orthographic lens effects and precise acquisition point management. Appendix #2 of the FOPPA Protocol extensively covers these methods for acquiring tiny objects.</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">rm (Rotating Base Microscope)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q111973380 + https://www.wikidata.org/wiki/Q196538</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Rotating Base Microscope Acquisition, Microscope Camera Survey</skos:altLabel>
+        <skos:definition xml:lang="en">Rotating base acquisitions with a microscope camera are used for objects smaller than 2 cm, addressing challenges like orthographic lens effects and acquisition point management.</skos:definition>
+        <skos:scopeNote xml:lang="en">Applied to small objects under 2 cm, this method ensures precise and detailed acquisition, accounting for small-scale intricacies.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/404#rb:_rotating_base_fixed_instrument -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/404#rb:_rotating_base_fixed_instrument">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory"/>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">rb: rotating base fixed instrument
+This category includes all those acquisitions in which the acquisition instrument has a fixed position and the specimen is rotated to be exposed in all its parts to the sensor. This category includes, for example, hybrid instruments of the photogrammetric and laser scanner category (such as the ATOS III) or the box laser scanner.</terms:description>
+        <terms:modified>2024-12-10</terms:modified>
+        <rdfs:label xml:lang="en">rb (Rotating Base Fixed Instrument)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q94701573 P2079 https://www.wikidata.org/wiki/Q111973380 + https://www.wikidata.org/wiki/Q196538 + https://www.wikidata.org/wiki/Q1444534</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Rotating Base Fixed Instrument Survey, Fixed Instrument Acquisition</skos:altLabel>
+        <skos:definition xml:lang="en">This category involves acquisitions where the instrument is fixed and the specimen is rotated to expose all parts to the sensor, used in hybrid photogrammetric and laser scanner instruments.</skos:definition>
+        <skos:scopeNote xml:lang="en">Commonly applied in systems like the ATOS III, which integrates photogrammetry and laser scanning for comprehensive 3D scanning.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/405#A:_Small_object_(equal_to_or_smaller_than_1_cm) -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/405#A:_Small_object_(equal_to_or_smaller_than_1_cm)">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type"/>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">A: Small object (equal to or smaller than 1 cm)
+Small objects mean those archaeological finds of any material that have a diameter equal to or less than 1 cm. Complete objects originally of small size fall into this category, as do fragments of small objects.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">A (Small Object - Equal to or Smaller than 1 cm)</rdfs:label>
+        <rdfs:seeAlso>:SmallObject a owl:Class ;
+rdfs:label &quot;Small Object&quot;@en ;
+rdfs:comment &quot;Objects with a volume equal to or smaller than a cube with 1cm edge length.&quot;@en ;
+skos:definition &quot;Any object whose volume is ≤ 1 cm³, corresponding to a cube with edges of 1 cm.&quot;@en ;
+:hasMaximumDimension [
+a owl:Restriction ;
+owl:onProperty :edgeLength ;
+owl:allValuesFrom [
+a rdfs:Datatype ;
+owl:onDatatype xsd:decimal ;
+owl:withRestrictions (
+[ xsd:maxInclusive &quot;1.0&quot;^^xsd:decimal ]
+)
+] ;
+] .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Small Object, Tiny Find</skos:altLabel>
+        <skos:definition xml:lang="en">Small objects mean those archaeological finds of any material that have a diameter equal to or less than 1 cm, including complete objects or fragments of small items.</skos:definition>
+        <skos:scopeNote xml:lang="en">Includes both complete small objects and fragments of such items, often requiring detailed and precise documentation.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/406#B:_Medium_Object_(1cm_to_30cm) -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/406#B:_Medium_Object_(1cm_to_30cm)">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type"/>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">B: Medium Object (1cm to 30cm)
+Objects whose diameter is between 1 cm and 30 cm, even partial parts of a larger overall object. In the case of extremely irregular objects, consider the maximum extension diameter.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">B (Medium Object - 1 cm to 30 cm)</rdfs:label>
+        <rdfs:seeAlso>:MediumObject a owl:Class ;
+rdfs:label &quot;Medium Object&quot;@en ;
+rdfs:comment &quot;Objects with an edge length between 1 cm and 30 cm.&quot;@en ;
+skos:definition &quot;Any object whose edge length is ≥ 1 cm and ≤ 30 cm.&quot;@en ;
+:hasEdgeLength [
+a owl:Restriction ;
+owl:onProperty :edgeLength ;
+owl:allValuesFrom [
+a rdfs:Datatype ;
+owl:onDatatype xsd:decimal ;
+owl:withRestrictions (
+[ xsd:minInclusive &quot;1.0&quot;^^xsd:decimal ]
+[ xsd:maxInclusive &quot;30.0&quot;^^xsd:decimal ]
+)
+] ;
+] .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Medium Object, Medium-Sized Find</skos:altLabel>
+        <skos:definition xml:lang="en">Objects whose diameter ranges between 1 cm and 30 cm, including partial parts of larger objects, or in the case of irregular objects, the maximum extension diameter.</skos:definition>
+        <skos:scopeNote xml:lang="en">Covers objects of medium size, often partial pieces or irregular objects where the maximum measurement is taken.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/407#F170_Acquisition_Environment_Type -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/407#F170_Acquisition_Environment_Type">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+        <rdfs:label xml:lang="en">AcquisitionEnvironmentType</rdfs:label>
+        <skos:definition xml:lang="en">F170 Acquisition Environment Type
+
+Subclass of: E55 Type</skos:definition>
+        <skos:example xml:lang="en">The acquisition was performed in a controlled indoor environment with stable lighting conditions.</skos:example>
+        <skos:example xml:lang="en">The survey took place in an open-air archaeological site under natural lighting and uneven ground conditions.</skos:example>
+        <skos:scopeNote xml:lang="en">This class represents the type of environment in which the acquisition took place. It categorizes the setting—such as indoor, outdoor, underwater, cave, urban area, or desert—where the surveying or photogrammetric process was conducted. Defining the acquisition environment type helps in contextualizing the conditions under which data was captured, influencing factors like lighting, accessibility, stability of the setup, and potential obstructions.</skos:scopeNote>
     </owl:Class>
     
 
