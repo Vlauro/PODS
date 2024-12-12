@@ -65,7 +65,7 @@ The ontology integrates established standards such as SKOS, QUDT, and CIDOC-CRM,
 The ontology is organized into classes and properties that define and describe the key components of the digital surveying process. These classes capture essential information about the objects, processes, and tools used in 3D photogrammetry, enabling the precise cataloging of digital models, point clouds, and related metadata. PODS aims to create a scalable, adaptable system that can be applied in diverse contexts, from archaeological excavation sites to museum digitalization projects.
 
 This document presents the detailed structure of the PODS ontology, outlining each class and its associated properties, along with their relationships to established standards. The goal is to provide a clear and systematic framework that ensures consistency, accuracy, and completeness in digital heritage documentation.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.39</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.40</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -113,6 +113,8 @@ This document presents the detailed structure of the PODS ontology, outlining ea
     <!-- http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E72_Legal_Object#E72_Legal_Object"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor#E39_Actor"/>
         <rdfs:comment xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P105i_has_right_on
 Domain:
@@ -136,9 +138,43 @@ This property is a shortcut of the fully developed path from E72 Legal Object, P
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P1_is_identified_by_(identifies)"/>
+        <rdfs:comment xml:lang="en">P168 place is defined by (defines place)
+URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by
+URI (inverse direction):	-
+Domain:
+E53 Place
+Range:
+E94 Space Primitive
+SubProperty Of:
+E1 CRM Entity. P1 is identified by (identifies): E41 Appellation
+SuperProperty Of:
+-
+Quantification:
+one to many, dependent (0,n:1,1)
+
+Scope Note:
+This property associates an instance of E53 Place with an instance of E94 Space Primitive that defines it. Syntactic variants or use of different scripts may result in multiple instances of E94 Space Primitive defining exactly the same place. Transformations between different reference systems always result in new definitions of places approximating each other and not in alternative definitions.
+
+Properties:
+-
+Examples:
+The centroid from https://sws.geonames.org/735927 (E53) place is defined by 40°31&apos;17.9&quot;N 21°15&apos;48.3&quot;E (E94). [A single point for approximating the centre of the city of Kastoria, Greece]
+Martin’s coordinates for Kastoria (E53) place is defined by 40°30&apos;23&quot;N 21°14&apos;53&quot;E, 40°31&apos;40&quot;N 21°16&apos;43&quot;E (E94). [A square covering the built settlement structure of Kastoria, Greece]
+Martin’s centroid for Kastoria (E53) place is defined by 40°31&apos;01.5&quot;N 21°15&apos;48&quot;E (E94). [A point in the lake of Kastoria in the centre of the area covered by the city]
+The position measured by Alexander von Humboldt for the Plaza Mayor in Cumaná, Sucre, Venezuela 1799-1800AD (E53) place is defined by 10°27&apos;52&quot;N 66°30&apos;02&quot;W (E94). [West of the Observatory of Paris = 64°09&apos;51&quot;W of Greenwich, actually 1.1km east of today’s Plaza Andrés Eloy Blanco of Cumaná] (Humboldt, 1859)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"/>
         <rdfs:comment xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P1i_identifies
 Domain:
@@ -168,9 +204,46 @@ It is also a shortcut for the path from E1 CRM Entity through P1 is identified b
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place#E53_Place"/>
+        <rdfs:comment xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at
+URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed
+Domain:
+E4 Period
+Range:
+E53 Place
+SubProperty Of:
+-
+SuperProperty Of:
+-
+Quantification:
+many to many, necessary (1,n:0,n)
+
+Scope Note:
+This property describes the spatial location of an instance of E4 Period.
+
+The related instance of E53 Place should be seen as a wider approximation of the geometric area within which the phenomena that characterise the period in question occurred, see below. P7 took place at (witnessed) does not convey any meaning other than spatial positioning (frequently on the surface of the earth). For example, the period “Révolution française” can be said to have taken place in “France in 1789”; the “Victorian” period may be said to have taken place in “Britain from 1837-1901” and its colonies, as well as other parts of Europe and North America. An instance of E4 Period can take place at multiple non-contiguous, non-overlapping locations.
+
+Any place where something happened includes the spatial projection of the happening given in the same geometric reference system. For instance, HMS Victory, as place of Lord Nelson&apos;s dying, includes the location of his body relative to the hull of HMS Victory at his time of death as the most precise location of his death. By the definition of P161 has spatial projection, an instance of E4 Period takes place on all its spatial projections to respective reference systems, that is, instances of E53 Place. Therefore, this property implies the more fully developed path from E4 Period through P161 has spatial projection, E53 Place, P89 falls within to E53 Place, where both places are defined in the same geometric reference system. The relation between an instance of E53 Place and its reference system can conveniently be documented via the property P157 is at rest relative to (provides reference space for).
+
+Something that has happened at a given place can also be considered to have happened at a smaller place within it: for example, it is reasonable to say Caesar’s murder took place in Rome, but also on the Forum Romanum, and more precisely in the Curia. It is characteristic for different historical sources to use varying precision in such statements, without being in contradiction with each other. This may be due to lack of knowledge or to the relevance of the precision for the purpose of the statement. In information integration, the more precise statement improves the overall knowledge.
+
+Properties:
+-
+Examples:
+The period “Révolution française” (E4) took place at the area covered by France in 1789 (E53). (Bertaud, 2004)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension#P40_observed_dimension">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E16_Measurement#E16_Measurement"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E54_Dimension#E54_Dimension"/>
         <skos:definition xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P40i_was_observed_in
 Domain:
@@ -653,6 +726,8 @@ Maria (E21) participated in Photographing of Maria (E7). (fictitious)</rdfs:comm
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P125_used_object_of_type_(was_type_of_object_used_in) -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P125_used_object_of_type_(was_type_of_object_used_in)">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
         <rdfs:comment>URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P125_used_object_of_type
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P125i_was_type_of_object_used_in
 Domain:
@@ -710,6 +785,8 @@ Matthew’s paperback copy of Reach for the Sky (E18) carries the text of Reach 
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P12_occurred_in_the_presence_of_(was_present_at) -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P12_occurred_in_the_presence_of_(was_present_at)">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E5_Event#E5_Event"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E77_Persistent_Item#E77_Persistent_Item"/>
         <rdfs:comment>URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at
 Domain:
@@ -745,6 +822,8 @@ Deckchair 42 (E19) was present at the sinking of the Titanic (E5). (Aldridge, 20
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P130_shows_features_of_(features_are_also_found_on) -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P130_shows_features_of_(features_are_also_found_on)">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E70_Thing#E70_Thing"/>
         <rdfs:comment>URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on
 Domain:
@@ -847,6 +926,8 @@ The examination of MS Sinai Greek 418 (E13) assigned attribute to MS Sinai Greek
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P141_assigned_(was_assigned_by) -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P141_assigned_(was_assigned_by)">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E13_Attribute_Assignment#E13_Attribute_Assignment"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
         <rdfs:comment>URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P141_assigned
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by
 Domain:
@@ -918,6 +999,8 @@ The painting of the Sistine Chapel (E7) carried out by Michelangelo Buonaroti (E
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P15_was_influenced_by_(influenced) -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P15_was_influenced_by_(influenced)">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
         <rdfs:comment>URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P15i_influenced
 Domain:
@@ -1090,6 +1173,8 @@ The coronation of Elizabeth II (E7) was motivated by the death of George VI (E69
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P1_is_identified_by_(identifies) -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P1_is_identified_by_(identifies)">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation#E41_Appellation"/>
         <rdfs:comment>P1 is identified by (identifies)
 URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P1i_identifies
@@ -1291,7 +1376,10 @@ Silver cup 232 (E22) has dimension height of silver cup 232 (E54). [which has un
 
     <!-- http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P45_consists_of_(is_incorporated_in) -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P45_consists_of_(is_incorporated_in)"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P45_consists_of_(is_incorporated_in)">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E18_Physical_Thing#E18_Physical_Thing"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E57_Material#E57_Material"/>
+    </owl:ObjectProperty>
     
 
 
@@ -1460,6 +1548,8 @@ Range: F100 Digital Twin</skos:definition>
     <!-- https://photogrammetry.altervista.org/collections/show/3#P3_has_note -->
 
     <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/collections/show/3#P3_has_note">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String#E62_String"/>
         <rdfs:comment xml:lang="en">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P3_has_note
 URI (inverse direction):	-
 Domain:
@@ -4728,6 +4818,376 @@ Range
 F78 Material for 3D Printing</skos:definition>
         <skos:example xml:lang="en">Material Tolerance Requirements (F147) gives material tolerance requirements to a specific Material for 3D Printing (F78) that needs a tolerance of ±0.05 mm to achieve the desired dimensional accuracy.</skos:example>
         <skos:scopeNote xml:lang="en">This property connects Material Tolerance Requirements (F147) with a Material for 3D Printing (F78), specifying the tolerance levels needed in the printing material. This ensures that the chosen printing material meets the exacting precision standards required by the model.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/410#Y136:_has_EIS_project_identifier -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/410#Y136:_has_EIS_project_identifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/176#F89_Project_Analysis"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/316#F137_Environmental_Impact_Studies_Project_Title/DOI"/>
+        <rdfs:label xml:lang="en">has_EIS_project_identifier</rdfs:label>
+        <skos:definition xml:lang="en">Y136: has EIS project identifier
+
+Subproperty of: P1 is identified by
+Domain
+F89 Project Analysis
+Range
+F137 Environmental Impact Studies Project Title/DOI</skos:definition>
+        <skos:example xml:lang="en">A Project Analysis (F89) has an EIS project identifier (F137) &quot;EIS_DOI_10.1234/environmental.impact&quot; allowing for quick lookup of related environmental studies.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Project Analysis (F89) to its Environmental Impact Studies (EIS) project identifier (F137), typically a title or DOI. It ensures that the EIS project can be referenced and retrieved easily.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/411#Y137:_has_surface_detail_resolution -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/411#Y137:_has_surface_detail_resolution">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P43_has_dimension_(is_dimension_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/325#F146_Surface_Detail_Resolution"/>
+        <rdfs:label xml:lang="en">has_surface_detail_resolution</rdfs:label>
+        <skos:definition xml:lang="en">Y137: has surface detail resolution
+
+
+
+Subproperty of: P43 has dimension
+Domain
+F88 3D Model for Research
+Range
+F146 Surface Detail Resolution</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for Research (F88) has a surface detail resolution (F146) of 0.02 mm, indicating a highly detailed mesh suitable for microanalysis.</skos:example>
+        <skos:scopeNote xml:lang="en">This property associates a 3D Model for Research (F88) with its surface detail resolution (F146), expressed as a dimension or measurement. It ensures that the level of fine detail captured by the model is clearly recorded.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/412#Y140:_uses_specific_production_method_compatibility -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/412#Y140:_uses_specific_production_method_compatibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/164#F77_Printing_Digital_Twin"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/328#F149_Production_Method_Compatibility"/>
+        <rdfs:label xml:lang="en">uses_specific_production_method_compatibility</rdfs:label>
+        <skos:definition xml:lang="en">Y140: uses specific production method compatibility
+
+Subproperty of: P33 used specific technique
+Domain
+F77 Printing Digital Twin
+Range
+F149 Production Method Compatibility</skos:definition>
+        <skos:example xml:lang="en">A Printing Digital Twin (F77) uses specific production method compatibility (F149) that supports SLS (Selective Laser Sintering), confirming that the model can be successfully printed with this technology.</skos:example>
+        <skos:scopeNote xml:lang="en">This property indicates that a Printing Digital Twin (F77) utilizes a specific Production Method Compatibility (F149), ensuring that the chosen printing or fabrication technique (e.g., SLA, FDM, resin casting) aligns with the requirements of the model.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/413#Y141:_has_baseline_dataset_date -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/413#Y141:_has_baseline_dataset_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P4_has_time-span_(is_time-span_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/329#F150_Baseline_Dataset_Date"/>
+        <rdfs:label xml:lang="en">has_baseline_dataset_date</rdfs:label>
+        <skos:definition xml:lang="en">Y141: has baseline dataset date
+
+Subproperty of: P4 has time-span
+Domain
+F88 3D Model for Research
+Range
+F150 Baseline Dataset Date</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for Research (F88) has a baseline dataset date (F150) recorded as “2021-06-15,” serving as the reference date for all subsequent analyses.</skos:example>
+        <skos:scopeNote xml:lang="en">This property associates a 3D Model for Research (F88) with a Baseline Dataset Date (F150), indicating the reference temporal point from which changes and evolutions of the model will be monitored over time. By specifying the baseline date, users can track modifications, updates, or degradations in the 3D model over its lifecycle.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/414#Y142:_is_referred_to_a_specific_S.U. -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/414#Y142:_is_referred_to_a_specific_S.U.">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/176#F89_Project_Analysis"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/317#F138_S.U._Referenced_Place_of_Excavation"/>
+        <rdfs:label xml:lang="en">is_referred_to_a_specific_SU</rdfs:label>
+        <skos:definition xml:lang="en">Y142: is referred to a specific S.U.
+
+Subproperty of: P7 took place at
+Domain
+F89 Project Analysis
+Range
+F138 S.U. Referenced Place of Excavation</skos:definition>
+        <skos:example xml:lang="en">A Project Analysis (F89) focusing on pottery composition is referred to a specific S.U. (F138), indicating the ceramic fragments originated from a distinct stratigraphic level.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Project Analysis (F89) focused on archaeometric or other in-depth studies to the Stratigraphic Unit (S.U.) referenced excavation place (F138) associated with the 3D model’s original find context. It ensures a clear connection between the project’s analysis and the precise excavation context, aiding in archaeological interpretation and contextualization.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/415#Y143:_has_main_face -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/415#Y143:_has_main_face">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/336#F157_Identified_Main_Face"/>
+        <rdfs:label xml:lang="en">has_main_face</rdfs:label>
+        <skos:definition xml:lang="en">Y143: has main face
+
+
+Subproperty of: P140i was attributed by
+Domain
+F100 Digital Twin
+Range
+F157 Identified Main Face</skos:definition>
+        <skos:example xml:lang="en">A Digital Twin (F100) of a ceramic vessel has a main face (F157) designated as the flat base, used as a reference plane for all subsequent alignment tasks.</skos:example>
+        <skos:scopeNote xml:lang="en">This property indicates that a Digital Twin (F100) has an identified main face (F157), a crucial reference surface chosen for alignment, registration, or interpretive purposes. Assigning a main face provides a consistent reference for analyzing or comparing complex 3D models.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/416#Y144:_has_model_multiple_composition -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/416#Y144:_has_model_multiple_composition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/335#F156_Model_Composition_from_Multiple_Parts"/>
+        <rdfs:label xml:lang="en">has_model_multiple_composition</rdfs:label>
+        <skos:definition xml:lang="en">Y144: has model multiple composition
+
+Subproperty of: P140i was attributed by
+Domain
+F100 Digital Twin
+Range
+F156 Model Composition from Multiple Parts</skos:definition>
+        <skos:example xml:lang="en">A Digital Twin (F100) of a large statue has model multiple composition (F156), indicating it was assembled from several individually scanned segments.</skos:example>
+        <skos:scopeNote xml:lang="en">This property specifies that a Digital Twin (F100) is composed of multiple parts (F156) integrated into one coherent model. It records the relationship between a unified 3D representation and its segmented origins, highlighting the complexity of the reconstruction process.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/417#Y145:_has_carried_out_comparison_activity_on_3D_model -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/417#Y145:_has_carried_out_comparison_activity_on_3D_model">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/321#F142_Comparison_Activity_of_Different_3D_Models"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:label xml:lang="en">has_carried_out_comparison_activity_on_3D_model</rdfs:label>
+        <skos:definition xml:lang="en">Y145: has carried out comparison activity on 3D model
+
+Subproperty of: P140 assigned attribute to
+Domain
+F142 Comparison Activity of Different 3D Models
+Range
+F100 Digital Twin</skos:definition>
+        <skos:example xml:lang="en">A Comparison Activity (F142) has carried out comparison activity on a 3D model (F100), identifying differences between two digital twins of the same artifact taken months apart.</skos:example>
+        <skos:scopeNote xml:lang="en">This property denotes that a Comparison Activity (F142) has been performed on a specific Digital Twin (F100). It captures the action of measuring discrepancies, deviations, or similarities between multiple 3D models.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/418#Y146:_used_comparison_software -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/418#Y146:_used_comparison_software">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P16_used_specific_object_(was_used_for)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/321#F142_Comparison_Activity_of_Different_3D_Models"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/323#F144_Software_Used_for_the_Comparison_of_Two_3D_Models"/>
+        <rdfs:label xml:lang="en">used_comparison_software</rdfs:label>
+        <skos:definition xml:lang="en">Y146: used comparison software
+
+Subproperty of: P16 used specific object
+Domain
+F142 Comparison Activity of Different 3D Models
+Range
+F144 Software Used for the Comparison of Two 3D Models</skos:definition>
+        <skos:example xml:lang="en">A Comparison Activity (F142) used comparison software (F144) like CloudCompare to detect surface deviations between two digital twins.</skos:example>
+        <skos:scopeNote xml:lang="en">This property connects a Comparison Activity (F142) to the specific comparison software (F144) employed in the analysis. It ensures transparency in the tools and methods used to derive insights from multiple 3D models.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/419#Y147:_used_comparison_method -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/419#Y147:_used_comparison_method">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P33_used_specific_technique_(was_used_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/321#F142_Comparison_Activity_of_Different_3D_Models"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/324#F145_Methodology_Adopted_for_the_Comparison"/>
+        <rdfs:label xml:lang="en">used_comparison_method</rdfs:label>
+        <skos:definition xml:lang="en">Y147: used comparison method
+
+Subproperty of: P33 used specific technique
+Domain
+F142 Comparison Activity of Different 3D Models
+Range
+F145 Methodology Adopted for the Comparison</skos:definition>
+        <skos:example xml:lang="en">A Comparison Activity (F142) used comparison method (F145) involving point-to-point distance calculation to quantify differences between two aligned meshes.</skos:example>
+        <skos:scopeNote xml:lang="en">This property indicates that a Comparison Activity (F142) was guided by a specific comparison methodology (F145). It records the analytical approach or algorithmic procedure chosen for evaluating differences or similarities between 3D models.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/420#Y148:_S.U._has_coordinates -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/420#Y148:_S.U._has_coordinates">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/317#F138_S.U._Referenced_Place_of_Excavation"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/318#F139_S.U._Coordinates"/>
+        <rdfs:label xml:lang="en">SU_has_coordinates</rdfs:label>
+        <skos:definition xml:lang="en">Y148: S.U. has coordinates
+
+Subproperty of: P168 place is defined by
+Domain
+F138 S.U. Referenced Place of Excavation
+Range
+F139 S.U. Coordinates</skos:definition>
+        <skos:example xml:lang="en">An S.U. Referenced Place of Excavation (F138) has coordinates (F139) recorded as UTM 33T E500000 N4640000.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a Stratigraphic Unit’s referenced place (F138) with its spatial coordinates (F139), defining the exact location of the S.U. within the excavation site. Such geospatial referencing is vital for archaeological contextualization and subsequent analysis.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/421#Y149:_was_S.U._characterized_by_material -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/421#Y149:_was_S.U._characterized_by_material">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/317#F138_S.U._Referenced_Place_of_Excavation"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/319#F140_S.U._Material"/>
+        <rdfs:label xml:lang="en">was_SU_characterized_by_material</rdfs:label>
+        <skos:definition xml:lang="en">Y149: was S.U. characterized by material
+
+
+No subproperty
+Domain
+F138 S.U. Referenced Place of Excavation
+Range
+F140 S.U. Material</skos:definition>
+        <skos:example xml:lang="en">An S.U. Referenced Place of Excavation (F138) was characterized by material (F140) predominantly composed of clay and small ceramic sherds.</skos:example>
+        <skos:scopeNote xml:lang="en">This property notes that a Stratigraphic Unit (F138) was characterized by a particular material (F140), such as sediment type, soil composition, or artifact concentration. Understanding these material characteristics aids in interpreting the archaeological context and depositional history.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/422#Y150:_has_orientation_of_3D_model -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/422#Y150:_has_orientation_of_3D_model">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/334#F155_Orientation_of_the_3D_Model"/>
+        <rdfs:label xml:lang="en">has_orientation_of_3D_model</rdfs:label>
+        <skos:definition xml:lang="en">Y150: has orientation of 3D model
+
+Subproperty of: P140i was attributed by
+Domain
+F100 Digital Twin, F81 3D Model for G.I.S, F88 3D Model for Research
+Range
+F155 Orientation of the 3D Model</skos:definition>
+        <skos:example xml:lang="en">A Digital Twin (F100) has orientation of 3D model (F155) defined by a rotation of 45° around the Z-axis.</skos:example>
+        <skos:scopeNote xml:lang="en">This property associates a Digital Twin (F100), a 3D Model for GIS (F81), or a 3D Model for Research (F88) with its orientation (F155), reflecting how the model is placed or aligned within a coordinate system. Recording orientation ensures consistency across analyses and visualizations.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/423#has_3D_model_spatial_metadata -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/423#has_3D_model_spatial_metadata">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/332#F153_3D_Model_Spatial_Metadata"/>
+        <rdfs:label xml:lang="en">has_3D_model_spatial_metadata</rdfs:label>
+        <skos:definition xml:lang="en">Y151: has 3d model spatial metadata
+
+Subproperty of: P140i was attributed by
+Domain
+F100 Digital Twin, F81 3D Model for G.I.S, F88 3D Model for Research
+Range
+F153 3D Model Spatial Metadata</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for Research (F88) has 3D model spatial metadata (F153) detailing its georeference system and assembled composition.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a 3D model (in various contexts) to its spatial metadata (F153), covering aspects like georeferencing, orientation, and composition. By recording this metadata, users can better interpret the model’s spatial parameters and integrate it with other spatial datasets.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/424#Y152:_has_3d_model_georeferencing -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/424#Y152:_has_3d_model_georeferencing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P140_assigned_attribute_to_(was_attributed_by)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/145#F100_3D_Digital_Twin"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/168#F81_3D_Model_for_G.I.S."/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/333#F154_Georeferencing_of_the_3D_Model"/>
+        <rdfs:label xml:lang="en">has_3D_model_georeferencing</rdfs:label>
+        <skos:definition xml:lang="en">Y152: has 3d model georeferencing
+
+
+Subproperty of: P140i was attributed by
+Domain
+F100 Digital Twin, F81 3D Model for G.I.S, F88 3D Model for Research
+Range
+F154 Georeferencing of the 3D Model</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for GIS (F81) has 3D model georeferencing (F154) aligned to the WGS84 coordinate system.</skos:example>
+        <skos:scopeNote xml:lang="en">This property specifies that a given 3D model is georeferenced (F154), linking its coordinates to a known spatial reference system. Georeferencing supports integration with maps, GIS layers, and other spatial analyses.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/425#Y153:_has_3d_model_density_and_uniformity -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/425#Y153:_has_3d_model_density_and_uniformity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P43_has_dimension_(is_dimension_of)"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/338#F158_Mesh_Density_and_Uniformity"/>
+        <rdfs:label xml:lang="en">has_3D_model_density_and_uniformity</rdfs:label>
+        <skos:definition xml:lang="en">Y153: has 3d model density and uniformity
+
+Subproperty of: P43 has dimension
+Domain
+F88 3D Model for Research
+Range
+F158 Mesh Density and Uniformity</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for Research (F88) has 3d model density and uniformity (F158) indicating an average face size of 0.1 mm and uniform distribution.</skos:example>
+        <skos:scopeNote xml:lang="en">This property associates a research-oriented 3D model (F88) with its mesh density and uniformity (F158), quantifying how consistently its geometry is distributed. Such information is vital for simulations and structural analyses requiring homogeneous mesh quality.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/426#Y155:_has_boundary_and_constraints -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/426#Y155:_has_boundary_and_constraints">
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/340#F160_Boundary_Conditions_and_Constraints"/>
+        <rdfs:label xml:lang="en">has_boundary_and_constraints</rdfs:label>
+        <skos:definition xml:lang="en">Y155: has boundary and constraints
+
+No subproperty
+Domain
+F88 3D Model for Research
+Range
+F160 Boundary Conditions and Constraints</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for Research (F88) has boundary and constraints (F160) defining fixed supports at its base and a uniform load along its top edge.</skos:example>
+        <skos:scopeNote xml:lang="en">This property links a 3D Model for Research (F88) to the boundary conditions and constraints (F160) applied, essential for structural or mechanical simulations. Recording these ensures replicability and correct interpretation of simulation results.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/427#Y156:_has_load_parameters -->
+
+    <owl:ObjectProperty rdf:about="https://photogrammetry.altervista.org/items/show/427#Y156:_has_load_parameters">
+        <rdfs:subPropertyOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#P3_has_note"/>
+        <rdfs:domain rdf:resource="https://photogrammetry.altervista.org/items/show/175#F88_Archaeometric_3D_Model"/>
+        <rdfs:range rdf:resource="https://photogrammetry.altervista.org/items/show/342#F162_Structural_Load_Parameters"/>
+        <rdfs:label xml:lang="en">has_load_parameters</rdfs:label>
+        <skos:definition xml:lang="en">Y156: has load parameters
+
+
+Subproperty of: P3 has note
+Domain
+F88 3D Model for Research
+Range
+F162 Structural Load Parameters</skos:definition>
+        <skos:example xml:lang="en">A 3D Model for Research (F88) has load parameters (F162) indicating a static vertical load of 1000 N applied to its top surface.</skos:example>
+        <skos:scopeNote xml:lang="en">This property attaches load parameter data (F162) to a research-oriented 3D model (F88). It clarifies what types of loads (e.g., static, dynamic) and units (e.g., N, kPa) are involved, enabling precise simulations or assessments of structural behavior.</skos:scopeNote>
     </owl:ObjectProperty>
     
 
