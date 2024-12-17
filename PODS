@@ -6822,6 +6822,7 @@ Subclass of: D14_Software</skos:definition>
 
     <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F101_Survey_Phase">
         <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+        <rdfs:comment xml:lang="en">The following terms do not define an absolute chronological value (for which reference is made to the F43 Date of Acquisition class) but a relative temporal value, i.e. how the survey is placed in relation to the project times and the role it has in relation to potential previous surveys that may have concerned the surveyed object.</rdfs:comment>
     </owl:Class>
     
 
@@ -6830,6 +6831,23 @@ Subclass of: D14_Software</skos:definition>
 
     <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F12_Acquisition_Trajectory">
         <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies"/>
+        <rdfs:comment xml:lang="en">By dominant geometry we mean the geometry assumed by the conjunction of the opposite vertices of the object according to an approximation based on the inclination of the faces not exceeding 45 degrees. This distinction is necessary for the application of the &quot;rule of opposites&quot; as defined in the FOPPA Manual. For example, a basketball is a sphere, a bottle is a cylinder, a book is a parallelepiped, a κρατήρ is a bowl/hemisphere. As an approximation, however, we can say that an irregular glass bead is a sphere, a ceramic shard or an animal jaw is a parallelepiped, a column is a cylinder and a crater or a lake are hemisphere.</rdfs:comment>
     </owl:Class>
     
 
@@ -6846,6 +6864,29 @@ Subclass of: D14_Software</skos:definition>
 
     <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#Thesauruses_and_Vocabularies">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/collections/show/3#VI -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/collections/show/3#VI">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Isometric View: The model is oriented for an isometric view (associated with 3D graphics and CAD).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the orientation of a 3D model in an isometric perspective, enabling a balanced, three-dimensional view without distortion from perspective scaling.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Isometric View</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Isometric_View a owl:Class ;
+rdfs:label &quot;Isometric View&quot; ;
+skos:definition &quot;The model is oriented for an isometric view (associated with 3D graphics and CAD).&quot; ;
+geo:geometry [ geo:asWKT &quot;POINT(0 0)&quot;^^geo:wktLiteral ; # Example coordinates for the camera position
+geo:hasOrientation &quot;45&quot;^^xsd:decimal ] ; # Example of isometric view orientation angle (45-degree angle typical for isometric views).</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">3D Perspective View, CAD Isometric View</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented for an isometric view (associated with 3D graphics and CAD).</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe the orientation of the model when displayed in an isometric projection, often used in 3D design and technical documentation.</skos:scopeNote>
     </owl:Class>
     
 
@@ -9502,6 +9543,620 @@ Subclass of: E55 Type</skos:definition>
         <skos:example xml:lang="en">The acquisition was performed in a controlled indoor environment with stable lighting conditions.</skos:example>
         <skos:example xml:lang="en">The survey took place in an open-air archaeological site under natural lighting and uneven ground conditions.</skos:example>
         <skos:scopeNote xml:lang="en">This class represents the type of environment in which the acquisition took place. It categorizes the setting—such as indoor, outdoor, underwater, cave, urban area, or desert—where the surveying or photogrammetric process was conducted. Defining the acquisition environment type helps in contextualizing the conditions under which data was captured, influencing factors like lighting, accessibility, stability of the setup, and potential obstructions.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/428#D:_Open_architectural_structure -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/428#D:_Open_architectural_structure">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">D: Open architectural structure
+Architectural structures that can be visited or potentially visited, understood in their overall external structure and not in their internal volumes. Courtyards and parade grounds fall into this category as they are external volumes.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes architectural structures that are open for visitation, emphasizing external parts and excluding interior volumes.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">D (Open Architectural Structure)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q811979</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Open Structure, External Architectural Structure</skos:altLabel>
+        <skos:definition xml:lang="en">Architectural structures that can be visited or potentially visited, understood in their overall external structure and not in their internal volumes. Examples include courtyards and parade grounds, which are external volumes.</skos:definition>
+        <skos:scopeNote xml:lang="en">Refers to external architectural volumes that are accessible or potentially accessible, excluding internal spaces.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/429#E:_Architectural_element_(part_of_an_architectural_structure) -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/429#E:_Architectural_element_(part_of_an_architectural_structure)">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">E: Architectural element (part of an architectural structure)
+All those elements that are part of an architectural structure (D) both structurally (such as pillars and bastions) and as parts of an external structure (windows, portals and doors).
+Architectural elements may still be in place or may have been removed from the main structure or may never have been part of it.</dc:description>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines various parts of an architectural structure that may still be in place, removed, or never part of the main structure.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">E (Architectural Element - Part of an Architectural Structure)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://vocab.getty.edu/page/aat/300000885</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Architectural Element, Structural Element</skos:altLabel>
+        <skos:definition xml:lang="en">Elements that are part of an architectural structure, both structurally (such as pillars and bastions) and as parts of external structure (windows, portals, and doors). These elements may still be in place or may have been removed from the main structure or never have been part of it.</skos:definition>
+        <skos:scopeNote xml:lang="en">Includes structural and decorative elements that form part of an architectural structure, with potential variations in their preservation or removal.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/430#F:_Cave_or_underground_structure -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/430#F:_Cave_or_underground_structure">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">F: Cave or underground structure
+Caves, rooms and underground environments. Any finished practicable volume, including the environments that make up architectural structures</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Refers to subterranean or cave-like structures that may be practical to access, including those that make up parts of larger architectural sites.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">F (Cave or Underground Structure)</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q35509, https://www.wikidata.org/wiki/Q44377, https://www.wikidata.org/wiki/Q172896</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Underground Structure, Subterranean Environment</skos:altLabel>
+        <skos:definition xml:lang="en">Caves, rooms, and underground environments. Any finished practicable volume, including the environments that make up architectural structures.</skos:definition>
+        <skos:scopeNote xml:lang="en">Covers all types of underground spaces that are accessible or formed as part of architectural or archaeological environments.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/431#G:_Landscape_element -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/431#G:_Landscape_element">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F19_Scale_Type_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">G: Landscape element
+Landscape elements such as plains, woods, clearings, cliffs and any landscape element derived from the action of nature and anthropic action but which cannot be traversed within it. A rock structure does not fall into this category, but rather the facade is an architectural structure (D) and its interior is a walkable volume (F). Dynamic or transforming landscape elements such as landslides, sinkholes, and sink holes also fall into this category. Elements of the landscape modified by human action but not visitable fall into this category. (So ​​Mount Rashmure does NOT fall into this category, the Behistun carvings do fall into this category).</dc:description>
+        <dc:source xml:lang="en">PODS Thesaurus</dc:source>
+        <terms:description xml:lang="en">Describes landscape elements that are either natural or human-modified, not typically visitable or accessible.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">G (Landscape Element)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q107425 , http://vocab.getty.edu/page/aat/300008631, http://vocab.getty.edu/page/aat/300435107 , http://vocab.getty.edu/page/aat/300008932 , http://vocab.getty.edu/page/aat/300419990 ,</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Landscape Feature, Geographical Element</skos:altLabel>
+        <skos:definition xml:lang="en">Landscape elements such as plains, woods, clearings, cliffs, and any landscape element derived from the action of nature and anthropic action but which cannot be traversed within it. It also includes dynamic or transforming landscape elements such as landslides and sinkholes.</skos:definition>
+        <skos:scopeNote xml:lang="en">Refers to natural or modified landscape features that are significant but not traversable, including dynamic features shaped by natural or human actions.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/432#Sphere -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/432#Sphere">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">Sphere
+A sphere is a perfectly round geometrical object in three-dimensional space, like a ball. Examples include a basketball or a glass bead.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a perfectly round geometrical shape, used to classify objects like basketballs and beads.</terms:description>
+        <terms:modified>2024-12-13</terms:modified>
+        <rdfs:label xml:lang="en">Sphere</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://vocab.getty.edu/page/aat/300378898</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Round Object, Spherical Shape</skos:altLabel>
+        <skos:definition xml:lang="en">A sphere is a perfectly round geometrical object in three-dimensional space, such as a ball. Examples include a basketball or a glass bead.</skos:definition>
+        <skos:scopeNote xml:lang="en">A geometric shape characterized by uniformity and symmetry in all directions.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/433#Parallelepiped -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/433#Parallelepiped">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">Parallelepiped
+
+A parallelepiped is a six-faced figure (also called a polyhedron) where each face is a parallelogram. Examples include a book or a ceramic shard.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a polyhedral object with six faces that are parallelograms, such as a book or ceramic shard.</terms:description>
+        <terms:modified>2024-12-13</terms:modified>
+        <rdfs:label xml:lang="en">Parallelepiped</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.wikidata.org/wiki/Q181658</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Rectangular Object, Polyhedron</skos:altLabel>
+        <skos:definition xml:lang="en">A parallelepiped is a six-faced figure (also called a polyhedron) where each face is a parallelogram. Examples include a book or a ceramic shard.</skos:definition>
+        <skos:scopeNote xml:lang="en">A six-faced shape, where opposite faces are parallelograms, often used for objects with rectangular or angular properties.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/434#Hemisphere -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/434#Hemisphere">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">Hemisphere
+A hemisphere is half of a sphere, typically divided by a plane passing through its center. Examples include a crater or a bowl.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">A three-dimensional object that is half of a sphere, such as a crater or a bowl, divided by a plane.</terms:description>
+        <terms:modified>2024-12-13</terms:modified>
+        <rdfs:label xml:lang="en">Hemisphere</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q47091889</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Half-Sphere, Semi-Spherical Object</skos:altLabel>
+        <skos:definition xml:lang="en">A hemisphere is half of a sphere, typically divided by a plane passing through its center. Examples include a crater or a bowl.</skos:definition>
+        <skos:scopeNote xml:lang="en">A geometric shape representing half of a sphere, often used to describe objects like craters or bowls.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/435#Cylinder -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/435#Cylinder">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">Cylinder
+A cylinder has two parallel circular bases connected by a curved surface. Examples include a column or a bottle.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a geometric shape with two parallel circular faces and a curved side, such as columns or bottles.</terms:description>
+        <terms:modified>2024-12-13</terms:modified>
+        <rdfs:label xml:lang="en">Cylinder</rdfs:label>
+        <rdfs:seeAlso>http://vocab.getty.edu/page/aat/300163037</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Cylindrical Object, Round Column</skos:altLabel>
+        <skos:definition xml:lang="en">A cylinder has two parallel circular bases connected by a curved surface. Examples include a column or a bottle.</skos:definition>
+        <skos:scopeNote xml:lang="en">A three-dimensional geometric shape with two parallel circular bases connected by a curved surface.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/436#Plane_Surface -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/436#Plane_Surface">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">Plane Surface
+A plane surface is a flat, two-dimensional surface extending infinitely in all directions. Examples include a flat stone tablet or a pavement segment.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">A flat, two-dimensional surface found in various objects, such as stone tablets or pavement segments.</terms:description>
+        <terms:modified>2024-12-13</terms:modified>
+        <rdfs:label xml:lang="en">Plane Surface</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q17285 , https://www.wikidata.org/wiki/Q160091 , http://vocab.getty.edu/page/aat/300008805</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Flat Surface, Two-Dimensional Plane</skos:altLabel>
+        <skos:definition xml:lang="en">A plane surface is a flat, two-dimensional surface extending infinitely in all directions. Examples include a flat stone tablet or a pavement segment.</skos:definition>
+        <skos:scopeNote xml:lang="en">A perfectly flat, two-dimensional surface that extends infinitely, commonly used in architecture and archaeology.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/437#Irregular_shape/Landscape -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/437#Irregular_shape/Landscape">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F18_Dominant_Geometry_Type"/>
+        <dc:description xml:lang="en">Irregular shape/Landscape
+An irregular shape does not fit neatly into standard geometric categories and has uneven or asymmetrical surfaces. Examples include an irregular animal remains like Lyuba&apos;s mummy or a piece of pottery with an unusual form.</dc:description>
+        <dc:source xml:lang="en">FOPPA Manual</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Refers to shapes that do not fit into traditional geometric categories, such as irregular bones or unusual pottery.</terms:description>
+        <terms:modified>2024-12-13</terms:modified>
+        <rdfs:label xml:lang="en">Irregular Shape/Landscape</rdfs:label>
+        <rdfs:seeAlso>http://vocab.getty.edu/page/aat/300010347, https://www.wikidata.org/wiki/Q107425</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Asymmetrical Shape, Non-Standard Geometry</skos:altLabel>
+        <skos:definition xml:lang="en">An irregular shape does not fit neatly into standard geometric categories and has uneven or asymmetrical surfaces. Examples include irregular animal remains like Lyuba&apos;s mummy or a piece of pottery with an unusual form.</skos:definition>
+        <skos:scopeNote xml:lang="en">A shape that lacks symmetry or standard geometric form, often used to describe organic objects or irregular artifacts.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/438#AX_X-Axis_Oriented:_The_model_is_oriented_along_the_X-axis. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/438#AX_X-Axis_Oriented:_The_model_is_oriented_along_the_X-axis.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">AX
+X-Axis Oriented: The model is oriented along the X-axis.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a spatial orientation where the model&apos;s primary alignment follows the X-axis of its coordinate reference system.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">X-Axis Oriented</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:X_Axis_Orientation a geo:Geometry ;
+rdfs:label &quot;X-Axis Oriented&quot; ;
+geo:asWKT &quot;POINT (1 0 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented along the X-axis.&quot;</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Aligned to X-Axis, Horizontal Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented along the X-axis of the coordinate system, aligning its primary orientation with the horizontal axis.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the model&apos;s primary orientation is aligned with the X-axis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/439#AY_Y-Axis_Oriented:_The_model_is_oriented_along_the_Y-axis. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/439#AY_Y-Axis_Oriented:_The_model_is_oriented_along_the_Y-axis.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">AY
+Y-Axis Oriented: The model is oriented along the Y-axis.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator xml:lang="en">Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a spatial orientation where the model&apos;s primary alignment follows the Y-axis of its coordinate reference system.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">Y-Axis Oriented</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Y_Axis_Orientation a geo:Geometry ;
+rdfs:label &quot;Y-Axis Oriented&quot; ;
+geo:asWKT &quot;POINT (0 1 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented along the Y-axis.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Aligned to Y-Axis, Vertical Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented along the Y-axis of the coordinate system, aligning its primary orientation with the vertical axis.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the model&apos;s primary orientation is aligned with the Y-axis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/440#AZ_Z-Axis_Oriented:_The_model_is_oriented_along_the_Z-axis. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/440#AZ_Z-Axis_Oriented:_The_model_is_oriented_along_the_Z-axis.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">AZ
+Z-Axis Oriented: The model is oriented along the Z-axis.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a spatial orientation where the model&apos;s primary alignment follows the Z-axis of its coordinate reference system.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">Z-Axis Oriented</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Z_Axis_Orientation a geo:Geometry ;
+rdfs:label &quot;Z-Axis Oriented&quot; ;
+geo:asWKT &quot;POINT (0 0 1)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented along the Z-axis.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Aligned to Z-Axis, Depth Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented along the Z-axis of the coordinate system, aligning its primary orientation with the depth axis.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the model&apos;s primary orientation is aligned with the Z-axis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/441#NR_No_Rotation:_No_rotation_applied_(model_aligned_to_the_global_system). -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/441#NR_No_Rotation:_No_rotation_applied_(model_aligned_to_the_global_system).">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">NR
+No Rotation: No rotation applied (model aligned to the global system).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes a model that has not undergone rotational adjustments, maintaining its alignment with the global system.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">No Rotation</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:No_Rotation a geo:Geometry ;
+rdfs:label &quot;No Rotation&quot; ;
+skos:definition &quot;Indicates that no rotation has been applied to the model, aligning it with the global coordinate system.&quot; ;
+geo:asWKT &quot;POINT (0 0 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is aligned with the global coordinate system without rotation.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Unrotated, Global Alignment</skos:altLabel>
+        <skos:definition xml:lang="en">Indicates that no rotation has been applied to the model, aligning it with the global coordinate system.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the model retains its original alignment without any applied rotational transformations.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/442#RZ_Yaw_Rotation:_Rotation_around_the_Z-axis_(horizontal_angle). -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/442#RZ_Yaw_Rotation:_Rotation_around_the_Z-axis_(horizontal_angle).">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">RZ
+Yaw Rotation: Rotation around the Z-axis (horizontal angle).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Specifies the rotation of a 3D model along the horizontal plane, modifying its orientation relative to a reference axis.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">Yaw Rotation</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Yaw_Rotation a geo:Geometry ;
+rdfs:label &quot;Yaw Rotation&quot; ;
+skos:definition &quot;Rotation of the model around the Z-axis, altering its horizontal orientation within the coordinate system.&quot; ;
+geo:asWKT &quot;POINT (0 0 1)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model has been rotated around the Z-axis, affecting its horizontal orientation.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Horizontal Rotation, Rotation Around Z-Axis</skos:altLabel>
+        <skos:definition xml:lang="en">Rotation of the model around the Z-axis, altering its horizontal orientation within the coordinate system.</skos:definition>
+        <skos:scopeNote xml:lang="en">Apply this term to describe models rotated horizontally relative to their global coordinate system.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/443#RX_Roll_Rotation:_Rotation_around_the_X-axis_(longitudinal_angle). -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/443#RX_Roll_Rotation:_Rotation_around_the_X-axis_(longitudinal_angle).">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">RX
+Roll Rotation: Rotation around the X-axis (longitudinal angle).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Refers to the rotation of the model along its longitudinal axis, typically used for rolling transformations.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">Roll Rotation</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Roll_Rotation a geo:Geometry ;
+rdfs:label &quot;Roll Rotation&quot; ;
+skos:definition &quot;Rotation of the model around the X-axis, altering its longitudinal orientation.&quot; ;
+geo:asWKT &quot;POINT (1 0 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model has been rotated around the X-axis, affecting its longitudinal orientation.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Rotation on X-axis, Longitudinal Rotation</skos:altLabel>
+        <skos:definition xml:lang="en">Rotation of the model around the X-axis, altering its longitudinal orientation.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe adjustments made by rolling the model along the X-axis.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/444#NF_North-Facing:_The_model_is_oriented_towards_the_true_North. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/444#NF_North-Facing:_The_model_is_oriented_towards_the_true_North.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">NF
+North-Facing: The model is oriented towards the true North.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Indicates a 3D model whose primary alignment corresponds to the geographic North.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">North-Facing</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:North_Facing a geo:Geometry ;
+rdfs:label &quot;North-Facing&quot; ;
+skos:definition &quot;The model is oriented towards the true North, aligning its primary axis with the geographic North direction.&quot; ;
+geo:asWKT &quot;POINT (0 1 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented towards the true North, with the primary axis pointing in the North direction.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Aligned to North, Oriented to True North</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented towards the true North, aligning its primary axis with the geographic North direction.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe models oriented to align their axis with the North in a geospatial reference.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/445#SF_South-Facing:_The_model_is_oriented_towards_the_true_South. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/445#SF_South-Facing:_The_model_is_oriented_towards_the_true_South.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">SF
+South-Facing: The model is oriented towards the true South.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the alignment of the model where its primary orientation is towards the South within a global georeferencing framework.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">South-Facing</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:South_Facing a geo:Geometry ;
+rdfs:label &quot;South-Facing&quot; ;
+skos:definition &quot;Indicates that the model is oriented towards the true South.&quot; ;
+geo:asWKT &quot;POINT (0 -1 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented towards the true South.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Facing South, Oriented Southward</skos:altLabel>
+        <skos:definition xml:lang="en">Indicates that the model is oriented towards the true South.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe models positioned or aligned with the true South direction in a global reference system.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/446#EF_East-Facing:_The_model_is_oriented_towards_the_East. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/446#EF_East-Facing:_The_model_is_oriented_towards_the_East.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">EF
+East-Facing: The model is oriented towards the East.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the alignment of the model where its primary orientation is towards the East within a global georeferencing framework.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">East-Facing</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:East_Facing a geo:Geometry ;
+rdfs:label &quot;East-Facing&quot; ;
+skos:definition &quot;Indicates that the model is oriented towards the East.&quot; ;
+geo:asWKT &quot;POINT (1 0 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented towards the East.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Facing East, Oriented Eastward</skos:altLabel>
+        <skos:definition xml:lang="en">Indicates that the model is oriented towards the East.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe models positioned or aligned with the East direction in a global reference system.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/447#WF_West-Facing:_The_model_is_oriented_towards_the_West. -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/447#WF_West-Facing:_The_model_is_oriented_towards_the_West.">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">WF
+West-Facing: The model is oriented towards the West</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the alignment of the model where its primary orientation is towards the West within a global georeferencing framework.</terms:description>
+        <terms:modified>2024-12-5</terms:modified>
+        <rdfs:label xml:lang="en">West-Facing</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:West_Facing a geo:Geometry ;
+rdfs:label &quot;West-Facing&quot; ;
+skos:definition &quot;Indicates that the model is oriented towards the West.&quot; ;
+geo:asWKT &quot;POINT (-1 0 0)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented towards the West.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Facing West, Oriented Westward</skos:altLabel>
+        <skos:definition xml:lang="en">Indicates that the model is oriented towards the West.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe models positioned or aligned with the West direction in a global reference system.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/448#OGP -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/448#OGP">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">OGP
+Relative to Ground Plane: The model is aligned with the ground plane (for example, with a flat surface that coincides with the XY plane).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Describes the spatial alignment of a model relative to a horizontal reference plane.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Relative to Ground Plane</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Relative_to_Ground_Plane a geo:Geometry ;
+rdfs:label &quot;Relative to Ground Plane&quot; ;
+skos:definition &quot;The model is aligned with the ground plane, such that its base coincides with the XY plane of the reference system.&quot; ;
+geo:asWKT &quot;POLYGON ((0 0, 1 0, 1 1, 0 1, 0 0))&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is aligned with the ground plane, typically represented by the XY plane of the reference system.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Aligned with Ground, XY-Plane Aligned</skos:altLabel>
+        <skos:definition xml:lang="en">The model is aligned with the ground plane, such that its base coincides with the XY plane of the reference system.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term for models oriented so that their base aligns with a flat horizontal plane.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/449#OOF -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/449#OOF">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Relative to Object Features: Orientation based on specific features of the object, such as a leading edge or prominent detail.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator xml:lang="en">Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the spatial alignment of a 3D model relative to distinct features of the object, ensuring precision in documentation and visualization workflows.</terms:description>
+        <terms:modified xml:lang="en">2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Relative to Object Features</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Relative_to_Object_Features a geo:Geometry ;
+rdfs:label &quot;Relative to Object Features&quot; ;
+skos:definition &quot;Orientation based on specific features of the object, such as a leading edge or prominent detail.&quot; ;
+geo:asWKT &quot;LINESTRING (0 0, 1 1)&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is oriented based on specific features of the object, like a leading edge or other prominent features.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Object-Feature Alignment, Feature-Based Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">Orientation based on specific features of the object, such as a leading edge or prominent detail.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the orientation of the model is determined by specific features or details of the object itself, aiding in accurate alignment or presentation.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/450#OAM -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/450#OAM">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Aligned with Another Model: The model is oriented with respect to another model (for example, a point cloud or reference model).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the orientation of a 3D model in reference to another model, ensuring interoperability and coherence in multi-model projects.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Aligned with Another Model</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Aligned_with_Another_Model a geo:Geometry ;
+rdfs:label &quot;Aligned with Another Model&quot; ;
+skos:definition &quot;The model is oriented with respect to another model, such as a point cloud or reference model.&quot; ;
+geo:asWKT &quot;MULTILINESTRING ((0 0, 2 2), (2 2, 3 3))&quot;^^geo:wktLiteral ;
+rdfs:comment &quot;The model is aligned with another model, such as a point cloud or reference model.&quot; .</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Model-to-Model Alignment, Comparative Model Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented with respect to another model, such as a point cloud or reference model.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe models that are spatially oriented in relation to another model, facilitating comparative analysis or integration in digital heritage workflows.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/451#SO -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/451#SO">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Symmetrical Orientation: The model is oriented so that the intrinsic symmetry of the object is respected.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines an orientation in which the model is aligned to maintain its intrinsic symmetry, aiding in visualization, analysis, and comparison.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Symmetrical Orientation</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Symmetry-Preserving Orientation, Balanced Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented so that the intrinsic symmetry of the object is respected.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the 3D model&apos;s orientation respects the inherent symmetrical properties of the object, ensuring an accurate representation of its geometry.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/452#AO -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/452#AO">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Asymmetrical Orientation: The orientation does not respect the symmetry of the object.
+Perspective or View Specifications</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines an orientation in which the model is deliberately aligned without maintaining its inherent symmetry, supporting use cases requiring unconventional perspectives or alignments.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Asymmetrical Orientation</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Symmetry-Ignoring Orientation, Unbalanced Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The orientation does not respect the symmetry of the object.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the 3D model&apos;s orientation intentionally disregards the object&apos;s symmetry, often to highlight specific features or align with external criteria.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/453#VT -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/453#VT">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Top-Down View: The model is oriented for a top view.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Indicates that the 3D model is presented with an overhead perspective for analysis or visualization.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Top-Down View</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Top_Down_View a owl:Class ;
+rdfs:label &quot;Top-Down View&quot; ;
+skos:definition &quot;The model is oriented to present a top view, allowing the user to observe it from above.&quot; ;
+geo:geometry [ geo:asWKT &quot;POINT(0 0)&quot;^^geo:wktLiteral ; # Example coordinates for the camera position
+geo:hasOrientation &quot;90&quot;^^xsd:decimal ] ; # Example of top-down orientation angle (view from above).</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Overhead View, Bird’s Eye View</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented to present a top view, allowing the user to observe it from above.</skos:definition>
+        <skos:scopeNote xml:lang="en">This orientation is useful for visualizing the layout or distribution of features from above.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/454#VF -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/454#VF">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Front View: The model is oriented for a front view.</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the orientation of a 3D model in which the front-facing portion is prioritized, aiding in visual clarity for educational or presentational purposes.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Front View</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Front_View a owl:Class ;
+rdfs:label &quot;Front View&quot; ;
+skos:definition &quot;The model is oriented for a front view.&quot; ;
+geo:geometry [ geo:asWKT &quot;POINT(0 0)&quot;^^geo:wktLiteral ; # Example coordinates for the camera position
+geo:hasOrientation &quot;0&quot;^^xsd:decimal ] ; # Example of front-facing orientation angle (view from the front).</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Frontal Orientation, Forward View</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented for a front view.</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term to describe the orientation of the model when it is displayed from the front-facing perspective, highlighting the primary façade or forward-facing details.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://photogrammetry.altervista.org/items/show/455#VS -->
+
+    <owl:Class rdf:about="https://photogrammetry.altervista.org/items/show/455#VS">
+        <rdfs:subClassOf rdf:resource="https://photogrammetry.altervista.org/collections/show/3#Thesaurus_for_F155_Orientation_of_the_3D_Model"/>
+        <dc:description xml:lang="en">Side View: The model is oriented for a side view (left or right).</dc:description>
+        <dc:source xml:lang="en">PODS Declaration</dc:source>
+        <terms:creator>Vittorio Lauro</terms:creator>
+        <terms:description xml:lang="en">Defines the orientation of a 3D model from a lateral or side angle, providing insights into the object’s profile and side features.</terms:description>
+        <terms:modified>2024-11-25</terms:modified>
+        <rdfs:label xml:lang="en">Side View</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">:Side_View a owl:Class ;
+rdfs:label &quot;Side View&quot; ;
+skos:definition &quot;The model is oriented for a side view (left or right).&quot; ;
+geo:geometry [ geo:asWKT &quot;POINT(0 0)&quot;^^geo:wktLiteral ; # Example coordinates for the camera position
+geo:hasOrientation &quot;90&quot;^^xsd:decimal ] ; # Example of side view orientation (either left or right).</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <skos:altLabel xml:lang="en">Lateral View, Profile Orientation</skos:altLabel>
+        <skos:definition xml:lang="en">The model is oriented for a side view (left or right).</skos:definition>
+        <skos:scopeNote xml:lang="en">Use this term when the model is oriented to display a profile or side perspective, often used to highlight structural or design details.</skos:scopeNote>
     </owl:Class>
     
 
