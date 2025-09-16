@@ -1,0 +1,1501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#"
+     xml:base="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pods="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08">
+        <rdfs:comment xml:lang="en">The Protocol of Ontological Digital Survey (PODS) is an ontology designed to formalize the documentation of digital surveying processes, particularly within the cultural heritage domain. Initially developed as an expansion of earlier protocols such as BeAPG and FOPPA, PODS introduces a structured and semantically explicit representation of the entire 3D documentation pipeline—from acquisition and processing to modeling and final data output.
+
+The current release, PODS v0.8.4.2, builds on the streamlined design of v0.8.4.1 while introducing an enhanced dual-level annotation model. This version not only maintains a deep, process-oriented semantic structure but also incorporates surface-level knowledge for improved compatibility with platforms like Omeka-S. In particular, it enables the annotation of core digital outputs, such as the point cloud and the digital twin, as primary entities in the documentation workflow—ensuring that both the procedural history and the digital artefacts themselves are semantically accessible and reusable.
+
+Optimized for automatic integration with Omeka-S, PODS v0.8.4.2 supports dynamic generation of structured data records through simplified class labels, modular organization, and curated property declarations. This configuration ensures seamless alignment with Omeka-S resource templates and API-based ingestion workflows.
+
+Despite these optimizations, PODS preserves its foundational alignment with semantic web standards, including CIDOC-CRM, CIDOC-CRMdig, SKOS, and QUDT. All key concepts remain ontologically grounded, making the ontology both lightweight and fully interoperable within scholarly and institutional Linked Open Data ecosystems.
+
+The ontology is structured into key modules corresponding to the main phases of digital survey:
+
+F1 Survey Object
+
+F2 Acquisition
+
+F3 Processing
+
+F4 Modelling
+
+F5 Exporting
+
+Each phase is complemented by a coherent set of domain-specific properties (Y1–Y200) used to document instruments, methodologies, responsible agents, and digital products with semantic clarity and traceability.
+
+This document outlines the structure and logic of PODS v0.8.4.3, showcasing its application in automated metadata generation and its capacity to support both high-resolution process modeling and lightweight resource annotation, meeting the diverse needs of digital heritage documentation workflows.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">0.844</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P102_has_title -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P102_has_title"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P148_has_component -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P148_has_component"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P14_carried_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P14_carried_out_by"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P15_was_influenced_by -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P15_was_influenced_by"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P161_has_spatial_projection -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P161_has_spatial_projection"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P165_incorporates -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P165_incorporates"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P16_used_specific_object -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P16_used_specific_object"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P1_is_identified_by -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P1_is_identified_by"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P3_has_note -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P3_has_note"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P4_has_time-span -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P4_has_time-span"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P52_has_current_owner -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P52_has_current_owner"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P67_refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P67_refers_to"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P7_took_place_at -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P7_took_place_at"/>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P9_consists_of -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P9_consists_of">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P134_continued#P134_continued -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P134_continued#P134_continued">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/P33_used_specific_technique#P33_used_specific_technique -->
+
+    <owl:ObjectProperty rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/P33_used_specific_technique#P33_used_specific_technique">
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L19_stores -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L19_stores"/>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L19i_is_stored_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L19i_is_stored_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F9_Acquisition_Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L1_digitized -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L1_digitized">
+        <rdfs:domain rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D2__Digitization_Process"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L23_used_software_or_firmware -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L23_used_software_or_firmware"/>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L10_had_input_(was_input_of) -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L10_had_input_(was_input_of)">
+        <rdfs:domain rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:range rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D1_Digital_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L11_had_output_(was_output_of) -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L11_had_output_(was_output_of)">
+        <rdfs:domain rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:range rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D1_Digital_Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#L12_happened_on_device_(was_device_for) -->
+
+    <owl:ObjectProperty rdf:about="http://www.ics.forth.gr/isl/CRMdig#L12_happened_on_device_(was_device_for)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#A1_had_raw_data_as_output -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#A1_had_raw_data_as_output">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L11_had_output_(was_output_of)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F25_Acquisition_Raw_Data"/>
+        <rdfs:comment xml:lang="en">This property links an acquisition activity (F2) to its direct digital output (F25), typically the raw data generated by the capture device. In photogrammetry, this includes the original photographs or image sets produced for subsequent processing steps.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y158 had raw data as output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y122_was_influenced_by_eidotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y122_was_influenced_by_eidotype">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P15_was_influenced_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F40_Eidotype"/>
+        <rdfs:comment xml:lang="en">This property links the Acquisition (F2) process with an Eidotype (F40), indicating that the acquisition was influenced or guided by the eidotype. An eidotype refers to an idealized or conceptual representation, such as a blueprint or reference model, which informs the acquisition process by providing a visual or theoretical guide for capturing the data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y122 was influenced by eidotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y157_had_raw_data_as_input -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y157_had_raw_data_as_input">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L10_had_input_(was_input_of)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F25_Acquisition_Raw_Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F46_Matching"/>
+        <rdfs:comment xml:lang="en">This property links a set of acquisition raw data (F25) to the first phase of processing (F46), where the data is used as input for matching operations. In photogrammetry, this typically refers to the raw photographs or depth data being processed to generate a point cloud.
+ It ensures the traceability of the original input dataset that initiates the computation pipeline.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y157 had raw data as input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y161_is_point_cloud_representation_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y161_is_point_cloud_representation_of">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P67_refers_to"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Archeological_Finding_Record"/>
+        <rdfs:comment xml:lang="en">This property establishes a semantic connection between a generic point cloud and the corresponding archaeological finding it represents. It signifies that the digital representation was generated specifically to document or visualize a physical archaeological asset, supporting spatial interpretation and research.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y161 is point cloud representation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y162_is_related_to_a_place -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y162_is_related_to_a_place">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F42_Place_Of_Acquisition"/>
+        <rdfs:comment xml:lang="en">This property links a point cloud to the geographic location where the acquisition took place. It supports the spatial contextualization of digital assets and should preferably be expressed through persistent geographic URIs such as those from OpenStreetMap or GeoNames.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y162 is related to a place</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y163_was_produced_thanks_to_acquisition_device -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y163_was_produced_thanks_to_acquisition_device">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L19i_is_stored_on"/>
+        <rdfs:comment xml:lang="en">This property connects a point cloud with the specific acquisition device that enabled its creation. It documents the material instrumentality of data generation, aiding in reproducibility and analysis of quality parameters.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y163 was produced thanks to acquisition device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y164_has_eidotype_as_production_note -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y164_has_eidotype_as_production_note">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P165_incorporates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F40_Eidotype"/>
+        <rdfs:comment xml:lang="en">This property links a point cloud to an eidotype, a structured annotation that conveys production-level metadata such as noise levels, scanning anomalies, lighting issues, or subjective choices made during modeling.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y164 has eidotype as production note</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y165_created_by_type_of_acquisition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y165_created_by_type_of_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F17_Acquisition_Trajectory_Type"/>
+        <rdfs:comment xml:lang="en">This property specifies the type of acquisition trajectory followed during data capture, characterizing the operational geometry of the acquisition process (e.g., spiral, linear, circular), and facilitating comparisons among acquisition strategies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y165 created by type of acquisition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y166_raw_data_used_as_base_of_creation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y166_raw_data_used_as_base_of_creation">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P148_has_component"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F25_Acquisition_Raw_Data"/>
+        <rdfs:comment xml:lang="en">This property identifies the raw data from which the point cloud was derived. It supports the documentation of provenance and traceability within the digital workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y166 raw data used as base of creation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y167_based_on_type_of_matching -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y167_based_on_type_of_matching">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F21_Matching_Algorithm_Type"/>
+        <rdfs:comment xml:lang="en">This property associates a point cloud with the type of image-matching algorithm applied during feature extraction and triangulation. It enables analytical assessment of reconstruction strategies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y167 based on type of matching</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y168_based_on_type_of_densification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y168_based_on_type_of_densification">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F22_Densification_Algorithm_Type"/>
+        <rdfs:comment xml:lang="en">This property records the specific densification algorithm employed to enrich a sparse point cloud. It clarifies the algorithmic basis of the resulting geometry.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y168 based on type of densification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y169_was_produced_on_processing_device -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y169_was_produced_on_processing_device">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L19i_is_stored_on"/>
+        <rdfs:comment xml:lang="en">This property links a point cloud to the physical hardware on which the processing was executed. It documents the technical environment that may affect performance or reproducibility.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y169 was produced on processing device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y170_creation_work_carried_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y170_creation_work_carried_out_by">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P52_has_current_owner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F38_Processing_Operator"/>
+        <rdfs:comment xml:lang="en">This property identifies the operator responsible for the processing stage that generated the point cloud. It supports accountability and contextualization of human intervention in the workflow.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y170 creation work carried out by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y171_has_processing_software_as_a_creation_environment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y171_has_processing_software_as_a_creation_environment">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P165_incorporates"/>
+        <rdfs:comment xml:lang="en">This property links a point cloud to the software environment used during its generation. It serves to document the computational context and versioning of tools.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y171 has processing software as a creation environment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y172_point_cloud_used_as_base_of_creation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y172_point_cloud_used_as_base_of_creation">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P148_has_component"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:comment xml:lang="en">This property links a 3D Digital Twin to the point cloud dataset on which it was based. It highlights the data dependency between the model and the underlying spatial representation, supporting traceability and validation of the modeling process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y172 point cloud used as base of creation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y173_based_on_type_of_reconstruction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y173_based_on_type_of_reconstruction">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F23_Reconstruction_Algorithm_Type"/>
+        <rdfs:comment xml:lang="en">This property records the algorithmic method used for mesh reconstruction during the generation of a 3D Digital Twin. It enables semantic specification of the reconstruction strategy (e.g., Poisson, Delaunay), aiding reproducibility and comparative studies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y173 based on type of reconstruction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y174_was_modelled_in_date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y174_was_modelled_in_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F65_Modelling_Date"/>
+        <rdfs:comment xml:lang="en">This property indicates the date on which the 3D Digital Twin was modeled. It is useful for temporal tracking of digital assets, version control, and archiving.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y174 was modelled in date</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y175_was_produced_on_modelling_device -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y175_was_produced_on_modelling_device">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L19i_is_stored_on"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F11_Modelling_Device"/>
+        <rdfs:comment xml:lang="en">This property links the 3D Digital Twin to the hardware used for its creation. It documents the computing environment that may influence processing time, resolution, and capabilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y175 was produced on modelling device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y176_has_note_of_modification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y176_has_note_of_modification">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F64_Modelling_Description"/>
+        <rdfs:comment xml:lang="en">This property documents specific notes or descriptions about manual or algorithmic modifications applied to the model after its initial creation, such as artifact cleaning or topology corrections.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y176 has note of modification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y177_digital_object_has_repository -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y177_digital_object_has_repository">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L19_stores"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F172_Digital_Repository"/>
+        <rdfs:comment xml:lang="en">This property links a digital object (either a point cloud or a digital twin) to the online or institutional repository where it is hosted, stored, or made accessible. It promotes traceability, citation, and long-term accessibility.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y177 digital object has repository</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y17_has_acquisition_operator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y17_has_acquisition_operator">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F37_Survey_Operator"/>
+        <rdfs:comment xml:lang="en">This property links the acquisition process (F2) to the survey operator (F37) responsible for carrying out the data collection. It defines the role of the person or team who performed the acquisition.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y17 has acquisition operator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y18_has_place_of_acquisition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y18_has_place_of_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P161_has_spatial_projection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F42_Place_Of_Acquisition"/>
+        <rdfs:comment xml:lang="en">This property refers to the specific location (F42) where the acquisition event (F2) took place. It identifies the spatial setting or area in which the survey or documentation occurred.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y18 has place of acquisition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y19_has_date_of_acquisition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y19_has_date_of_acquisition">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P4_has_time-span"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F43_Survey_Date"/>
+        <rdfs:label xml:lang="en">Y19 has date of acquisition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y1_is_acquired_object_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y1_is_acquired_object_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L1_digitized"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing"/>
+        <rdfs:comment xml:lang="en">This property refers to the specific survey object (F1) that was the subject of the acquisition process (F2). It indicates the object being digitized or acquired during a particular survey or documentation effort.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y1 is acquired object of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y24_happened_on_processing_device -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y24_happened_on_processing_device">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L12_happened_on_device_(was_device_for)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F10_Processing_Device"/>
+        <rdfs:comment xml:lang="en">This property associates the processing phase (F3) with the processing device (F10) on which the processing occurred.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y24 happened on processing device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y25_Processing_consist_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y25_Processing_consist_of">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P9_consists_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F46_Matching"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F47_PG_Densification"/>
+        <rdfs:comment xml:lang="en">This property indicates that a processing phase (F3) is composed of subprocesses like matching (F46) or densification (F47).</rdfs:comment>
+        <rdfs:label xml:lang="en">Y25 Processing consist of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y26_used_processing_software -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y26_used_processing_software">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L23_used_software_or_firmware"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F31_Processing_Software"/>
+        <rdfs:label xml:lang="en">Y26 used processing software</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y27_has_method_of_densification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y27_has_method_of_densification">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P33_used_specific_technique#P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F48_Densification_Method"/>
+        <rdfs:comment xml:lang="en">This property links the densification process (F47) to the specific method (F48) used to increase the density of a point cloud or model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y27 has method of densification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y32_has_method_of_matching -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y32_has_method_of_matching">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P33_used_specific_technique#P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F14_Matching_Method"/>
+        <rdfs:comment xml:lang="en">This property links the matching process (F46) to the specific matching method (F14) used.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y32 has method of matching</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y40_has_processing_operator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y40_has_processing_operator">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P14_carried_out_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F38_Processing_Operator"/>
+        <rdfs:comment xml:lang="en">This property connects a processing phase (F3) to the operator (F38) who performed the processing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y40 has processing operator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y47_has_method_of_reconstruction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y47_has_method_of_reconstruction">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P33_used_specific_technique#P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F4_PG_Modelling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F15_Reconstruction_Method"/>
+        <rdfs:comment xml:lang="en">This property associates a mesh reconstruction process (F56) with the specific reconstruction method (F15) it used, such as surface reconstruction or volumetric reconstruction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y47 has method of reconstruction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y49_has_created_Digital_Twin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y49_has_created_Digital_Twin">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L11_had_output_(was_output_of)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F5_PG_Exporting"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:comment xml:lang="en">This property indicates that the output of a mesh modification process (F58) is a digital twin (F100), which is a precise digital replica of a real-world object.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y49 has created Digital Twin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y51_Modelling_consist_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y51_Modelling_consist_of">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P9_consists_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F4_PG_Modelling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F56_PG_Mesh_Reconstruction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F57_PG_Texturing_Mesh"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F58_PG_Modifying_Mesh"/>
+        <rdfs:comment xml:lang="en">This property indicates that a modelling process (F4) is composed of various sub-processes such as mesh reconstruction (F56), texturing (F57), and modifying mesh (F58).</rdfs:comment>
+        <rdfs:label xml:lang="en">Y51 Modelling consist of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y60__has_modelling_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y60__has_modelling_description">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F4_PG_Modelling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F64_Modelling_Description"/>
+        <rdfs:comment xml:lang="en">This property links a modelling process (F4) with a descriptive note (F64) detailing the process, method, or specifics about the model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y60 has modelling description</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y66i_digital_twin_has_physical_carrier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y66i_digital_twin_has_physical_carrier">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L19_stores"/>
+        <rdfs:comment xml:lang="en">This inverse property connects a digital twin with the physical medium (such as a USB device, SSD, or archival server) that stores it. It is particularly useful for workflows that include offline backup, physical conservation, or distribution of digital heritage content.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y66i digital twin has physical carrier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y6_used_trajectory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y6_used_trajectory">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P33_used_specific_technique#P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F12_Acquisition_Trajectory"/>
+        <rdfs:comment xml:lang="en">This property describes the specific trajectory (F12) used during the acquisition event (F2). It denotes the path or movement employed to capture data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y6 used trajectory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y71_has_number_of_final_destination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y71_has_number_of_final_destination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F5_PG_Exporting"/>
+        <rdfs:comment xml:lang="en">This property indicates the number of final destinations (F70) for the 3D model based on the final use (F71).</rdfs:comment>
+        <rdfs:label xml:lang="en">Y71 has number of final destination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y8_happened_on_acquisition_device -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y8_happened_on_acquisition_device">
+        <rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#L12_happened_on_device_(was_device_for)"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F9_Acquisition_Device"/>
+        <rdfs:comment xml:lang="en">This property refers to the acquisition device (F9) on which the acquisition process (F2) occurred. It links the acquisition event to the specific piece of hardware or equipment used.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y8 happened on acquisition device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y93_was_continued_by_subsequent_phase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y93_was_continued_by_subsequent_phase">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P134_continued#P134_continued"/>
+        <rdfs:domain rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+        <rdfs:comment xml:lang="en">This property connects one Survey Phase (F101) to a subsequent Survey Phase (F101), marking the progression of the survey process from one phase to another. The aim of this property is to articulate the sequence of phases involved in a survey, often defined by different design choices or procedural steps. It highlights how a given survey phase transitions into a new one, either in terms of methodology or operational focus.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y93 was continued by subsequent phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y180:_has_Automation_Note -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y180:_has_Automation_Note">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F174_DT_Automation_Vocabulary"/>
+        <rdfs:comment xml:lang="en">This property specifies the degree of automation used in the creation of a 3D Digital Twin by linking it to a term from the DT Automation Vocabulary. It qualifies whether the modeling process was fully automatic, semi-automatic, or manually executed.
+ The property supports the evaluation of provenance, reproducibility, and epistemological transparency in digital heritage documentation.
+Suggested
+-Automated
+-Semiautomated 
+-Manual</rdfs:comment>
+        <rdfs:label xml:lang="en">Y180: has Automation Note</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y181:_has_DT_URL -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y181:_has_DT_URL">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P1_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F173_Digital_Twin_URL"/>
+        <rdfs:comment xml:lang="en">This property links a 3D Digital Twin to the web address (URL) through which it can be accessed, visualized, or interacted with online. The URL typically leads to a 3D viewer platform, institutional portal, or custom interface displaying the digital twin.
+ The property enables the semantic integration of online visualization tools within metadata records, facilitating LOD alignment, citation, and scholarly reuse.</rdfs:comment>
+        <rdfs:label xml:lang="en">Y181: has DT URL</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y20:_has_acquisition_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Y20:_has_acquisition_description">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F44_Acquisition_Description"/>
+        <rdfs:label xml:lang="en">Y20 has acquisition description</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf01:_DT_has_title -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf01:_DT_has_title">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P102_has_title"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin"/>
+        <rdfs:comment xml:lang="en">This property assigns a descriptive title or label to the 3D Digital Twin associated with the catalogue record. The title reflects the name under which the model is identified or published, supporting human-readable documentation and retrieval.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf01: DT has title</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf02:_DT_has_Place_of_Acquisition_URL -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf02:_DT_has_Place_of_Acquisition_URL">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P7_took_place_at"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F42_Place_Of_Acquisition"/>
+        <rdfs:comment xml:lang="en">This property indicates the spatial context where the physical object was surveyed, typically linking to a georeferenced location such as an OpenStreetMap URL or GIS dataset. It supports geospatial indexing and browsing of catalogued digital twins.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf02: DT has Place of Acquisition URL</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf03:_DT_has_input -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf03:_DT_has_input">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P16_used_specific_object"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Archeological_Finding_Record"/>
+        <rdfs:comment xml:lang="en">This property establishes the physical or conceptual object that was documented to generate the 3D Digital Twin. It connects the digital product to its real-world reference, supporting provenance tracking and contextual documentation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf03: DT has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf04:_DT_has_acquisition_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf04:_DT_has_acquisition_description">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F44_Acquisition_Description"/>
+        <rdfs:comment xml:lang="en">This property links the catalogue record to a textual or structured description of the acquisition process, including setup, devices, and context. It enables transparent access to the conditions under which the survey was carried out.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf04: DT has acquisition description</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf05:_DT_has_densification_method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf05:_DT_has_densification_method">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F48_Densification_Method"/>
+        <rdfs:comment xml:lang="en">This property documents the method or algorithm used to increase the point density of the raw dataset, contributing to the final 3D representation. It supports comparative analysis of processing techniques across different models.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf05: DT has densification method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf06:_DT_has_survey_date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf06:_DT_has_survey_date">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P4_has_time-span"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F43_Survey_Date"/>
+        <rdfs:comment xml:lang="en">This property assigns a temporal value to the acquisition of the physical object that generated the digital twin. It may refer to a specific date or a broader time range, supporting chronological indexing and filtering.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf06: DT has survey date</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf07:_DT_has_processing_software -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf07:_DT_has_processing_software">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P165_incorporates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F31_Processing_Software"/>
+        <rdfs:comment xml:lang="en">This property identifies the software environment used in the creation or processing of the 3D Digital Twin. It supports reproducibility and transparency of digital workflows, enabling validation and reprocessing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf07: DT has processing software</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf08:_DT_has_creation_automation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf08:_DT_has_creation_automation">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P2_has_type#P2_has_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F174_DT_Automation_Vocabulary"/>
+        <rdfs:comment xml:lang="en">This property describes the level of automation involved in the creation of the digital twin. Values from the DT Automation Vocabulary indicate whether the pipeline was fully automated, semi-automatic, or manual, improving transparency in digital documentation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf08: DT has creation automation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf09:_DT_has_Digital_Twin_URL -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Yf09:_DT_has_Digital_Twin_URL">
+        <rdfs:subPropertyOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/P1_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F173_Digital_Twin_URL"/>
+        <rdfs:comment xml:lang="en">This property provides a direct web link to the 3D Digital Twin, typically in a viewer-friendly format. It enables online access, citation, and cross-platform integration of the digital resource within Linked Open Data infrastructures.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yf09: DT has Digital Twin URL</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#has_medium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#has_medium"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E42_Identifier -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E42_Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E65_Creation#E65_Creation -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E65_Creation#E65_Creation">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E28_Conceptual_Object#E28_Conceptual_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity -->
+
+    <owl:Class rdf:about="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E4_Period#E4_Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D13_Digital_Information_Carrier -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D13_Digital_Information_Carrier">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D14_Software -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D14_Software">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D1_Digital_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D1_Digital_Object -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D1_Digital_Object">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E73_Information_Object#E73_Information_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D2__Digitization_Process -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D2__Digitization_Process">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E7_Activity#E7_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E65_Creation#E65_Creation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D8_Digital_Device -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D8_Digital_Device">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E24_Physical_Human-Made_Thing#E24_Physical_Human-Made_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D1_Digital_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Archeological_Finding_Record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Archeological_Finding_Record"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#Digital_Twin_Catalogue_Record"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F100_3D_Digital_Twin">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object"/>
+        <rdfs:comment xml:lang="en">The 3D Digital Twin class refers to the ultimate 3D model resulting from the complete acquisition and processing workflow. This model may be the outcome of either the F5 Exporting process or F4 Modelling, depending on the workflow followed. At this stage, the model is considered complete and will not undergo any further modifications. It is the final product that represents the culmination of all previous acquisition, processing, and modeling efforts, encapsulating all the geometric and textural information. This final model is typically used for documentation, analysis, visualization, or presentation purposes in various fields such as cultural heritage, architecture, and archaeology. Where possible expressed with a URL linked to the 3D model viewer or the possibility to download it. 
+QUERY 
+F100 Can you provide a link to download and/or view the final 3D model?</rdfs:comment>
+        <rdfs:label xml:lang="en">F100 3D Digital Twin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F10_Processing_Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F10_Processing_Device">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D8_Digital_Device"/>
+        <rdfs:comment xml:lang="en">The Processing Device class refers to any digital apparatus responsible for executing the computational tasks involved in the processing phase of data collected during a photogrammetric survey or other types of acquisition. This device typically includes computers running specialized software used to transform raw data (such as images or point clouds) into processed outputs like 3D models or Densified Point Clouds. In certain cases, such as laser scanners or other integrated systems, the same device used for acquisition may also perform data processing. The technical specifications and capabilities of the Processing Device directly influence the efficiency, speed, and quality of the final results.</rdfs:comment>
+        <rdfs:label xml:lang="en">F10 Processing Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F11_Modelling_Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F11_Modelling_Device">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D8_Digital_Device"/>
+        <rdfs:comment xml:lang="en">The Modelling Device class refers to any digital apparatus specifically used to perform the modeling and transformation of 3D models derived from processed data during photogrammetric surveys or other similar workflows. This device is most commonly a high-performance computer equipped with specialized software for 3D modeling, texturing, and refinement of point clouds or meshes. The Modelling Device plays a crucial role in converting raw or processed data into final, high-quality 3D models ready for visualization, analysis, or export. Its processing power and graphic capabilities directly impact the accuracy, level of detail, and speed of the 3D model&apos;s refinement.</rdfs:comment>
+        <rdfs:label xml:lang="en">F11 Modelling Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F12_Acquisition_Trajectory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F12_Acquisition_Trajectory">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+        <rdfs:comment xml:lang="en">The Acquisition Trajectory class refers to the physical path or series of positions followed by an acquisition device (such as a camera or laser scanner) during the data acquisition phase of photogrammetric or other survey processes. This trajectory defines the movement or stationary positions of the device relative to the object or area being documented, affecting the quality, coverage, and accuracy of the data captured. The Acquisition Trajectory can include linear paths, spirals, concentric movements, or modular setups in the case of a laser scanner, depending on the methodology adopted. Accurate documentation of the trajectory is essential for ensuring comprehensive and consistent capture of an object’s geometry, which is vital for subsequent processing and modeling phases.</rdfs:comment>
+        <rdfs:label xml:lang="en">F12 Acquisition Trajectory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F13_Acquisition_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F13_Acquisition_Method">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+        <rdfs:comment xml:lang="en">The Acquisition Method class refers to the set of protocols, guidelines, or operational instructions that dictate how the acquisition process is conducted during a photogrammetric or other survey operation. This class captures the methodology adopted for data capture, specifying procedural elements such as device settings, trajectory planning, object coverage, and environmental considerations. The Acquisition Method can range from formalized protocols, such as the Metashape Manual or the McGlone Method, to custom or ad-hoc procedures defined for specific projects or objects. The choice of method impacts the completeness and quality of the raw data produced, influencing all subsequent phases of processing and modeling.
+QUERY 
+F13 What was the method/protocoll/manual used ?</rdfs:comment>
+        <rdfs:label xml:lang="en">F13 Acquisition Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F14_Matching_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F14_Matching_Method">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+        <rdfs:comment xml:lang="en">The Matching Method class refers to the procedures and algorithms employed during the initial processing phase to extract corresponding points from multiple images based on color, texture, or other visual data. This method is essential for generating an accurate point cloud by identifying shared points across photographs or other forms of acquired raw data, such as laser scans. The Matching Method includes techniques like feature detection, keypoint extraction, and descriptor matching, which are critical for aligning images and generating the foundational structure of the 3D model. Various algorithms such as SIFT, SURF, or proprietary methods like those found in Metashape or Zephyr can be classified under this category.</rdfs:comment>
+        <rdfs:label xml:lang="en">F14 Matching Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F15_Reconstruction_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F15_Reconstruction_Method">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+        <rdfs:comment xml:lang="en">The Reconstruction Method class refers to the procedures and algorithms used to transform a densified point cloud into a polygonal mesh, thereby creating a structured 3D representation of an object or scene. This process involves generating polygons, typically triangles or quads, that form the mesh surface based on the spatial data from the point cloud. The Reconstruction Method also includes steps like mesh optimization, hole filling, and refinement to improve accuracy and ensure the continuity of the 3D surface. Different software solutions and algorithms such as Poisson Surface Reconstruction, Delaunay Triangulation, or Ball-Pivoting Algorithm are examples of methods employed during this phase.</rdfs:comment>
+        <rdfs:label xml:lang="en">F15 Reconstruction Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object"/>
+        <rdfs:comment xml:lang="en">The class F71 PG Generic Point Cloud defines a general category of three-dimensional data consisting of discrete spatial points, typically produced during photogrammetric or laser scanning processes. This class serves as an abstract superclass for both initial and densified point clouds and is used to structure metadata when the specific degree of elaboration (e.g., sparse vs. dense) is unknown or not yet defined.
+F71 enables the documentation and reuse of point cloud datasets across various stages of the digital survey pipeline, providing a semantic anchor for operations such as device tracking, software provenance, and typological associations. This class also serves as a central node for linking with contextual metadata such as acquisition location, associated objects, operators, and processing algorithms.
+Where possible, instances of F71 should be linked to a persistent URI pointing to a repository, viewer, or downloadable resource representing the point cloud.</rdfs:comment>
+        <rdfs:label xml:lang="en">F171 PG Generic Point Cloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F172_Digital_Repository -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F172_Digital_Repository">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D13_Digital_Information_Carrier"/>
+        <rdfs:comment xml:lang="en">The class F172 Digital Repository defines an information carrier specifically intended for the storage, dissemination, or long-term archiving of digital survey outputs such as 3D models, point clouds, textured meshes, or metadata records. It represents both institutional archives and cloud-based platforms that host cultural heritage data for visualization, download, or scholarly reuse.
+Instances of this class can be repositories linked to individual resources, such as URLs pointing to viewer platforms (e.g., Sketchfab, Open Heritage 3D), or full digital infrastructures, such as institutional databases or research data portals.
+This class supports semantic anchoring of digital assets by associating them with their location and context of preservation. It can also act as a referential node within a Linked Open Data architecture by providing persistent URIs and interoperable metadata endpoints.
+Where possible, instances of F172 should include the full URI of the hosted resource or repository interface.</rdfs:comment>
+        <rdfs:label xml:lang="en">F172 Digital Repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F173_Digital_Twin_URL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F173_Digital_Twin_URL">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E42_Identifier"/>
+        <rdfs:comment xml:lang="en">The class F173 Digital Twin URL represents the persistent or semi-persistent web address (URL) through which a 3D Digital Twin—typically derived from photogrammetric survey, laser scanning, or manual modeling—can be visualized online. These URLs act as direct links between the digital object and its web-based representation, including 3D viewers, sharing platforms (e.g., Sketchfab), or custom visualization portals.
+This class enables the semantic description of the digital twin’s online location, supporting integration within Linked Open Data (LOD) environments and enhancing interoperability across digital heritage infrastructures. It can link to individual 3D models or aggregated collections and should always point to a valid and accessible resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">F173 Digital Twin URL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F174_DT_Automation_Vocabulary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F174_DT_Automation_Vocabulary">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+        <rdfs:comment xml:lang="en">The class F174 DT Automation Vocabulary defines a controlled vocabulary used to categorize the degree of automation employed in the creation of a 3D Digital Twin—a virtual replica of a physical object. The vocabulary expresses whether the modeling process was:
+Fully automatic (e.g., using AI pipelines or unattended photogrammetric workflows)
+
+
+Semi-automatic (with partial human intervention during key phases)
+
+
+Manual (entirely hand-crafted by a 3D operator without algorithmic aid)</rdfs:comment>
+        <rdfs:label xml:lang="en">F174 DT Automation Vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F17_Acquisition_Trajectory_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F17_Acquisition_Trajectory_Type">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+        <rdfs:comment xml:lang="en">The Acquisition Trajectory Type class encompasses the various classifications of movement patterns executed by the acquisition device during the data collection process. These types are essential for understanding the methodology of data capture and are critical for accurately interpreting the resulting raw data. Different trajectory types can include linear movements, spiral paths, vertical scans, and other systematic approaches tailored to the specific context of the survey. Each trajectory type informs the photogrammetric workflow by dictating how the acquisition device interacts with the subject, which ultimately affects the quality and detail of the captured data.</rdfs:comment>
+        <rdfs:label xml:lang="en">F17 Acquisition Trajectory Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F21_Matching_Algorithm_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F21_Matching_Algorithm_Type">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+        <rdfs:comment xml:lang="en">The Matching Algorithm Type class encompasses the various types of algorithms utilized for extracting the initial point cloud from images in photogrammetry or from positional information in laser scanning. This class is crucial for categorizing the different methodologies employed in point cloud generation.</rdfs:comment>
+        <rdfs:label xml:lang="en">F21 Matching Algorithm Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F22_Densification_Algorithm_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F22_Densification_Algorithm_Type">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+        <rdfs:comment xml:lang="en">The Densification Algorithm Type class refers to the various types of algorithms used to obtain a densified point cloud from an initial point cloud. These algorithms enhance the resolution and detail of the point cloud, making it more suitable for detailed analysis and modeling.</rdfs:comment>
+        <rdfs:label xml:lang="en">F22 Densification Algorithm Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F23_Reconstruction_Algorithm_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F23_Reconstruction_Algorithm_Type">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
+        <rdfs:comment xml:lang="en">The Reconstruction Algorithm Type class refers to the various types of algorithms used to create a mesh or surface from a point cloud. These algorithms transform the discrete points into a continuous representation, facilitating the modeling and visualization of 3D objects.</rdfs:comment>
+        <rdfs:label xml:lang="en">F23 Reconstruction Algorithm Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F25_Acquisition_Raw_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F25_Acquisition_Raw_Data">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object"/>
+        <rdfs:comment xml:lang="en">The Acquisition Raw Data class refers to the unprocessed data resulting from the acquisition phase of photogrammetric surveys or laser scanning. These data serve as the foundational elements for subsequent processing steps and are essential for creating accurate 3D models. The raw data maintain original details and metadata critical for ensuring fidelity in model reconstruction.
+QUERY 
+F6 Can you provide the link to the Raw data of the acquisition with any kind of intrument</rdfs:comment>
+        <rdfs:label xml:lang="en">F25 Acquisition Raw Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F26_Point_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F26_Point_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:comment xml:lang="en">The Point Cloud class represents the initial output generated from the processing of raw data in photogrammetry or laser scanning. This class includes unrefined sets of data points that define the three-dimensional spatial distribution of the scanned object. The point cloud is a crucial intermediary stage prior to any densification processes, providing a preliminary representation of the object&apos;s surface geometry.
+QUERY 
+F26 Can you provide a link to the sparse point cloud?</rdfs:comment>
+        <rdfs:label xml:lang="en">F26 Point Cloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F27_Densified_Point_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F27_Densified_Point_Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F171_PG_Generic_Point_Cloud"/>
+        <rdfs:comment xml:lang="en">The Densified Point Cloud class refers to a refined set of three-dimensional data points that have undergone an additional processing stage to enhance point density. This process occurs independently from the initial matching phase and results in a more detailed representation of the object&apos;s surface geometry. Densified point clouds are crucial for improving the accuracy and quality of subsequent modeling and visualization tasks. Where possible expressed with a URL to the viewer or the repository where the densified point cloud is located
+QUERY 
+F27 Can you provide a link to the densified cloud resulting from your survey?</rdfs:comment>
+        <rdfs:label xml:lang="en">F27 Densified Point Cloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F28_3D_Mesh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F28_3D_Mesh">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object"/>
+        <rdfs:comment xml:lang="en">The 3D Mesh class refers to a three-dimensional model constructed from a densified point cloud. This mesh represents the geometric structure of the object and is generated prior to any texturing processes. It includes the surface topology and spatial relationships derived solely from the point cloud data, making it essential for visualizing the basic form and structure of the scanned object before adding detailed textures.
+QUERY 
+F28 Can you provide a link to the 3D Mesh derived from the densified point cloud?</rdfs:comment>
+        <rdfs:label xml:lang="en">F28 3D Mesh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F29_Textured_3D_Mesh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F29_Textured_3D_Mesh">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D9_Data_Object"/>
+        <rdfs:comment xml:lang="en">The Textured 3D Mesh class refers to a three-dimensional model that has been enhanced with texture mapping, providing detailed surface appearances and color information. This model integrates visual details onto the geometric structure established by the 3D mesh, allowing for realistic representations of artifacts or objects. The texture is applied based on the UV mapping or other texturing techniques, creating a lifelike visual experience suitable for presentation, analysis, and interactive applications.</rdfs:comment>
+        <rdfs:label xml:lang="en">F29 Textured 3D Mesh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F2_PG_Acquisition">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D2__Digitization_Process"/>
+        <rdfs:comment xml:lang="en">Acquisition refers to the process of capturing detailed photographic data of an object or structure. This involves systematically taking overlapping photographs from various angles to create a comprehensive and accurate 3D model, crucial for archaeological documentation and analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">F2 PG Acquisition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F31_Processing_Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F31_Processing_Software">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D14_Software"/>
+        <rdfs:comment xml:lang="en">The Processing Software class refers to software specifically used to process raw data into point clouds and densified point clouds during the 3D modeling workflow. This software transforms the data acquired during the acquisition phase (e.g., images from photogrammetry or raw point clouds from laser scanning) and applies algorithms to generate an initial point cloud, followed by densification processes to refine and enrich the dataset. Processing Software is responsible for tasks such as matching, densification, and initial 3D reconstruction steps, ultimately laying the foundation for later stages of modeling. Where possible, expressed with a text string that reports the name of the software and the specific version used.</rdfs:comment>
+        <rdfs:label xml:lang="en">F31 Processing Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F37_Survey_Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F37_Survey_Operator">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor"/>
+        <rdfs:comment xml:lang="en">The Survey Operator class refers to the individual responsible for physically performing the survey or acquisition. This person operates the acquisition devices (such as cameras, laser scanners, or LiDAR systems) during the process of data collection. The Survey Operator is in charge of executing the specific survey protocol, ensuring that the equipment functions correctly, and adhering to the instructions or guidelines outlined in the acquisition methodology. This role is crucial for the successful gathering of accurate and high-quality raw data.</rdfs:comment>
+        <rdfs:label xml:lang="en">F37 Survey Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F38_Processing_Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F38_Processing_Operator">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E39_Actor"/>
+        <rdfs:comment xml:lang="en">The Processing Operator class refers to the individual responsible for processing the raw data collected during the acquisition phase. This person uses specific software and algorithms to transform raw data, such as point clouds or images, into more refined outputs like densified point clouds or 3D models. The Processing Operator has to be skilled in utilizing various processing tools to ensure the data is cleaned, aligned, and prepared for subsequent modeling and analysis stages.</rdfs:comment>
+        <rdfs:label xml:lang="en">F38 Processing Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F3_PG_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">Processing in photogrammetry involves transforming raw data files into usable outputs. This includes validating image quality, stitching photographs, generating 3D models, and correcting errors like texture and polygon mismatches. It ensures data consistency, enhances detail accuracy, and prepares the images for further modeling and analysis in archaeological contexts. This specific action is in a state of dependence on the RawDataFile and on the Acquisition action and although intentional and therefore Activity depends on the choices made in the previous classes.
+QUERY 
+F3 The identification code of the processing ?</rdfs:comment>
+        <rdfs:label xml:lang="en">F3 PG Processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F40_Eidotype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F40_Eidotype">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+        <rdfs:comment xml:lang="en">The Eydotipe class refers to the sketch or drawing (whether digital or hand-drawn) created by the operator at the time of the survey. This drawing serves to document the general conditions of the surveyed object, including factors such as lighting conditions and the planned trajectory for the acquisition in relation to the object. The Eydotipe is an essential part of the surveying process, providing context and clarity regarding the approach and conditions of the survey.</rdfs:comment>
+        <rdfs:label xml:lang="en">F40 Eidotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F42_Place_Of_Acquisition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F42_Place_Of_Acquisition">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E53_Place"/>
+        <rdfs:comment xml:lang="en">The Place of Acquisition class refers to the physical space where the acquisition took place, encompassing the location where the acquisition occurred or where the architectural structure that was surveyed is situated. This class is essential for contextualizing the data collected during the acquisition process and provides information on the geographical and cultural relevance of the acquired data. Where possible expressed with a URL on the platform https://www.openstreetmap.org/</rdfs:comment>
+        <rdfs:label xml:lang="en">F42 Place Of Acquisition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F43_Survey_Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F43_Survey_Date">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span"/>
+        <rdfs:comment xml:lang="en">The Survey Date class refers to the time period expressed as a specific date when the survey was conducted. This class is crucial for documenting the temporal context of the acquisition process and allows for the establishment of a chronological framework for the collected data. Where possible expressed in XSD 
+YYYY indicates the year
+MM indicates the month
+DD indicates the day
+&lt;xs:element name=&quot;start&quot; type=&quot;xs:date&quot;/&gt;
+according to the following indications:
+https://www.w3schools.com/xml/schema_dtypes_date.asp</rdfs:comment>
+        <rdfs:label xml:lang="en">F43 Survey Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F44_Acquisition_Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F44_Acquisition_Description">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String"/>
+        <rdfs:comment xml:lang="en">The Acquisition Description class represents a narrative description of the acquisition process. This class allows for the documentation of detailed contextual information regarding the methodologies, conditions, and observations made during the acquisition, enhancing the understanding and interpretation of the collected data.
+A description is distinguished from the information already established by other classes as it represents a string where elements not already classified can be annotated and allows a free annotation of information that can help guide the creation of new classes for the ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">F44 Acquisition Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F46_Matching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F46_Matching">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">The Matching class refers to the process of identifying and matching corresponding points or features between multiple images or other forms of raw data. This process is essential in photogrammetry and other surveying methods, as it establishes the spatial relationships between images, allowing the creation of a 3D point cloud. Matching can involve various algorithms and methods to accurately pair points from different perspectives or data sources.
+QUERY
+F46 Can you provide a short description of the matching?</rdfs:comment>
+        <rdfs:label xml:lang="en">F46 Matching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F47_PG_Densification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F47_PG_Densification">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">The Densification class refers to the process of enriching the initial sparse point cloud obtained from the Matching phase by adding more data points. This step involves algorithms that interpolate or directly calculate additional points to generate a more detailed and dense representation of the scanned object or scene. Densification is crucial for achieving higher accuracy and detail in the subsequent stages of 3D reconstruction, such as meshing.
+QUERY 
+F47 Can you provide a short description of the densification process?</rdfs:comment>
+        <rdfs:label xml:lang="en">F47 PG Densification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F48_Densification_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F48_Densification_Method">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E29_Design_or_Procedure#E29_Design_or_procedure"/>
+        <rdfs:comment xml:lang="en">The Densification Method class refers to the specific procedures, instructions, or algorithms used to carry out the process of densification during the creation of a 3D model. This involves selecting or defining methods that will enrich an initial sparse point cloud by adding more points, which may include techniques based on interpolation, dense matching, or other computational approaches. The densification method directly influences the level of detail and accuracy in the 3D reconstruction process and is essential for achieving a faithful representation of the object or scene being captured.</rdfs:comment>
+        <rdfs:label xml:lang="en">F48 Densification Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F4_PG_Modelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F4_PG_Modelling">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">Modeling a 3D model involves creating and refining a digital representation of an object using specialized software. This process includes shaping the geometry, and adding details to achieve an accurate and detailed virtual model, ready for analysis, visualization, or further processing.
+This is an activity confined to modeling, not to be confused with the Modeling instructions which already include the construction of the mesh, and which however are continuous with it. The modeling is driven by design and research considerations and has no aesthetic character, distinguishing itself from 3D design modeling, which is not the subject of this analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">F4 PG Modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F56_PG_Mesh_Reconstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F56_PG_Mesh_Reconstruction">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">The Mesh Reconstruction class refers to the process of generating a 3D mesh from a densified point cloud (F27 Densified Point Cloud). This class captures the modeling operation where a continuous surface (mesh) is reconstructed, typically using algorithms that define the relationships between individual points within the cloud. This surface representation becomes the foundation for the final 3D model before any texturing is applied, and is crucial for the geometrical definition of the object in digital form.
+QUERY 
+F56 Can you describe in detail how the mesh reconstruction was generated?</rdfs:comment>
+        <rdfs:label xml:lang="en">F56 PG Mesh Reconstruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F57_PG_Texturing_Mesh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F57_PG_Texturing_Mesh">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">The Texturing Mesh class refers to the process of applying textures to a 3D mesh in order to enhance its visual appearance. The texture is generally derived from photographs or other 2D image data and is mapped onto the 3D surface to represent the color, material, and finer surface details. This step follows the mesh reconstruction phase and is crucial for adding realism to the 3D model, especially in cultural heritage applications where visual accuracy is important.</rdfs:comment>
+        <rdfs:label xml:lang="en">F57 PG Texturing Mesh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F58_PG_Modifying_Mesh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F58_PG_Modifying_Mesh">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">The Modifying Mesh class refers to the process of altering or refining a 3D mesh to correct geometrical inaccuracies, simplify the model, or adapt it for specific use cases. This modification can involve smoothing, decimating (reducing the number of polygons), or adjusting the mesh to meet certain criteria, such as improving visual fidelity or optimizing for real-time applications. This step is performed manually or through semi-automated processes and can be part of the workflow in the creation of accurate and efficient 3D models.</rdfs:comment>
+        <rdfs:label xml:lang="en">F58 PG Modifying Mesh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F5_PG_Exporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F5_PG_Exporting">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D7_Digital_Machine_Event"/>
+        <rdfs:comment xml:lang="en">Exporting involves the final stages of digital asset management. This phase encompasses exporting the processed data and archiving it for long-term preservation, ensuring the integrity and accessibility of digital records.
+QUERY 
+F5 the identification code of the 3D model export?</rdfs:comment>
+        <rdfs:label xml:lang="en">F5 PG Exporting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F64_Modelling_Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F64_Modelling_Description">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E62_String"/>
+        <rdfs:comment xml:lang="en">The Modelling Description class refers to a prose description of the modelling operations performed on a Textured Mesh (F29) within the context of Modelling (F4). This description provides a narrative account of the changes and modifications made to the 3D model, detailing the techniques, tools, and processes employed during the modelling phase. Such descriptions are essential for documentation purposes, allowing users to understand the adjustments made and the rationale behind them.
+A description is distinguished from the information already established by other classes as it represents a string where elements not already classified can be annotated and allows a free annotation of information that can help guide the creation of new classes for the ontology. Where possible, expressed with a text string that describes in detail the modification operations performed on the 3D model before its final export, indicating which elements were eliminated, whether registration and/or alignment operations were performed and what reasons led to such modifications</rdfs:comment>
+        <rdfs:label xml:lang="en">F64 Modelling Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F65_Modelling_Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F65_Modelling_Date">
+        <rdfs:subClassOf rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E52_Time-Span"/>
+        <rdfs:comment xml:lang="en">The Modelling Date class refers to the specific date when the F58 Modifying Mesh took place. This date is crucial for documenting the timeline of the modelling process, allowing for tracking of changes, revisions, and the overall progression of the 3D model development. Recording the modelling date can aid in understanding the evolution of the model and its context within the broader project timeline.</rdfs:comment>
+        <rdfs:label xml:lang="en">F65 Modelling Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F68_Digital_Twin_Physical_Carrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F68_Digital_Twin_Physical_Carrier">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D13_Digital_Information_Carrier"/>
+        <rdfs:comment xml:lang="en">The Digital Twin Physical Carrier class refers to the physical storage medium where the Digital Twin (F58) is preserved. This can include various types of physical storage devices, such as external hard drives, SSDs, or any other digital information carriers that ensure the safe storage and accessibility of the Digital Twin for future use.</rdfs:comment>
+        <rdfs:label xml:lang="en">F68 Digital Twin Physical Carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F7_Picture_Set -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F7_Picture_Set">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F25_Acquisition_Raw_Data"/>
+        <rdfs:comment xml:lang="en">The Picture Set class refers to a collection of unprocessed digital images captured during the acquisition phase of a photogrammetric survey. These images, taken systematically from multiple viewpoints, are critical for reconstructing 3D models of surveyed objects or environments. Each picture within the set is treated as part of a coherent whole, as the completeness and quality of the survey depend on the collective set rather than individual photographs.
+Picture Sets preserve high-resolution details, color information, and metadata essential for subsequent processing stages, ensuring accurate spatial and geometric reconstructions.
+QUERY 
+F7 In the context of photogrammetric acquisitions can you provide the link to the raw images produced by the acquisition ?</rdfs:comment>
+        <rdfs:label xml:lang="en">F7 Picture Set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F9_Acquisition_Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vitto/ontologies/2025/4/PODS_08#F9_Acquisition_Device">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig#D8_Digital_Device"/>
+        <rdfs:comment xml:lang="en">The Acquisition Device class represents any digital tool or instrument used during the acquisition phase of a photogrammetric survey or other data collection processes. These devices capture raw data such as photographs, point clouds, or laser scans, which serve as the foundation for subsequent processing and modeling. Examples of Acquisition Devices include digital cameras, 360° cameras, laser scanners, or LiDAR devices. Each device has specific technical capabilities that influence the quality and precision of the data collected, playing a critical role in the accuracy of the final 3D reconstruction.</rdfs:comment>
+        <rdfs:label xml:lang="en">F9 Acquisition Device</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
