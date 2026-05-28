@@ -1,30 +1,92 @@
-PODS Ontologies
+# PODS Ontology
 
-This repository contains three OWL ontologies developed as part of the PODS project (Protocol of Ontological Digital Survey), aimed at formalizing the metadata structure of 3D survey workflows for cultural heritage documentation. Each file corresponds to a specific stage or scope of development:
+**PODS – Protocol of Ontological Digital Survey** is an ontology designed to standardize and formalize the digital surveying process, with particular attention to the documentation, management, and preservation of cultural heritage through structured metadata.
 
-🔹 PODS_0.844.owl
+PODS was developed as a refinement and expansion of previous protocols such as BeAPG and FOPPA. Its main purpose is to provide a semantically coherent framework for representing the metadata of 3D digital survey workflows, including acquisition, processing, modelling, exporting, and final use of Digital Twins and related digital objects.
 
-Purpose:
-Optimized, reduced version of the PODS ontology designed for use in Omeka-S environments.
-Content:
-Includes only the classes and properties needed to describe 3D Digital Twin Catalogue Records, especially for publishing outputs (e.g., mesh models, point clouds, URLs, survey metadata).
-Status:
-This is the most lightweight and deployment-friendly version, tailored for RDF export and practical integration in digital catalogues.
+The ontology integrates and aligns with established semantic standards such as **SKOS**, **QUDT**, **CIDOC CRM**, and **CIDOC CRMdig**, in order to enhance interoperability, controlled vocabulary management, and compatibility with international data-sharing and linked data environments.
 
-🔹 PODS_03.owl
+## Current Version: PODS2
 
-Purpose:
-Full and modular version of the PODS ontology for comprehensive semantic representation of photogrammetric workflows.
-Content:
-Includes the entire set of PODS classes (F1–F5 and sub-classes), properties (Y1–Y95), and alignments with reference ontologies such as CIDOC CRM, CRMDig, SKOS, QUDT, OWL-Time.
-Status:
-Designed for completeness, academic use, and formal reasoning over all phases of the survey process (acquisition, processing, modelling, exporting).
+The current version of the ontology is **PODS2**.
 
-🔹 PODS-CORE.owl
+The complete ontology is provided as:
 
-Purpose:
-Merged, rationalized version that combines the essential elements from both PODS_0.844 and PODS_03, structured for public dissemination and semantic interoperability.
-Content:
-Balances expressiveness and implementation-readiness. Retains the core PODS classes and properties while simplifying redundant structures. Fully URI-compliant and aligned with semantic web standards.
-Status:
-This is the stable core release intended for linked data applications, public SPARQL endpoints, and integration with external knowledge graphs.
+- `PODS2.owl`
+
+This file contains the full structure of the PODS ontology, including the classes and properties required to describe the full lifecycle of a Digital Twin, from the initial survey object and acquisition activities to processing, modelling, exporting, dissemination, and final use.
+
+## Modular Structure
+
+PODS2 is organized into four main compositional modules. Each module corresponds to a specific phase of the digital survey workflow and is also available as an independent OWL file.
+
+The modular structure is intended to support both full ontology use and phase-specific implementation.
+
+### PODS2 Acquisition Module
+
+File:
+
+- `PODS2-AcquisitionModule.owl`
+
+This module describes the acquisition phase of a digital survey. It includes classes and properties related to the surveyed object, acquisition event, acquisition devices, software, operators, acquisition methods, trajectories, raw data, image sets, acquisition places, dates, coordinates, calibration tools, eidotypes, and acquisition environments.
+
+### PODS2 Processing Module
+
+File:
+
+- `PODS2-ProcessingModule.owl`
+
+This module describes the processing phase of a digital survey. It includes classes and properties related to acquisition input, processing devices, processing software, operators, matching, densification, point clouds, densified point clouds, calibration, alignment, registration, measurements, and processing descriptions.
+
+### PODS2 Modelling Module
+
+File:
+
+- `PODS2-ModellingModule.owl`
+
+This module describes the modelling phase of a digital survey. It includes classes and properties related to mesh reconstruction, texturing, modifying mesh, modelling devices, modelling software, modelling operators, reconstruction methods, texturing methods, digital scale, smoothing filters, texture sets, scaling factors, 3D meshes, textured 3D meshes, and the creation of Digital Twins.
+
+### PODS2 Exporting Module
+
+File:
+
+- `PODS2-ExportingModule.owl`
+
+This module describes the exporting phase of a digital survey. It includes classes and properties related to the final use of Digital Twins and 3D models, including video rendering, 3D printing, GIS integration, CAD analysis, prospectuses, research outputs, interactive environments, database implementation, AR/MR applications, interrogation tools, and physical or digital carriers.
+
+## Ontology Structure
+
+Each class and property in PODS follows a structured documentation model.
+
+Classes are identified through a sequential naming convention, such as `F1`, `F2`, `F3`, and so on. Properties are identified through a corresponding `Y` numbering system. This structure supports internal consistency and allows each element of the ontology to be connected to a specific phase or action within the digital survey workflow.
+
+Each ontology element may include:
+
+- a label;
+- a URI;
+- superclass or subclass relations;
+- domain and range, where applicable;
+- a scope note;
+- examples of use;
+- alignment with reference ontologies;
+- descriptive metadata.
+
+The goal of this structure is to ensure consistency, accuracy, traceability, and semantic interoperability in the documentation of 3D digital heritage assets.
+
+## Legacy Versions before PODS2
+
+Previous versions of the PODS ontology are preserved for reference, reproducibility, and compatibility with earlier publications.
+
+They are available in the folder:
+
+- [`pre-v2/`](./pre-v2/)
+
+This folder contains earlier ontology files and the previous README structure, including:
+
+- `PODS_0.844.owl`
+- `PODS_03.owl`
+- `PODS-CORE.owl`
+
+These files are maintained as legacy versions and should be cited or used only when referring to work developed before the release of PODS2.
+
+For new implementations, use `PODS2.owl` or one of the four PODS2 module files.
