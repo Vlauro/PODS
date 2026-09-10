@@ -1231,7 +1231,7 @@ Text 25014–32 (E33) is identified by “The Decline and Fall of the Roman Empi
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vitto/ontologies/2024/9/PODS_1#P2__has_type_(is_type_of)">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity#E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://cidoc-crm.org/cidoc-crm/7.1.3/E55_Type#E55_Type"/>
-        <rdfs:comment xml:lang="cidoc-crm.org” (e41) has type e-mail address (e55). (fictitious)">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P2_has_type
+        <rdfs:comment xml:lang="en” (e41) has type e-mail address (e55). (fictitious)">URI (forward direction):	http://www.cidoc-crm.org/cidoc-crm/P2_has_type
 URI (inverse direction):	http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of
 Domain:
 E1 CRM Entity
